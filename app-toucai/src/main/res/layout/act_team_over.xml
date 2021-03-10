@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/vgTop"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/toolbar_bg">
+
+        <ImageButton
+            android:id="@+id/imgBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:src="@mipmap/ic_white_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="团队总览"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xlarge" />
+    </FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vgTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/agent_yue"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:text="团队余额"
+                        android:textColor="@color/gray_content" />
+
+                    <TextView
+                        android:id="@+id/tvTeamBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:text="0.0000 元"
+                        android:textColor="@color/red_ff2c66"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/app_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTeamCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray_content"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:text="团队人数"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvOnline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray_content"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:text="代理在线"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvOnlineUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray_content"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:text="玩家在线"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vgThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vgTwo"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:text="团队详情"
+                        android:textColor="@color/gray_content" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="时间:"
+                        android:textColor="@color/gray" />
+
+                    <com.noober.background.view.BLTextView
+                        android:id="@+id/tvStartDate"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv3"
+                        android:drawableRight="@mipmap/ic_common_arrow_down"
+                        android:drawablePadding="3dp"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        app:bl_corners_radius="3dp"
+                        android:textSize="13dp"
+                        app:bl_solid_color="@color/gray_line"
+                        app:bl_stroke_color="@color/gray_light"
+                        app:bl_stroke_width="0.5dp" />
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_toRightOf="@+id/tvStartDate"
+                        android:text="-" />
+
+                    <com.noober.background.view.BLTextView
+                        android:id="@+id/tvEndDate"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv4"
+                        android:drawableRight="@mipmap/ic_common_arrow_down"
+                        android:drawablePadding="3dp"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="3dp"
+                        app:bl_corners_radius="3dp"
+                        android:textSize="13dp"
+                        app:bl_solid_color="@color/gray_line"
+                        app:bl_stroke_color="@color/gray_light"
+                        app:bl_stroke_width="0.5dp" />
+
+                    <com.noober.background.view.BLTextView
+                        android:id="@+id/tvSetDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@mipmap/ic_common_arrow_down"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="3dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:text="快选"
+                        android:textSize="13dp"
+                        android:textColor="@color/red"
+                        app:bl_corners_radius="3dp"
+                        app:bl_stroke_color="@color/red"
+                        app:bl_stroke_width="0.5dp" />
+
+                    <com.noober.background.view.BLButton
+                        android:id="@+id/btnSearch"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/sl_btn_primary_sh"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/search"
+                        android:textColor="@color/search_backcolor"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/app_bg" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/teamRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vgThree"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/tvString"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:textColor="@color/gray_content" />
+
+                    <com.noober.background.view.BLTextView
+                        android:id="@+id/tvLineSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:drawableRight="@mipmap/ic_common_arrow_down"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="3dp"
+                        android:textSize="13dp"
+                        android:text="充值量"
+                        android:textColor="@color/red"
+                        app:bl_corners_radius="3dp"
+                        app:bl_stroke_color="@color/red"
+                        app:bl_stroke_width="0.5dp" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/app_bg" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="10dp"
+                    android:background="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

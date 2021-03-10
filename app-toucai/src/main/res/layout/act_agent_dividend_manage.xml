@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <FrameLayout
+        android:id="@+id/vgToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+            android:id="@+id/vgToolbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <ImageButton
+                android:id="@+id/ibLeftBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:onClick="titleLeftClick"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_circle_arrow_white" />
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="联系人"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgToolbarGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                app:bl_corners_radius="5dp"
+                app:bl_solid_color="@color/red_ffdfd7">
+
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:drawableLeft="@mipmap/agent_username"
+                    android:drawablePadding="6dp"
+                    android:text="我的分红规则 :" />
+
+                <com.noober.background.view.BLRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv7"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    app:bl_corners_bottomLeftRadius="5dp"
+                    app:bl_corners_bottomRightRadius="5dp"
+                    app:bl_solid_color="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/white_f7f7f7"
+                        android:padding="3dp"
+                        android:text="用户类型:"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/usertype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv8"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/white_f7f7f7"
+                        android:padding="3dp"
+                        android:text="分红比例:"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <com.noober.background.view.BLTextView
+                        android:id="@+id/bonusPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv8"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="  查看  "
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        app:bl_corners_radius="3dp"
+                        app:bl_pressed_solid_color="@color/red_2"
+                        app:bl_unPressed_solid_color="@color/red_ff2c66" />
+
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv9"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/white_f7f7f7"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="分红要求消费天数:"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/bonusdownLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv9"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv10"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:background="@color/white_f7f7f7"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="每天最低日量:"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/dayMoneyAtLeast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv10"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                </com.noober.background.view.BLRelativeLayout>
+            </com.noober.background.view.BLRelativeLayout>
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:bl_corners_radius="5dp"
+                app:bl_solid_color="@color/red_ffdfd7">
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:drawableLeft="@mipmap/agent_username"
+                    android:drawablePadding="6dp"
+                    android:text="我的分红详情 :" />
+
+                <com.noober.background.view.BLRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv1"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    app:bl_corners_bottomLeftRadius="5dp"
+                    app:bl_corners_bottomRightRadius="5dp"
+                    app:bl_solid_color="@color/white">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/bonusDetailRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never" />
+
+                </com.noober.background.view.BLRelativeLayout>
+            </com.noober.background.view.BLRelativeLayout>
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                app:bl_corners_radius="4dp"
+                app:bl_corners_topLeftRadius="4dp"
+                app:bl_corners_topRightRadius="4dp"
+                app:bl_solid_color="@color/white">
+
+                <TextView
+                    android:id="@+id/tv14"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="时 间："
+                    android:textColor="@color/gray" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/startTime"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/tv14"
+                    android:drawableRight="@mipmap/ic_common_arrow_down"
+                    android:drawablePadding="3dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="13dp"
+                    app:bl_corners_radius="3dp"
+                    app:bl_solid_color="@color/gray_line"
+                    app:bl_stroke_color="@color/gray_light"
+                    app:bl_stroke_width="0.5dp" />
+
+                <TextView
+                    android:id="@+id/tv15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/startTime"
+                    android:padding="3dp"
+                    android:text="-" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/stopTime"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv15"
+                    android:drawableRight="@mipmap/ic_common_arrow_down"
+                    android:drawablePadding="3dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="13dp"
+                    app:bl_corners_radius="3dp"
+                    app:bl_solid_color="@color/gray_line"
+                    app:bl_stroke_color="@color/gray_light"
+                    app:bl_stroke_width="0.5dp" />
+
+
+                <TextView
+                    android:id="@+id/tv16"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startTime"
+                    android:padding="3dp"
+                    android:text="用户名："
+                    android:textColor="@color/gray" />
+
+                <com.noober.background.view.BLEditText
+                    android:id="@+id/username"
+                    android:layout_width="110dp"
+                    android:layout_height="26dp"
+                    android:layout_below="@+id/startTime"
+                    android:layout_toRightOf="@+id/tv16"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:textSize="13dp"
+                    app:bl_corners_radius="3dp"
+                    app:bl_solid_color="@color/gray_line"
+                    app:bl_stroke_color="@color/gray_light"
+                    app:bl_stroke_width="0.5dp" />
+
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startTime"
+                    android:layout_alignLeft="@+id/stopTime"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="查询"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    app:bl_corners_radius="3dp"
+                    app:bl_pressed_solid_color="@color/red_2"
+                    app:bl_unPressed_solid_color="@color/red_ff2c66" />
+
+
+            </com.noober.background.view.BLRelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray_line" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:overScrollMode="never" />
+
+                <RelativeLayout
+                    android:id="@+id/emptyView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/emptyIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/img_empty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/emptyIcon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="无数据" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:bl_corners_radius="5dp"
+                app:bl_solid_color="@color/red_ffdfd7">
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:drawableLeft="@mipmap/agent_username"
+                    android:drawablePadding="6dp"
+                    android:text="汇总 :" />
+
+                <com.noober.background.view.BLRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv11"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    app:bl_corners_bottomLeftRadius="5dp"
+                    app:bl_corners_bottomRightRadius="5dp"
+                    app:bl_solid_color="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv12"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/white_f7f7f7"
+                        android:padding="3dp"
+                        android:text="团队盈亏:"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/teamYinkuiTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="7dp"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="0.0000"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv13"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv12"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:background="@color/white_f7f7f7"
+                        android:padding="3dp"
+                        android:text="分配金额:"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/huizongFenpei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv12"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="7dp"
+                        android:ellipsize="end"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="0.0000"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+                </com.noober.background.view.BLRelativeLayout>
+            </com.noober.background.view.BLRelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

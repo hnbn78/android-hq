@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Lib-Act</string>
+    <string name="permission_get_accounts_hint">读取账户信息</string>
+    <string name="permission_read_phone_hint">读取电话状态</string>
+    <string name="permission_call_phone_hint">拨打电话</string>
+    <string name="permission_camera_hint">拍照权限</string>
+    <string name="permission_access_fine_location_hint">获取精确位置</string>
+    <string name="permission_access_coarse_location_hint">获取粗略位置</string>
+    <string name="permission_read_external_hint">读取外部存储</string>
+    <string name="permission_white_external_hint">写入外部存储</string>
+    <string name="permission_recode_audio_hint">录音</string>
+    <string name="api_error_unknown">未知错误</string>
+    <string name="api_error_parse">解析错误</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vgDigit"
+    app:layout_columnWeight="1"
+    style="@style/GridLayout_cell_wrapper">
+
+<TextView
+    android:id="@+id/tvDigit"
+    android:text="0"
+    android:visibility="invisible"
+    style="@style/text_digits"
+    android:textColor="@color/lottery_play_digits_text"
+    android:background="@drawable/bg_lottery_play_view_digit_jd_item_circle"
+    />
+</RelativeLayout>

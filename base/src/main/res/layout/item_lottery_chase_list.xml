@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/colorPrimaryInverse"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/vgInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPlayName"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="彩票"
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/textColorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvIssueNo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="0000-00期"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/textColorPrimary"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:text="玩法:"
+            android:textColor="@color/gray"/>
+
+
+        <TextView
+            android:id="@+id/tvBillNo"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:text="订单号码: "
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tvOrderContent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="投注内容:"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray_1"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="投注状态:"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray_1"/>
+
+        <TextView
+            android:id="@+id/tvBetMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="投注金额:"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray_1"/>
+
+        <TextView
+            android:id="@+id/tvWinMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="中奖金额:"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/vgInfo"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvCancelBtn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="撤单"
+            android:background="@drawable/sh_bd_rect_primary_round_hover"
+            android:padding="3dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="详情"
+            android:background="@drawable/sh_bd_rect_primary_round_hover"
+            android:padding="3dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/vgInfo"
+        android:layout_marginTop="10dp"
+        style="@style/devider_h_dark"/>
+
+</RelativeLayout>

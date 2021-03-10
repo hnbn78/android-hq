@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f7f7f7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钱包地址："
+            android:textSize="@dimen/dp_16" />
+
+        <TextView
+            android:id="@+id/tvPocketAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/copyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="3dp"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="3dp"
+            android:text="复制"
+            android:textColor="@color/white"
+            app:bl_corners_radius="5dp"
+            app:bl_solid_color="@color/blue_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前汇率：" />
+
+        <TextView
+            android:id="@+id/tvLatestHuilv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1USDT = 6.88CNY"
+            android:textColor="@color/red_fa2727"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/amountTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_fa2727"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ivPocketErweima"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:text="钱包二维码"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvMinChargeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="最小充值额："
+        android:textSize="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值教程："
+            android:textSize="@dimen/dp_16" />
+
+        <TextView
+            android:id="@+id/tvJiaochengPC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_4"
+            android:text="PC端"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            android:autoLink="all"/>
+
+        <TextView
+            android:id="@+id/tvJiaochengApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_4"
+            android:text="手机端"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            android:autoLink="all"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="温馨提示：请确保达到以下要求，否则无法到账："
+        android:textColor="@color/red_fa2727"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvtip1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="1.此充值方式使用的【USDT为ERC20】模式，
+    请勿充值其他模式USDT或其他币种。" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="5dp"
+        android:text="2.每个平台账号皆用有一个专属的钱包充值地址" />
+
+    <TextView
+        android:id="@+id/tvtip3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tvtip4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tvtip5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="5.充值金额：单笔最低充值金额为 10.00USDT，最高50000.00USDT。"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

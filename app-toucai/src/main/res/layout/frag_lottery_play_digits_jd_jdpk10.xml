@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <com.desheng.app.toucai.view.PlayHeadView
+        android:id="@+id/vHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="bounds" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider0"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider1"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider2"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider3"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider4"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider5"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider6"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider7"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider8"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider9"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="gone" />
+
+    <com.desheng.app.toucai.view.PlayDigitsJDView
+        android:id="@+id/vgDigit10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/devider10"
+        style="@style/vPlayDevierNoBottomMargin"
+        android:visibility="invisible" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:id="@+id/layout_message"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:singleLine="true"
+        android:text="title" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_gray_1"
+        android:text="2018" />
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTime"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/imArrow"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_gray_1"
+        android:text="系统消息" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvFrom"
+        android:layout_marginLeft="150dp"
+        android:singleLine="true"
+        android:textColor="@color/textColorSecondary"
+        android:text="未读" />
+
+    <ImageView
+        android:id="@+id/imArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_common_arrow_right"
+        />
+
+
+</RelativeLayout>

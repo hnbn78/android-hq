@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫码支付"
+        android:layout_margin="@dimen/dp_10"
+        android:textColor="@color/gray_content"
+        android:textSize="@dimen/dp_16"/>
+
+    <ImageView
+        android:id="@+id/ivQrImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_10" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示：长按二维码识别进行支付"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/tvChargeAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值金额："
+        android:textSize="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textColor="@color/gray_content"/>
+
+    <TextView
+        android:id="@+id/tvChargeBillNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单编号："
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textColor="@color/gray_content"
+        android:textSize="@dimen/dp_16"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/sl_btn_primary_oval_sh"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_recharge_record"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/sl_btn_primary_oval_sh"
+            android:text="查看充值记录"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="充值注意事项:"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_constant_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:textSize="13sp" />
+
+</LinearLayout>

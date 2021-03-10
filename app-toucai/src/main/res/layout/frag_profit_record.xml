@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        >
+
+        <!--饼图-->
+        <LinearLayout
+            android:id="@+id/ll_bing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            >
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart_pie"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                />
+
+            <!--<com.teaanddogdog.mpandroidchartutil.PieChartFixCover-->
+            <!--android:id="@+id/chart_pie"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="280dp"-->
+            <!--app:mp_chart_auto_adapt_text_size="true"-->
+            <!--app:mp_chart_out_value_place_mode="AVG"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:id="@+id/emptyview"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:src="@mipmap/img_empty"/>
+
+                <TextView
+                    android:id="@+id/tvEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_16"
+                    android:text="@string/not_data"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_profit_amount"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_profit_record_profit_amount"
+                    android:gravity="center"
+                    android:text="盈利"
+                    android:textColor="@color/btn_primary_high_light_white"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/btn_loss_amount"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="25.5dp"
+                    android:background="@drawable/btn_profit_record_loss_amount"
+                    android:gravity="center"
+                    android:text="负盈利"
+                    android:textColor="@color/btn_blue_high_light_white"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white_f9fafc"
+                >
+                <include
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="12.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_profit_header"
+                    layout="@layout/item_profit_record_list_header"/>
+
+                <include
+                    android:id="@+id/view_loss_header"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="12.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/item_loss_record_list_header"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_bing"
+            android:overScrollMode="never"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white_f9fafc">
+
+                <!--<com.skyline.widget.layout.RoundCornerLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="12.5dp"-->
+                <!--android:layout_marginTop="9dp"-->
+                <!--android:layout_marginRight="12.5dp"-->
+                <!--android:layout_marginBottom="13dp">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginRight="12.5dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/layout_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                    </FrameLayout>
+
+                </LinearLayout>
+                <!--</com.skyline.widget.layout.RoundCornerLayout>-->
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <FrameLayout
+            android:id="@+id/fragContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="盈亏总额"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="总计"/>
+
+        <TextView
+            android:id="@+id/totalMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="5dp"
+            android:text="+0.00"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

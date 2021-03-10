@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/vgLotteryTitle"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivType"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_home_lottery_title"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="我的彩种"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_large"/>
+</LinearLayout>

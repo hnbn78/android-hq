@@ -1,0 +1,119 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!--全屏framentDialog-->
+    <style name="Dialog_FullScreen" parent="android:Theme.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--Dialog样式activity-->
+    <style name="ActDialog_FullScreen" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>              <!-- 设置title -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>               <!-- 设置边框 -->
+        <item name="android:windowIsTranslucent">true</item>        <!-- 设置半透明 -->
+        <item name="android:windowFullscreen">true</item>           <!-- 设置全屏 -->
+    </style>
+
+    <!-- activity style begin -->
+    <style name="activity_transition_fade_in_out" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/ab_activity_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/ab_activity_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/ab_activity_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/ab_activity_fade_out</item>
+    </style>
+
+    <!-- 淡入淡出 全屏activity切换   <item name="android:windowAnimationStyle">@style/activity_transition_fade_in_out</item> -->
+    <style name="CustomActivityTheme">
+        <item name="android:editTextStyle">@style/EditText_NoBackground</item>
+    </style>
+    <!-- activity style end -->
+
+    <!-- EditText -->
+    <style name="EditText_NoBackground" parent="android:Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">@color/text_gray_1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+   <style name="dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/ab_dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/ab_dialog_exit</item>
+    </style>
+
+    <!--弹出DialogFragment样式-->
+    <style name="ab_loading_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+         <item name="android:backgroundDimAmount">0</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="PopupTheme">
+        <item name="android:popupBackground">@color/popup_bg</item>
+    </style>
+
+    <style name="ab_popupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/ab_popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/ab_pophidden_anim</item>
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <!-- style for material dialog -->
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/material_dialog_button</item>
+        <item name="android:textSize">@dimen/action_button_text_size</item>
+    </style>
+
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/ab_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/ab_dialog_exit_anim</item>
+    </style>
+
+</resources>

@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <com.desheng.app.toucai.view.PlayHeadView
+                android:id="@+id/vHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="bounds"
+                android:elevation="2dp" />
+
+            <com.desheng.app.toucai.view.PlayDigitK3View
+                android:id="@+id/vgDigit0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/devider0"
+                style="@style/vPlayDevier"
+                android:visibility="gone" />
+
+            <com.desheng.app.toucai.view.PlayDigitK3View
+                android:id="@+id/vgDigit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/devider1"
+                style="@style/vPlayDevier"
+                android:visibility="gone" />
+
+            <com.desheng.app.toucai.view.PlayDigitK3View
+                android:id="@+id/vgDigit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/devider2"
+                style="@style/vPlayDevier"
+                android:visibility="gone" />
+
+            <com.desheng.app.toucai.view.PlayDigitK3View
+                android:id="@+id/vgDigit3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/devider3"
+                style="@style/vPlayDevier"
+                android:visibility="gone" />
+
+            <com.desheng.app.toucai.view.PlayDigitK3View
+                android:id="@+id/vgDigit4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/devider4"
+                style="@style/vPlayDevier" />
+
+            <com.desheng.app.toucai.view.PlayFootView
+                android:id="@+id/vFootView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/dp_10" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

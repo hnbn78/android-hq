@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/member_name"
+            android:textColor="@color/text_333" />
+
+        <TextView
+            android:id="@+id/tvMemberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="@string/member_name"
+            android:textColor="@color/blue_0c6ce2" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@color/colorDevider" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:background="@color/white"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/register_date"
+            android:textColor="@color/text_333" />
+
+        <TextView
+            android:id="@+id/tvRegisterDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:text="@string/register_date"
+            android:textColor="@color/blue_0c6ce2" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:divider="@drawable/divider_line_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/def_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/real_name"
+                    android:textColor="@color/text_333" />
+
+                <TextView
+                    android:id="@+id/tvRealName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:onClick="onAddClick"
+                    android:text="@string/add_now_tc"
+                    android:textColor="@color/text_333" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/def_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/text_333" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvPhoneNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/dp_8"
+                        android:onClick="onAddClick"
+                        android:text="@string/add_now_tc"
+                        android:textColor="@color/text_333" />
+
+                    <TextView
+                        android:id="@+id/tvPhoneModify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onAddClick"
+                        android:text="修改"
+                        android:visibility="gone"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/def_height"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/email_address"
+                    android:textColor="@color/text_333" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvEmailAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/dp_8"
+                        android:onClick="onAddClick"
+                        android:text="@string/add_now_tc"
+                        android:textColor="@color/text_333" />
+
+                    <TextView
+                        android:id="@+id/tvEmailAddressModify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="onAddClick"
+                        android:text="修改"
+                        android:visibility="gone"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/def_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sex"
+                    android:textColor="@color/text_333" />
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/check_secret"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/sl_checkbox_blue_check"
+                        android:button="@null"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/text_333"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/secrecy"
+                        android:textColor="@color/text_333" />
+
+                    <RadioButton
+                        android:id="@+id/check_man"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/sl_checkbox_blue_check"
+                        android:button="@null"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/tvMan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="男"
+                        android:textColor="@color/text_333" />
+
+                    <RadioButton
+                        android:id="@+id/check_woman"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/sl_checkbox_blue_check"
+                        android:button="@null"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/tvWoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="女"
+                        android:textColor="@color/text_333" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="女"
+                    android:textColor="@color/text_333" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/def_height"
+                android:onClick="onAddClick">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/birth_date"
+                    android:textColor="@color/text_333" />
+
+                <TextView
+                    android:id="@+id/tvBirthDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:drawableRight="@mipmap/ic_right_arrow"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="选择日期"
+                    android:textColor="@color/text_333" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:onClick="onAddClick"
+        android:padding="@dimen/dp_10"
+        android:text="@string/more_setting"
+        android:textColor="@color/text_333" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_remind"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_4"
+            android:text="@string/remind"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/setting_info"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+</LinearLayout>

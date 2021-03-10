@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/vLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="329dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryInverse"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="53dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:text="玩法选择"
+                android:textColor="#4F4F4F"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:id="@+id/flMine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="23dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="25dp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="31dp"
+                android:text="其他"
+                android:textColor="#4F4F4F"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:id="@+id/flOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="21dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="25dp" />
+            </com.zhy.view.flowlayout.FlowLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="87dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tvCancell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_lhc_play_choose_reset"
+                    android:gravity="center"
+                    android:text="重置"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/tvChoose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_lhc_play_choose_confirm"
+                    android:gravity="center"
+                    android:text="确认"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

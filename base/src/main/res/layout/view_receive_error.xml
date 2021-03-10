@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText 
+        android:id="@+id/etMsg"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="left|top"
+        android:textColor="#000"
+        />
+    <CheckBox 
+        android:id="@+id/cbSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="发送邮件"
+        />
+    <Button
+        android:id="@+id/btnSendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ab_sl_btn_rect_orange"
+         android:textColor="#fff"
+        android:text="发送日志" />
+</LinearLayout>

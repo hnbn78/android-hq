@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<TextView
+    android:id="@+id/tvCode"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:text="-"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:textColor="@color/ab_white"
+    android:background="@drawable/sh_bg_square_blue_solid_round"
+    />
+
+</RelativeLayout>

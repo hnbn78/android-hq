@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/layout_message"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_item_shadow"
+    >
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="12dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_pocket_main"/>
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivIcon"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:singleLine="true"
+        android:text="钱包"/>
+
+    <ImageView
+        android:id="@+id/imArrow"
+        android:layout_width="27dp"
+        android:layout_height="6dp"
+        android:layout_alignBottom="@+id/tvFrom"
+        android:layout_toRightOf="@+id/tvFrom"
+        android:scaleType="centerCrop"
+        android:paddingBottom="3dp"
+        android:src="@mipmap/ic_out_arrow"
+        />
+
+
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvFrom"
+        android:layout_alignTop="@+id/tvFrom"
+        android:layout_toRightOf="@+id/imArrow"
+        android:singleLine="true"
+        android:text="AG钱包"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivIcon"
+        android:layout_below="@id/tvFrom"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:singleLine="true"
+        android:text="2000-05-20 09:09"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/textColorSecondary"/>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:text="+000"
+        android:textSize="@dimen/text_xxlarge"
+        android:layout_marginRight="7dp"
+        android:textColor="@color/red"/>
+</RelativeLayout>

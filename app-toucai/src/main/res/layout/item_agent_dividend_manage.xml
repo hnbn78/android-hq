@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white_f7f7f7"
+        android:padding="3dp"
+        android:text="日期:"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tv4"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="-"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/time"
+        android:background="@color/white_f7f7f7"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="团队盈亏:"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/teamYinkui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tv5"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="0.0000"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv4"
+        android:layout_marginTop="7dp"
+        android:background="@color/white_f7f7f7"
+        android:padding="3dp"
+        android:text="用户名:"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv4"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tv6"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="-"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv4"
+        android:layout_alignLeft="@+id/tv5"
+        android:layout_marginTop="7dp"
+        android:background="@color/white_f7f7f7"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="分红金额:"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv4"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tv7"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="0.0000"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv6"
+        android:layout_marginTop="7dp"
+        android:background="@color/white_f7f7f7"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="分红比例:"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/bonusRay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv6"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tv8"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="-"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv6"
+        android:layout_alignLeft="@+id/tv5"
+        android:layout_marginTop="7dp"
+        android:background="@color/white_f7f7f7"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="状态:"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv7"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/tv9"
+        android:ellipsize="end"
+        android:padding="3dp"
+        android:singleLine="true"
+        android:text="-"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_dash_line" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:bottom="4dp" android:drawable="@mipmap/ic_cb_blue_selected" android:end="4dp" android:start="4dp" android:top="4dp" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:bottom="4dp" android:drawable="@mipmap/ic_cb_blue_normal" android:end="4dp" android:start="4dp" android:top="4dp" />
+        </layer-list>
+    </item>
+</selector>

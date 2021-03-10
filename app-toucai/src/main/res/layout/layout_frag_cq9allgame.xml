@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tipsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下拉刷新查看全部游戏"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@color/orange_ff7a21"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tipsView">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_empty"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无数据"
+            android:layout_below="@+id/ic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/gray_bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

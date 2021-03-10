@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgGames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp">
+
+            <RadioButton
+                android:id="@+id/rb_ky_card"
+                style="@style/RadioButton_Accent_Checked"
+                android:layout_width="70dp"
+                android:text="KY棋牌" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rb_agin"
+                style="@style/RadioButton_Accent_UnChecked"
+                android:layout_width="70dp"
+                android:text="AGIN" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rb_im_sport"
+                style="@style/RadioButton_Accent_UnChecked"
+                android:layout_width="70dp"
+                android:text="IM体育" />
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/layout_all_third"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_all_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableRight="@mipmap/invert_triangle"
+                android:text="游戏平台" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vgAllGame"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_all_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableRight="@mipmap/invert_triangle"
+                android:text="全部游戏" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RadioButton
+            android:id="@+id/rbYesterday"
+            style="@style/RadioButton_Accent_UnChecked"
+            android:text="昨日" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rbToday"
+            style="@style/RadioButton_Accent_Checked"
+            android:text="今日" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rbWeek"
+            style="@style/RadioButton_Accent_UnChecked"
+            android:text="本周" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rbMonth"
+            style="@style/RadioButton_Accent_UnChecked"
+            android:text="本月" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/time_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvTo"
+            android:layout_alignTop="@+id/tvTo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvStartDate"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTo"
+            android:layout_alignBottom="@+id/tvTo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvTo"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/sl_btn_primary_sh"
+            android:text="@string/search"
+            android:textColor="@color/search_backcolor" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

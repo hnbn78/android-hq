@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:bottom="9.5dp" android:drawable="@mipmap/ic_cb_lottery_cart_list_selected" android:left="9.5dp" android:right="9.5dp" android:top="9.5dp" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:bottom="9.5dp" android:drawable="@mipmap/ic_cb_lottery_cart_list_normal"  android:left="9.5dp" android:right="9.5dp" android:top="9.5dp" />
+        </layer-list>
+    </item>
+</selector>

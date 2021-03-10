@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorPrimaryInverse"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/ivBankLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_bank_def"/>
+
+        <TextView
+            android:id="@+id/tvBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivBankLogo"
+            android:text=""
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_normal"/>
+
+        <TextView
+            android:id="@+id/tvCardNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvBankName"
+            android:text=""
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_normal"/>
+
+        <ImageView
+            android:id="@+id/ivDefault"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_red_check"/>
+    </RelativeLayout>
+
+</LinearLayout>

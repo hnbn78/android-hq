@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/toolbar_bg_half"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="手机验证"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <ScrollView
+                android:id="@+id/sv_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/ll_title"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingTop="12dp"
+                        android:paddingRight="24dp"
+                        android:paddingBottom="12dp"
+                        android:text="手机号158******48接收的短信验证码"
+                        android:textSize="18dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="265dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/sh_bd_et_phone_modify_capcha">
+
+                        <EditText
+                            android:id="@+id/et_capcha"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="输入验证码"
+                            android:textColor="#ababab"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/btn_capcha"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/ic_btn_dialog_phone_capcha"
+                            android:text="获取验证码"
+                            android:textColor="#333333"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/sv_content"
+                android:background="#CACACA" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_below="@+id/divider"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="取消"
+                    android:textColor="#A4A4A4"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/horizontal_divider"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#CACACA" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="确认"
+                    android:textColor="#FF5045"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

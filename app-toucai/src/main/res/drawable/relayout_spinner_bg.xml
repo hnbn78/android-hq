@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--白色背景 灰色底边  用于自定义的下列表 如：我有空车  -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#dadada" />
+        </shape>
+    </item>
+    <item android:bottom="1dip">
+        <shape>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+</layer-list>

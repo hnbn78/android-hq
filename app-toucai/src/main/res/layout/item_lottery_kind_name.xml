@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vgLotteryKind"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/colorPrimaryInverse"
+    android:descendantFocusability="blocksDescendants"
+   >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:gravity="left"
+        android:layout_marginTop="7dp"
+        android:text="sdf"/>
+
+   <!-- <View
+        android:layout_alignParentBottom="true"
+        style="@style/devider_h_dark"
+        />-->
+</RelativeLayout>

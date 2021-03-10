@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="3dp"
+        android:layout_centerHorizontal="true"
+
+        android:src="@mipmap/person_withdrawal_icon" />
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pic"
+        android:padding="3dp"
+        android:layout_centerHorizontal="true"
+        android:text="投注记录"
+        android:gravity="center"
+        android:textSize="@dimen/text_small"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+
+    <FrameLayout
+        android:id="@+id/vgToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+            android:id="@+id/vgToolbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <ImageButton
+                android:id="@+id/ibLeftBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:onClick="titleLeftClick"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_circle_arrow_white" />
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="联系人"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                app:bl_corners_radius="4dp"
+                app:bl_solid_color="@color/white">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/agent_yue"
+                    android:drawablePadding="7dp"
+                    android:text="团队余额："
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/teamBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:text="1124545.00"
+                    android:textColor="@color/red" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tv1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/gray_line" />
+
+                <TextView
+                    android:id="@+id/teamMemberNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="233人" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/teamMemberNum"
+                    android:layout_margin="5dp"
+                    android:text="团队总数"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/agentNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_centerHorizontal="true"
+                    android:text="12人" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/agentNum"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:text="代理在线"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/playerOnlineNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="1236人" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/playerOnlineNum"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:text="玩家在线"
+                    android:textColor="@color/gray" />
+
+            </com.noober.background.view.BLRelativeLayout>
+
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                app:bl_corners_radius="4dp"
+                app:bl_solid_color="@color/white">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="团队详情"
+                    android:textColor="@color/gray" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/gray_line" />
+
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:text="时间："
+                    android:textColor="@color/gray" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/startTime"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/tv3"
+                    android:drawableRight="@mipmap/ic_common_arrow_down"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    app:bl_corners_radius="3dp"
+                    app:bl_solid_color="@color/gray_line"
+                    app:bl_stroke_color="@color/gray_light"
+                    app:bl_stroke_width="0.5dp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/startTime"
+                    android:text="-" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/stopTime"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_toRightOf="@+id/tv4"
+                    android:drawableRight="@mipmap/ic_common_arrow_down"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="3dp"
+                    app:bl_corners_radius="3dp"
+                    app:bl_solid_color="@color/gray_line"
+                    app:bl_stroke_color="@color/gray_light"
+                    app:bl_stroke_width="0.5dp" />
+
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/selectFast"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="3dp"
+                    android:text="快选"
+                    android:textColor="@color/red"
+                    app:bl_corners_radius="3dp"
+                    app:bl_stroke_color="@color/red"
+                    app:bl_stroke_width="0.5dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/agentRc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startTime"
+                    android:overScrollMode="never" />
+
+            </com.noober.background.view.BLRelativeLayout>
+
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                app:bl_corners_radius="4dp"
+                app:bl_solid_color="@color/white">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单位（元）"
+                    android:textColor="@color/gray" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/selectMethod"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/ic_common_arrow_down"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="3dp"
+                    android:text="快选"
+                    android:textColor="@color/red"
+                    app:bl_corners_radius="3dp"
+                    app:bl_stroke_color="@color/red"
+                    app:bl_stroke_width="0.5dp" />
+
+                <View
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/selectMethod"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/gray_line" />
+
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/line6"
+                    android:layout_margin="10dp"
+                    android:background="#ffffff" />
+
+
+            </com.noober.background.view.BLRelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

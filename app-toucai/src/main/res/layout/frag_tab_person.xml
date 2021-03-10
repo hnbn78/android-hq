@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:dfv="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/myaccount_background"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivPotrait"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_default_potrait"/>
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/ivPotrait"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="掘金者"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_normal"/>
+
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAccount"
+                android:layout_centerHorizontal="true"
+                android:text="会员类型：铂金"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvWithdrawalsLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvType"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/tvType"
+                android:gravity="center"
+                android:text="可提现(元)"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvWithdrawCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvWithdrawalsLab"
+                android:layout_alignRight="@+id/tvWithdrawalsLab"
+                android:layout_below="@+id/tvWithdrawalsLab"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0.0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_normal"/>
+
+            <ImageView
+                android:id="@+id/ivWithdrawal"
+                android:layout_width="122dp"
+                android:layout_height="32.5dp"
+                android:layout_alignLeft="@+id/tvWithdrawCnt"
+                android:layout_alignRight="@+id/tvWithdrawCnt"
+                android:layout_below="@+id/tvWithdrawCnt"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/mywithdrawals"/>
+
+            <TextView
+                android:id="@+id/tvBlanceLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvType"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/tvType"
+                android:gravity="center"
+                android:text="余额(元)"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvBalanceCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvBlanceLab"
+                android:layout_alignRight="@+id/tvBlanceLab"
+                android:layout_below="@+id/tvBlanceLab"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0.0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_normal"/>
+
+            <ImageView
+                android:id="@+id/ivTransfer"
+                android:layout_width="122dp"
+                android:layout_height="32.5dp"
+                android:layout_below="@+id/tvBalanceCnt"
+                android:layout_centerHorizontal="true"
+                android:padding="1dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_third_transfer"/>
+
+
+            <ImageView
+                android:id="@+id/ivDeposit"
+                android:layout_width="122dp"
+                android:layout_height="32.5dp"
+                android:layout_alignLeft="@+id/tvBalanceCnt"
+                android:layout_alignRight="@+id/tvBalanceCnt"
+                android:layout_below="@+id/tvBalanceCnt"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/mydespoitrecord"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vgAccountSetTitle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryInverse"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="账号设置"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vgAccountSetContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/vgSafe"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/ivSafe"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_safe"/>
+
+                    <TextView
+                        android:id="@+id/tvSafe"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/ivSafe"
+                        android:text="@string/safe_center"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgFunds"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/ivFunds"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_cost"/>
+
+                    <TextView
+                        android:id="@+id/tvFunds"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/ivFunds"
+                        android:text="@string/funds_maragment"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgBankCard"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/ivBankCard"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_card"/>
+
+                    <TextView
+                        android:id="@+id/tvBankCard"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/ivBankCard"
+                        android:text="@string/bank_maragment"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vgMyRecordTitle"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/colorPrimaryInverse"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="我的记录"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_normal"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vgMyRecordContent0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/vgBetting"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/imbetting"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_bet"/>
+
+                    <TextView
+                        android:id="@+id/tvbetting"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/imbetting"
+                        android:text="@string/betting_record"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgAccountChange"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/imaccount"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_account"/>
+
+                    <TextView
+                        android:id="@+id/tv"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@id/imaccount"
+                        android:text="@string/myaccount_change"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgLotteryReport"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/imlottery"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_form"/>
+
+                    <TextView
+                        android:id="@+id/tvMoneyRecord"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/imlottery"
+                        android:text="彩票报表"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgChaseRecord"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/imafterrecord"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_number"/>
+
+                    <TextView
+                        android:id="@+id/tvafterno"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/imafterrecord"
+                        android:text="@string/aftr_no"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/devider_h_light"
+                />
+
+            <LinearLayout
+                android:id="@+id/vgMyRecordContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/vgWithdrawRecord"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/imwithdrawals_icon"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_deposit"/>
+
+                    <TextView
+                        android:id="@+id/tvwitharawals"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/imwithdrawals_icon"
+                        android:text="@string/withdrawals_tixian"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgChargeRecode"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/imrecharge_icon"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_recharge"/>
+
+                    <TextView
+                        android:id="@+id/tvrecharge"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/imrecharge_icon"
+                        android:text="@string/recharge_record"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgThirdGameRecode"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/third_game_icon"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_thirdbet"/>
+
+                    <TextView
+                        android:id="@+id/third_game"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/third_game_icon"
+                        android:text="第三方投注"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/vgThirdTransfer"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/thirdtransfer_icon"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_transfer"/>
+
+                    <TextView
+                        android:id="@+id/thirdtransfer"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/thirdtransfer_icon"
+                        android:text="转账记录"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/devider_h_light"
+                />
+
+            <LinearLayout
+                android:id="@+id/vgMyRecordContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/vgUserMessage"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                      android:id="@+id/imusermsg_icon"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_transfer"/>
+
+                    <TextView
+                        android:id="@+id/tvusermsg"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/imusermsg_icon"
+                        android:text="消息"/>
+
+                    <com.desheng.base.view.DraggableFlagView
+                        android:id="@+id/mUserMsgDot"
+                        android:visibility="gone"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        dfv:color1="#FF3B30"
+                        />
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    />
+
+                <RelativeLayout
+                    style="@style/vg_menu_group"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_recharge"/>
+
+                    <TextView
+                        style="@style/tv_menu_title"
+                        android:text="@string/recharge_record"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    android:visibility="invisible"
+                    />
+
+                <RelativeLayout
+                    style="@style/vg_menu_group"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_thirdbet"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        style="@style/tv_menu_title"
+                        android:text="第三方投注"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/devider_v_light"
+                    android:visibility="invisible"
+                    />
+
+                <RelativeLayout
+                    style="@style/vg_menu_group"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_transfer"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        style="@style/tv_menu_title"
+                        android:text="转账记录"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="第三方游戏"
+                android:textSize="@dimen/sp_12"/>
+
+            <LinearLayout
+                android:id="@+id/game_list"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/vgThirdTransferOld"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/ivThirdTransfer"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_third_trans"/>
+
+                    <TextView
+                        android:id="@+id/tvThirdTransfer"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/ivThirdTransfer"
+                        android:text="转账"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vgGameRecord"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/ivGameRecord"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_game_report"/>
+
+                    <TextView
+                        android:id="@+id/tvGameRecord"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/ivGameRecord"
+                        android:text="游戏记录"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vgGameDayReport"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/ivGameDayReport"
+                        style="@style/vg_menu_icon"
+                        android:src="@mipmap/ic_person_third_report"/>
+
+                    <TextView
+                        android:id="@+id/tvGameDayReport"
+                        style="@style/tv_menu_title"
+                        android:layout_below="@+id/ivGameDayReport"
+                        android:text="日报表"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        -->
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

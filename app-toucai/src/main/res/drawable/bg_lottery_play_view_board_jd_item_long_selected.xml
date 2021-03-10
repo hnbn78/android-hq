@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#ff5353" />
+            <size
+                android:width="45dp"
+                android:height="45dp" />
+
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_dragon_act" />
+
+</layer-list>

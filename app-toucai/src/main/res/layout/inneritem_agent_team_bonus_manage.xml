@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="key："
+        android:textColor="@color/gray"
+        android:textSize="13dp"
+        app:bl_solid_color="@color/white_f7f7f7"
+        app:bl_stroke_color="@color/white"
+        app:bl_stroke_width="0.5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="0.0000"
+            android:textColor="@color/gray"
+            android:textSize="13dp"
+            app:bl_solid_color="@color/white"
+            app:bl_stroke_color="@color/white_f7f7f7"
+            app:bl_stroke_width="0.5dp" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/bonusSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/recycler_devider_margin_5dp"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text=" 派发分红 "
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            app:bl_corners_radius="3dp"
+            app:bl_pressed_solid_color="@color/red_2"
+            app:bl_unPressed_solid_color="@color/red_ff2c66"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

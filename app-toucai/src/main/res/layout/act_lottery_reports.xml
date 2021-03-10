@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/vgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rbPersion"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sl_rb_rec_primary_round"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/persion"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbTeam"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sl_rb_rec_primary_round"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/team"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/time_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/vgType"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvTo"
+            android:layout_alignBottom="@+id/tvTo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center"
+            android:onClick="date"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvStartDate"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTo"
+            android:layout_alignBottom="@+id/tvTo"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvTo"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center"
+            android:onClick="date"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sl_btn_primary_sh"
+            android:text="@string/search"
+            android:textColor="#fff"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/time_relativelayout"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvUserAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/etUserAccount"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/user_name"
+            android:textSize="@dimen/text_normal"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etUserAccount"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvUserAccount"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:hint="请输入用户名"
+            android:inputType="text"
+            android:textSize="@dimen/text_normal"
+            android:visibility="gone" />
+
+        <com.pearl.view.DrawableCenterTextView
+            android:id="@+id/tvCoinType"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/etUserAccount"
+            android:drawableRight="@mipmap/invert_triangle"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center"
+            android:text="币种切换"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgUserName"
+        android:layout_marginTop="@dimen/dp_4"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/gray_line" />
+
+        <include
+            layout="@layout/refresh_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/empty_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vgUserName"
+        android:visibility="gone" />
+</RelativeLayout>

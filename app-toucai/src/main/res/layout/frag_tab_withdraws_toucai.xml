@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlWithdrawRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/second__layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/tvBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="@string/guangda"
+                    android:textSize="@dimen/text_normal"
+
+                    />
+
+                <TextView
+                    android:id="@+id/modify_funds_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/cash_detail_bank"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:id="@+id/modify_founds_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_common_arrow_right"
+
+                    />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/second__view"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_below="@+id/second__layout"
+                android:background="@color/myaccount_title" />
+
+            <RelativeLayout
+                android:id="@+id/three__layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second__view"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/tvCardNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text=""
+                    android:textSize="@dimen/text_normal"
+
+                    />
+
+                <TextView
+                    android:id="@+id/three_funds_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/bind_bank_card_number"
+                    android:textSize="@dimen/text_normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_one"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_below="@+id/three__layout"
+                android:background="@color/myaccount_title" />
+
+            <RelativeLayout
+                android:id="@+id/four__layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_one"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text=""
+                    android:textSize="@dimen/text_normal"
+
+                    />
+
+                <TextView
+                    android:id="@+id/four_funds_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/name"
+                    android:textSize="@dimen/text_normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_two"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_below="@+id/four__layout"
+                android:background="@color/myaccount_title" />
+
+            <RelativeLayout
+                android:id="@+id/five__layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/view_two"
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+
+                <EditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/five_funds_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/with_total"
+                    android:textSize="@dimen/text_normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_three"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_below="@+id/five__layout"
+                android:background="@color/myaccount_title" />
+
+            <RelativeLayout
+                android:id="@+id/six__layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/view_three"
+                android:background="@color/white"
+                android:paddingLeft="10dp">
+
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/six_funds_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/title_fund_password"
+                    android:textSize="@dimen/text_normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_five"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_below="@+id/six__layout"
+                android:background="@color/myaccount_title" />
+
+            <RelativeLayout
+                android:id="@+id/layout_withdraw_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_below="@+id/view_five"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_withdraw_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/withdraw_amount"
+                    android:textSize="@dimen/text_normal" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_four"
+                android:layout_width="match_parent"
+                android:layout_height="0.75dp"
+                android:layout_below="@+id/layout_withdraw_amount"
+                android:background="@color/myaccount_title" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/view_four"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/sl_btn_primary_sh"
+                android:padding="10dp"
+                android:text="@string/sure"
+                android:textColor="@color/myaccount_title"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tvTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnConfirm"
+                android:layout_marginTop="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                android:text="@string/with_time"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tvTip2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTip"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:textSize="@dimen/text_normal" />
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

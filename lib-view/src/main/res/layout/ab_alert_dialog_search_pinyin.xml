@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ab_white"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/linearlayout_corner_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="60dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/search" />
+
+            <AutoCompleteTextView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:paddingLeft="10dp"
+                android:hint="输入名称或拼音首字母"
+                android:imeOptions="actionSearch"
+                android:maxLength="20"
+                android:dropDownHeight="wrap_content"
+                android:dropDownWidth="300dp"
+                android:singleLine="true"
+                android:textColor="@color/ab_black"
+                android:textColorHint="@color/ab_gray_1"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/empty"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/cross_empty" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

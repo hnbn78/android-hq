@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp">
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+        <RadioButton
+            android:id="@+id/rbOrdinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/sl_rb_bg"
+            android:paddingRight="10dp"
+            android:text="@string/ordinary_account"
+            android:textSize="@dimen/text_normal"
+            android:gravity="center"
+            android:button="@null"
+            android:paddingLeft="10dp"
+            />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+        <RadioButton
+            android:id="@+id/rbLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/sl_rb_bg"
+            android:paddingLeft="10dp"
+            android:text="@string/link_account"
+            android:gravity="center"
+            android:button="@null"
+            />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/ly1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearlayout"
+
+
+        />
+    <FrameLayout
+        android:id="@+id/ly2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ly1"
+        />
+
+
+
+
+</RelativeLayout>

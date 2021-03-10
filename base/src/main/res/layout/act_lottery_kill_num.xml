@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryInverse"
+    >
+
+    <HorizontalScrollView
+        android:id="@+id/vgTitleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rgTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rbTitle1"
+                style="@style/radiobutton_title_accent"
+                android:checked="true"
+                android:text="万位杀号"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle2"
+                style="@style/radiobutton_title_accent"
+                android:text="千位杀号"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle3"
+                style="@style/radiobutton_title_accent"
+                android:text="百位杀号"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle4"
+                style="@style/radiobutton_title_accent"
+                android:text="十位杀号"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle5"
+                style="@style/radiobutton_title_accent"
+                android:text="个位杀号"
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle6"
+                style="@style/radiobutton_title_accent"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle7"
+                style="@style/radiobutton_title_accent"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle8"
+                style="@style/radiobutton_title_accent"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle9"
+                style="@style/radiobutton_title_accent"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rbTitle10"
+                style="@style/radiobutton_title_accent"
+
+                />
+
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/vDevider"
+        style="@style/devider_h_light"
+        android:layout_below="@+id/vgTitleGroup"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vDevider">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvKill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vgType"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

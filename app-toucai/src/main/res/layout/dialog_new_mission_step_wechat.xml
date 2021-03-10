@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+            android:id="@+id/vgBg"
+            android:layout_width="240dp"
+            android:layout_height="392dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/bg_new_mission"
+        >
+
+        <ImageView
+            android:id="@+id/ivTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:visibility="invisible"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="38dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_mission_wexin"/>
+
+        <RelativeLayout
+            android:id="@+id/ivInputBg"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/ivTitle"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="38dp"
+            android:background="@mipmap/bg_mission_name">
+
+            <ImageView
+                android:id="@+id/ivRealName"
+                android:layout_width="74.4dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_new_mission_weixin"/>
+
+            <EditText
+                android:id="@+id/tvWeiChat"
+                android:layout_width="80dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:textSize="@dimen/text_normal"
+                android:layout_toRightOf="@+id/ivRealName"/>
+
+            <View
+                style="@style/devider_h_light"
+                android:layout_below="@+id/tvWeiChat"
+                android:layout_marginTop="2dp"
+                android:layout_alignLeft="@+id/tvWeiChat"
+                android:layout_alignRight="@+id/tvWeiChat"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnOpenRed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/ivInputBg"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:text="拆红包"
+            android:textSize="@dimen/text_small"
+            android:enabled="false"
+            android:textColor="#fff"
+            android:background="@drawable/sl_btn_open_red"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivDeleteBtn"
+        android:layout_below="@+id/vgBg"
+        style="@style/iv_mission_delete"/>
+
+</RelativeLayout>

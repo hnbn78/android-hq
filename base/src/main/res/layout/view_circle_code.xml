@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_open_code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/sh_bd_circle_code_bg"
+    android:gravity="center"
+    android:text="1"
+    android:textColor="#FF4646" />

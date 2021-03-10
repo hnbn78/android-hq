@@ -1,0 +1,222 @@
+{
+  "100": {
+    "code": "GD11Y",
+    "id": 24,
+    "showName": "广东11选5"
+  },
+  "102": {
+    "code": "SD11Y",
+    "id": 22,
+    "showName": "山东11选5"
+  },
+  "103": {
+    "code": "SH11Y",
+    "id": 26,
+    "showName": "上海11选5"
+  },
+  "104": {
+    "code": "JX11Y",
+    "id": 23,
+    "showName": "江西11选5"
+  },
+  "105": {
+    "code": "JS11Y",
+    "id": 28,
+    "showName": "江苏11选5"
+  },
+  "11": {
+    "code": "CQSSCXJW",
+    "id": 80,
+    "isClassic": 1,
+    "showName": "经典重庆时时彩"
+  },
+  "110": {
+    "code": "BJPK10",
+    "id": 43,
+    "showName": "北京PK10"
+  },
+  "151": {
+    "code": "XJSSCXJW",
+    "id": 82,
+    "isClassic": 1,
+    "showName": "经典新疆时时彩"
+  },
+  "191": {
+    "code": "HGSSCXJW",
+    "id": 88,
+    "isClassic": 1,
+    "showName": "经典韩国1.5分彩"
+  },
+  "200": {
+    "code": "FLB15SSCXJW",
+    "id": 85,
+    "isClassic": 1,
+    "showName": "经典菲律宾1.5分彩"
+  },
+  "201": {
+    "code": "FLB2SSCXJW",
+    "id": 86,
+    "isClassic": 1,
+    "showName": "经典菲律宾2分彩"
+  },
+  "202": {
+    "code": "FLB5SSCXJW",
+    "id": 87,
+    "isClassic": 1,
+    "showName": "经典菲律宾5分彩"
+  },
+  "205": {
+    "code": "SHOUERSSCXJW",
+    "id": 71,
+    "isClassic": 1,
+    "showName": "经典首尔1.5分彩"
+  },
+  "206": {
+    "code": "NEWYOSSCXJW",
+    "id": 72,
+    "isClassic": 1,
+    "showName": "经典纽约1.5分彩"
+  },
+  "22": {
+    "code": "SD11YXJW",
+    "id": 102,
+    "isClassic": 1,
+    "showName": "经典山东11选5"
+  },
+  "23": {
+    "code": "JX11YXJW",
+    "id": 104,
+    "isClassic": 1,
+    "showName": "经典江西11选5"
+  },
+  "24": {
+    "code": "GD11YXJW",
+    "id": 100,
+    "isClassic": 1,
+    "showName": "经典广东11选5"
+  },
+  "26": {
+    "code": "SH11YXJW",
+    "id": 103,
+    "isClassic": 1,
+    "showName": "经典上海11选5"
+  },
+  "28": {
+    "code": "JS11YXJW",
+    "id": 105,
+    "isClassic": 1,
+    "showName": "经典江苏11选5"
+  },
+  "31": {
+    "code": "JSK3XJW",
+    "id": 90,
+    "isClassic": 1,
+    "showName": "经典江苏快3"
+  },
+  "43": {
+    "code": "BJPK10XJW",
+    "id": 110,
+    "isClassic": 1,
+    "showName": "经典北京PK10"
+  },
+  "60": {
+    "code": "TXSSC",
+    "id": 911,
+    "showName": "腾讯分分彩"
+  },
+  "601": {
+    "code": "DJSSCXJW",
+    "id": 70,
+    "isClassic": 1,
+    "showName": "经典东京1.5分彩"
+  },
+  "70": {
+    "code": "DJSSC",
+    "id": 601,
+    "showName": "东京1.5分彩"
+  },
+  "71": {
+    "code": "SHOUERSSC",
+    "id": 205,
+    "showName": "首尔1.5分彩"
+  },
+  "72": {
+    "code": "NEWYOSSC",
+    "id": 206,
+    "showName": "纽约1.5分彩"
+  },
+  "80": {
+    "code": "CQSSC",
+    "id": 11,
+    "showName": "重庆时时彩"
+  },
+  "82": {
+    "code": "XJSSC",
+    "id": 151,
+    "showName": "新疆时时彩"
+  },
+  "85": {
+    "code": "FLB15SSC",
+    "id": 200,
+    "showName": "菲律宾1.5分彩"
+  },
+  "86": {
+    "code": "FLB2SSC",
+    "id": 201,
+    "showName": "菲律宾2分彩"
+  },
+  "87": {
+    "code": "FLB5SSC",
+    "id": 202,
+    "showName": "菲律宾5分彩"
+  },
+  "88": {
+    "code": "HGSSC",
+    "id": 191,
+    "showName": "韩国1.5分彩"
+  },
+  "90": {
+    "code": "JSK3",
+    "id": 31,
+    "showName": "江苏快3"
+  },
+  "911": {
+    "code": "TXSSCXJW",
+    "id": 60,
+    "isClassic": 1,
+    "showName": "经典腾讯分分彩"
+  },
+  "116": {
+    "code": "XYFTPK10",
+    "id": 47,
+    "showName": "幸运飞艇"
+  },
+  "47": {
+    "code": "XYFTPK10XJW",
+    "id": 116,
+    "isClassic": 1,
+    "showName": "经典幸运飞艇"
+  },
+  "112": {
+    "code": "AKLPK10",
+    "id": 204,
+    "showName": "极速赛车"
+  },
+  "204": {
+    "code": "AKLPK10XJW",
+    "id": 112,
+    "isClassic": 1,
+    "showName": "经典极速赛车"
+  },
+  "331": {
+    "code": "XY300PK10",
+    "id": 330,
+    "showName": "幸运赛车"
+  },
+  "330": {
+    "code": "XY300PK10XJW",
+    "id": 331,
+    "isClassic": 1,
+    "showName": "经典幸运赛车"
+  }
+}

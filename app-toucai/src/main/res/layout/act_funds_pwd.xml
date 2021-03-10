@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="@string/setting_funds_password_info"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setting_password" />
+
+        <EditText
+            android:id="@+id/etPwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="请输入6-12位数字和字母"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/right_password" />
+
+        <EditText
+            android:id="@+id/etPwdAgain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="请再次输密码"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_16"
+        android:enabled="false"
+        android:background="@drawable/button_sure_selector"
+        android:text="@string/sure"
+        android:textColor="@color/white" />
+</LinearLayout>

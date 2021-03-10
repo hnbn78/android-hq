@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--通用 -->
+	<string name="money_sign">¥</string>
+
+    <!--权限提示-->
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。</string>
+</resources>

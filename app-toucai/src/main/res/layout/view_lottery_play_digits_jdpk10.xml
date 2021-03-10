@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/vgDigitGroup"
+    >
+
+    <TextView
+        android:id="@+id/tvDigitPowerLab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:background="@color/gray_bg"
+        android:text="号码"
+        android:textColor="#7a7a7a"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/glDigits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDigitPowerLab"
+        app:alignmentMode="alignBounds"
+        app:columnCount="2"
+        app:useDefaultMargins="false">
+
+    </android.support.v7.widget.GridLayout>
+
+
+</RelativeLayout>

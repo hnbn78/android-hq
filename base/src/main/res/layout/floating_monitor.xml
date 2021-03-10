@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.pearl.view.MoveImageView
+            android:id="@+id/ivGirl"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_girl_normal" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/actionbar_bg" />
+        
+        <CheckBox
+             android:id="@+id/cbGetEdit"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="5dp"
+             android:layout_alignBottom="@+id/ivGirl"
+             android:layout_alignRight="@+id/ivGirl" />
+
+        <LinearLayout
+            android:id="@+id/vgRealTime"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/ivGirl"
+            android:background="@drawable/ab_sh_border_round_gray_gray"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="状态："
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vgInfo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/vgRealTime"
+            android:background="@drawable/ab_sh_border_round_gray_gray"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSerial"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:gravity="left|center_vertical"
+                android:textSize="14sp"
+                android:text="通讯："
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvOrder"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="2"
+                android:paddingLeft="5dp"
+                android:gravity="left|top"
+                android:textSize="14sp"
+                android:text="订单数据："
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvGoods"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="2"
+                android:paddingLeft="5dp"
+                android:gravity="left|top"
+                android:textSize="14sp"
+                android:text="轨道数据："
+                android:textColor="#000000" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="切换面板"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:visibility="invisible"
+            android:background="@drawable/ab_sl_btn_rect_orange"
+            android:layout_below="@id/vgInfo"/>
+
+        <FrameLayout
+            android:id="@+id/flLists"
+            android:layout_width="200dp"
+            android:layout_height="390dp"
+            android:layout_below="@id/btnToggle">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvPwdBoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:gravity="left|center_vertical"
+                    android:textSize="14sp"
+                    android:text="输入密码："
+                    android:textColor="#000000" />
+            </LinearLayout>-->
+            <ListView
+                android:id="@+id/lvFuncs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/ab_bd_list_divider"
+                android:dividerHeight="2px"
+                android:background="@drawable/ab_sh_border_round_gray_gray"
+                />
+            <ListView
+                android:id="@+id/lvErrors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/ab_bd_list_divider"
+                android:dividerHeight="2px"
+                android:visibility="invisible"
+                android:background="@drawable/ab_sh_border_round_gray_gray"
+                />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/llDetail"
+        android:layout_width="440dp"
+        android:layout_height="800dp"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="440dp"
+        android:layout_height="180dp"
+        android:padding="20dp"
+        android:background="@drawable/ab_sh_border_round_gray_gray"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="sdfasdfasdf"
+        android:orientation="vertical"
+        />
+         <LinearLayout 
+        android:id="@+id/llPanel"
+        android:layout_width="440dp"
+        android:layout_height="620dp"
+        android:background="@drawable/ab_sh_border_round_gray_gray"
+        android:orientation="vertical"
+        />    
+        
+    </LinearLayout>
+</LinearLayout>

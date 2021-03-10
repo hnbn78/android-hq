@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="@dimen/dp_8"
+    android:background="@drawable/shape_b0_r3_white"
+    android:padding="5dp">
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/llBallsBlue"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="7dp" />
+
+    <TextView
+        android:id="@+id/choujiang_qihao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="期号: -"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/recycler_devider_margin_12dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/llBallsBlue"
+        android:text="发放时间"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/choujiang_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/llBallsBlue"
+        android:text="-"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/recycler_devider_margin_12dp" />
+
+    <TextView
+        android:id="@+id/choujiang_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

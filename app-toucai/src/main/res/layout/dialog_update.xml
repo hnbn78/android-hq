@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_bg_update_header" />
+
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bottomLeftEnabled="true"
+        app:bottomRightEnabled="true"
+        app:cornerRadius="10dp"
+        android:layout_marginRight="1dp"
+        app:topLeftEnabled="false"
+        app:topRightEnabled="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/sv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <FrameLayout
+                    android:id="@+id/layout_container"
+                    android:layout_width="match_parent"
+                    android:minHeight="150dp"
+                    android:layout_height="wrap_content">
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_content"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="left|center_vertical"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:padding="24dp"-->
+                        <!--android:textSize="15dp">-->
+
+                    <!--</TextView>-->
+
+                </FrameLayout>
+            </ScrollView>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#CACACA" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="取消"
+                    android:textColor="#A4A4A4"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/horizontal_divider"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#CACACA"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="立即更新"
+                    android:textStyle="bold"
+                    android:textColor="#FF5045"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.skyline.widget.layout.RoundCornerLayout>
+</LinearLayout>

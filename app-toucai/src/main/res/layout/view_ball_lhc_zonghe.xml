@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="第0430-083期"
+        android:textColor="@color/gray_content" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/tv_issue"
+        android:gravity="center"
+        android:text="12:10"
+        android:textColor="@color/gray_content" />
+
+    <TextView
+        android:id="@+id/zonghe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="666"
+        android:textColor="@color/red_ff2c66"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tv_time">
+    </TextView>
+
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/llBallsBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/zonghe"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_line" />
+
+</RelativeLayout>

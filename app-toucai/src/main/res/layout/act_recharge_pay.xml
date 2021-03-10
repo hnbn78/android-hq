@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryInverse"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bank_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvBankSelect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="请选择开户银行"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/tvicon"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_common_arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bank_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_bank_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etBankNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入银行卡号"
+                android:inputType="number"
+                android:paddingTop="5dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_common_arrow_right" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_bank_input"
+            android:padding="5dp"
+            android:background="@color/colorPrimaryInverse"
+            android:text="必须是绑定资料的银行卡卡号才能进行充值，否则不能正常到账"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/gv_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:focusable="true"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        android:visibility="gone"></GridView>
+
+    <RelativeLayout
+        android:id="@+id/layout_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_recharge_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="充值金额" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_recharge_amount"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_recharge_amount"
+            android:focusable="false"
+            android:textColor="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_recharge_amount"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_recharge_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@color/transparent"
+                android:focusable="true"
+                android:gravity="bottom"
+                tools:text ="1"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvFraction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                tools:text =".01"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_j_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="提示:充值金额除以100余额尾数为0都会风控。请输入，例如：1001、9999.9等"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="充值附言" />
+
+        <EditText
+            android:id="@+id/et_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_tips"
+            android:background="@color/transparent"
+            android:hint="支付宝付款人真实姓名"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_charge_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/sl_btn_primary_oval_sh"
+        android:text="下一步"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_recharge_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="取款时间:15分钟完成充值，单笔限额:0~5000元，免手续费。"
+        android:textColor="@color/textColorSecondary" />
+
+    <TextView
+        android:id="@+id/tv_recharge_tips2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="温馨提示:请不要用余额宝，财付通资金转账，否则无法到账。"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+</LinearLayout>

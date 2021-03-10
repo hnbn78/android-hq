@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/game_trend_left_item_tv_content"
+        android:layout_width="59.0dip"
+        android:layout_height="26.0dip"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMessageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEmptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f7f7f7"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivempty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ivempty"
+            android:text="暂无消息" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tvReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:bl_corners_radius="30dp"
+            app:bl_solid_color="@color/red_ff2c66" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/laohuji2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel11"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel22"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel33"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel44"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel55"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

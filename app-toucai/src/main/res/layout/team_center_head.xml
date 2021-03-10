@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@mipmap/team_center_bg1">
+
+        <ImageView
+            android:id="@+id/userLogo"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@mipmap/team_center_user_logo" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/userLogo"
+            android:text="姓 名"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/userloginDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/userLogo"
+            android:text="最后登录时间 2019-00-00"
+            android:textColor="@color/gray_bg"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userloginDate"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/userLogo"
+            android:text="当前团队人数 "
+            android:textColor="@color/gray_bg"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/team_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userloginDate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv3"
+            android:background="@drawable/shape_r15_white"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:paddingLeft="7dp"
+            android:paddingRight="1dp"
+            android:text="0"
+            android:textColor="@color/red"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userloginDate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/team_num"
+            android:text="人"
+            android:textColor="@color/gray_bg"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/goErweima"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="@string/text_erweima"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/iv1"
+                android:background="@mipmap/team_center_erweima" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/team_center_rignt" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_b0_r8_white"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/incomeToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/incomeToday"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/ic_right_arrow"
+                android:text="今日收益"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white_f7f7f7" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/incomeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/incomeToday"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/ic_right_arrow"
+                android:text="总收益"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:background="@drawable/bg_popup_lottery_cart_model"
+        android:divider="@drawable/ic_divider"
+        android:orientation="vertical"
+        android:showDividers="middle" >
+    </LinearLayout>
+
+</FrameLayout>

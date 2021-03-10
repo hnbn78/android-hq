@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_super_partner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/vgToolbarGroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <RelativeLayout
+                android:id="@+id/vgToolbarContent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height">
+
+                <ImageButton
+                    android:id="@+id/ibLeftBtn"
+                    android:layout_width="@dimen/toolbar_height"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:onClick="titleLeftClick"
+                    android:padding="7dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_back_circle_arrow_white" />
+
+                <TextView
+                    android:id="@+id/tvTitleLeft"
+                    style="@style/main_content_text_style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ibLeftBtn"
+                    android:onClick="titleLeftClick" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvLotteryTitleCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="超级合伙人"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_title_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/title_view"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/vgRightButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toolbar_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tvSearchBtn"
+                        style="@style/main_content_text_style"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="搜索"
+                        android:textColor="#FFFFFF"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.skyline.widget.layout.RoundCornerLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="15dp"
+                    app:bottomLeftEnabled="true"
+                    app:bottomRightEnabled="true"
+                    app:cornerRadius="5dp"
+                    app:topLeftEnabled="true"
+                    app:topRightEnabled="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="0,1">
+
+                            <TableRow android:layout_marginTop="23dp">
+
+                                <TextView
+                                    android:id="@+id/tv_bonus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="-2.7sp"
+                                    android:text="0.00"
+                                    android:textColor="#323232"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_member_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="-3sp"
+                                    android:text="0"
+                                    android:textColor="#323232"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow android:layout_marginTop="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="6.3sp"
+                                    android:text="我的红利"
+                                    android:textColor="#aaaaaa"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:lineSpacingExtra="6sp"
+                                    android:text="线下会员人数"
+                                    android:textColor="#aaaaaa"
+                                    android:textSize="13sp" />
+                            </TableRow>
+                        </TableLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="26dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_record"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="35dp"
+                                android:background="@drawable/bt_super_partner_selector"
+                                android:lineSpacingExtra="5sp"
+                                android:text="红利记录"
+                                android:textColor="@color/btn_super_partner_selector"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/btn_my_member"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bt_super_partner_selector"
+                                android:lineSpacingExtra="5sp"
+                                android:text="我的线下"
+                                android:textColor="@color/btn_super_partner_selector"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.skyline.widget.layout.RoundCornerLayout>
+
+                <FrameLayout
+                    android:id="@+id/fragContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/rootfragContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

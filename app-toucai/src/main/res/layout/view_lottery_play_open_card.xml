@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="6dp"
+    android:clickable="false"
+    android:elevation="3dp"
+    app:bl_corners_radius="5dp"
+    app:bl_solid_color="@color/blue_light_1">
+
+    <ImageView
+        android:id="@+id/iv_lottery_logo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_lottery_play_qqffc" />
+
+    <ImageView
+        android:id="@+id/iv_jd_play_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.5dp"
+        android:src="@mipmap/ic_lottery_play_jd"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_lottery_logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_issue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="7sp"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            tools:text="NO.180515068 开奖结果" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="27.5dp"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:id="@+id/iv_openning"
+                android:layout_width="142dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_open_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_num1"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_num2"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_num3"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_num4"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_num5"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_num6"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_num7"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_num8"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_num9"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_num10"
+                    android:layout_width="27.5dp"
+                    android:layout_height="27.5dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/bg_lottery_play_card_num_circle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="0"
+                    android:textColor="@color/lhc_card_num_text"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/sh_dash_line_3dp"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvIssueDeadLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="8sp"
+                android:maxLines="1"
+                android:textColor="#8b8b8b"
+                android:textSize="11dp"
+                tools:text="NO.000 投注截止时间" />
+
+            <TextView
+                android:id="@+id/tv_deadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="#ff4746"
+                android:textSize="12dp" />
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/tv_recent_lottery_open"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="近期开奖"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:bl_corners_radius="@dimen/dp_10"
+                app:bl_solid_color="@color/blue_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_recent_lottery_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:src="@mipmap/ic_lottery_play_jump_left"
+        android:visibility="gone" />
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/goOfficeOpenSite"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8"
+        android:text="开奖官网"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:bl_corners_radius="@dimen/dp_10"
+        app:bl_solid_color="@color/blue_light"
+        android:visibility="gone"/>
+
+</com.noober.background.view.BLRelativeLayout>
+
+
+

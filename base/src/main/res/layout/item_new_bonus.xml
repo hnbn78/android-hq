@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_time_length"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:text="周总销量(元)>=:"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/etAllSale"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:digits="1234567890"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="删除"
+            android:textColor="@color/gray_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_profit_length"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:text="周累计亏损:"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/etLost"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:digits="1234567890"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:text="分红:"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/etBonus"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:digits="1234567890"
+            android:hint="请输入整数"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" %" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:text="有效人数:"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/etActivity"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:digits="1234567890"
+            android:hint="请输入整数"
+            android:inputType="number"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+</LinearLayout>

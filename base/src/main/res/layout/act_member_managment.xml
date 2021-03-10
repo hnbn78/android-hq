@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:hint="请输入"
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/text_normal"
+
+            />
+
+        <TextView
+            android:id="@+id/agentcy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="代理下级："
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/etAgent"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:hint="请输入"
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/text_normal" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:background="@drawable/sl_btn_primary_sh"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_normal" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView_Chain"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_below="@+id/input_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycleView_Chain"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vgHomeHead"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/frag_tab_home">
+
+    <View
+        android:id="@+id/vEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <include layout="@layout/layout_login_regist" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp">
+
+        <com.pearl.view.mzbanner.MZBannerView
+            android:id="@+id/vBanner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:canLoop="true"
+            app:indicatorAlign="center"
+            app:indicatorPaddingLeft="10dp"
+            app:open_mz_mode="true" />
+
+        <ViewFlipper
+            android:id="@+id/filpper"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:autoStart="false"
+            android:flipInterval="2000"
+            android:inAnimation="@anim/anim_come_in"
+            android:outAnimation="@anim/anim_get_out" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/iv_gonggao"
+            android:layout_width="55dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/bg_tcgg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <com.pearl.view.marqueen.OneLineMarqueeView
+            android:id="@+id/vMarquee"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_toRightOf="@+id/iv_gonggao"
+            android:layout_weight="1"
+            android:paddingLeft="7dp"
+            android:paddingRight="5dp"
+            app:marqueeview_repet_type="repet_continuous"
+            app:marqueeview_text_color="@color/textColorPrimary"
+            app:marqueeview_text_size="14"
+            app:marqueeview_text_speed="1" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/yellow_FFF3EA"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_changwan" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_changwan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white_f3f3f3"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/ic_yxdting" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/yellow_FFF3EA"
+        app:tabIndicatorColor="@color/red_ff2c66"
+        app:tabIndicatorHeight="2dp"
+        app:tabPaddingTop="5dp"
+        app:tabSelectedTextColor="@color/red_ff2c66"
+        app:tabTextAppearance="@style/indcatorTextStyle2"
+        app:tabTextColor="@color/gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:overScrollMode="never" />
+
+</LinearLayout>

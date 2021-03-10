@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryInverse"
+    >
+
+        <RelativeLayout
+            android:id="@+id/vgType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="10dp"
+            >
+
+            <RadioGroup
+                android:id="@+id/rgPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbPlan1"
+                    android:text="@string/plan_one"
+                    style="@style/RadioButton_Accent_Checked"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rbPlan2"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:text="@string/plan_two"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rbPlan3"
+                    android:layout_width="wrap_content"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:text="@string/plan_three"/>
+
+            </RadioGroup>
+        </RelativeLayout>
+    <View
+        android:id="@+id/vgDevider"
+        android:layout_below="@+id/vgType"
+        style="@style/devider_h_light"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlRefresh"
+        android:layout_below="@+id/vgDevider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vgType"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

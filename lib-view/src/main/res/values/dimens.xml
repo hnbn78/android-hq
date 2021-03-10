@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textandiconmargin">10dp</dimen>
+
+    <!--走势图中球的宽高-->
+    <dimen name="trend_ball_wh">14dp</dimen>
+    <dimen name="item_wh">28dp</dimen>
+    <dimen name="dp_38">38dp</dimen>
+    <dimen name="item_whx2">64dp</dimen>
+    <dimen name="footer_itemwh">25dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="trend_issuno_withd">90dp</dimen>
+
+
+</resources>

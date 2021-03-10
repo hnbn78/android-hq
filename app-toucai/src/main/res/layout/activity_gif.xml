@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/wvBookPlay"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+    </com.tencent.smtt.sdk.WebView>
+
+    <FrameLayout
+        android:id="@+id/flVideoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</RelativeLayout>

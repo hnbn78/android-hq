@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:layout_margin="5.0dip">
+
+        <TextView
+            android:id="@+id/game_trend_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/login_bottom_text_color"
+            android:textSize="11.0dip" />
+
+        <TextView
+            android:id="@+id/game_trend_shunxu"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/trend_shunxu_qiehuan"
+            android:drawableLeft="@mipmap/trend_shunxu_qiehuan"
+            android:paddingLeft="5dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="正序"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:id="@+id/game_trend_issue30_text"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/login_button_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="30期"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:id="@+id/game_trend_issue50_text"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/bg_rb_lottery_button_normal"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="50期"
+            android:textColor="@color/login_bottom_text_color"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:id="@+id/game_trend_issue100_text"
+            android:layout_width="40.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/bg_rb_lottery_button_normal"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="100期"
+            android:textColor="@color/login_bottom_text_color"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:id="@+id/game_trend_setting_button"
+            android:layout_width="25.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:background="@mipmap/ic_x_setting"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/include_trend_head_single" />
+
+    <include layout="@layout/include_trend_title_single" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+    >
+
+
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+        android:id="@+id/mz_banner_imag_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:round_radius="4dp"
+        app:shape_mode="round_rect"
+        android:src="@mipmap/img_home_banner_default"
+        />
+
+
+    <ImageView
+        android:id="@id/mz_banner_shadow_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/mz_banner_imag_tag"
+        android:layout_alignLeft="@id/mz_banner_imag_tag"
+        android:layout_alignRight="@id/mz_banner_imag_tag"
+        android:layout_alignTop="@id/mz_banner_imag_tag"
+        android:src="@drawable/sh_bg_light_shadow_round"/>
+</RelativeLayout>

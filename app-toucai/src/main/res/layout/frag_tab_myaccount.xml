@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/ivMessage"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="14dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_myaccount_eamil"
+
+            />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="10dp"
+            />
+
+        <TextView
+            android:id="@+id/account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/myaccount"
+            android:textColor="@color/myaccount_title"
+            android:textSize="@dimen/sp_16"
+            />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="10dp"
+            />
+        <ImageView
+            android:id="@+id/ivSet"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_gravity="center_vertical"
+            android:padding="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_setting_icon"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout"
+
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/app_person_icon"
+            />
+
+        <TextView
+            android:id="@+id/tvSlideAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:text=""
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/myaccount_title"/>
+
+        <TextView
+            android:id="@+id/tvBonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:text="彩票返点：2.0"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/myaccount_title"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/second_layout"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="账户总额：0元"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tvBalanceFreeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="1dp"
+            android:text="冻结：0元"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/third_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/four_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:orientation="horizontal"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/textView9"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/person_topup_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/toup_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/textView9"
+                        android:text="@string/top_up"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="10dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_with"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/person_withdrawal_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/with_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/iv_with"
+                        android:paddingLeft="5dip"
+                        android:text="@string/withdrawals"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/myaccount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/four_layout"
+                android:background="@color/myaccount_backcolor"
+                android:padding="5dp"
+
+                android:text="@string/myaccount"
+                android:textSize="@dimen/text_normal"
+                />
+
+            <GridView
+                android:id="@+id/myaccount_rv"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_below="@+id/myaccount_text"
+                android:clipToPadding="false"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:nestedScrollingEnabled="false"
+
+                android:numColumns="3"
+
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:id="@+id/agency_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myaccount_rv"
+                android:layout_margin="2dp"
+                android:background="@color/myaccount_backcolor"
+                android:padding="5dp"
+                android:text="@string/agence"
+                android:textSize="@dimen/text_normal"
+                />
+
+            <GridView
+                android:id="@+id/agency_rv"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/agency_text"
+                android:clipToPadding="false"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:numColumns="3"
+
+
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"/>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

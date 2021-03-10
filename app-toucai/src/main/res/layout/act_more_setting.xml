@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/qq_number"
+            android:drawableLeft="@mipmap/ic_qq"
+            android:drawablePadding="@dimen/dp_10"
+            android:textColor="@color/text_333" />
+
+        <TextView
+            android:id="@+id/tvQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:drawablePadding="@dimen/dp_8"
+            android:onClick="onAddClick"
+            android:text="@string/add_now_tc"
+            android:textColor="@color/text_333" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/wechat_number"
+            android:drawableLeft="@mipmap/ic_chat"
+            android:drawablePadding="@dimen/dp_10"
+            android:textColor="@color/text_333" />
+
+        <TextView
+            android:id="@+id/tvWechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onAddClick"
+            android:layout_gravity="end|center_vertical"
+            android:drawablePadding="@dimen/dp_8"
+            android:text="@string/add_now_tc"
+            android:textColor="@color/text_333" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_remind"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_4"
+            android:text="@string/remind"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/more_setting_info"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+</LinearLayout>

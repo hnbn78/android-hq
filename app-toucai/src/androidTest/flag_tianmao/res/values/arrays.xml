@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通过FrameAnimation播放的八十张图片-->
+    <array name="toucai_progress">
+        <item>@mipmap/tm_1</item>
+        <item>@mipmap/tm_2</item>
+        <item>@mipmap/tm_3</item>
+        <item>@mipmap/tm_4</item>
+        <item>@mipmap/tm_5</item>
+        <item>@mipmap/tm_6</item>
+        <item>@mipmap/tm_7</item>
+        <item>@mipmap/tm_8</item>
+        <item>@mipmap/tm_9</item>
+        <item>@mipmap/tm_10</item>
+        <item>@mipmap/tm_11</item>
+        <item>@mipmap/tm_12</item>
+        <item>@mipmap/tm_13</item>
+        <item>@mipmap/tm_14</item>
+        <item>@mipmap/tm_15</item>
+        <item>@mipmap/tm_16</item>
+        <item>@mipmap/tm_17</item>
+        <item>@mipmap/tm_18</item>
+        <item>@mipmap/tm_19</item>
+        <item>@mipmap/tm_20</item>
+        <item>@mipmap/tm_21</item>
+        <item>@mipmap/tm_22</item>
+        <item>@mipmap/tm_23</item>
+        <item>@mipmap/tm_24</item>
+    </array>
+</resources>

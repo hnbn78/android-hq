@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f5f5f5"
+            android:orientation="vertical">
+
+            <com.pearl.view.PagerSlidingTabStrip
+                android:id="@+id/tsTabs"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:textSize="15sp"
+                app:pstsDividerColor="@android:color/transparent"
+                app:pstsIndicatiorWidth="84dp"
+                app:pstsIndicatorColor="#f7587f"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsShouldExpand="true"
+                app:pstsTextColor="#333333"
+                app:selectedTabTextColor="@color/chase_tab_text_selected" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpContent"
+                android:layout_width="match_parent"
+                android:layout_height="73dp" />
+
+            <include layout="@layout/headview_chase_list" />
+
+            <FrameLayout
+                android:id="@+id/srlRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPusrsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:paddingBottom="10dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#232728"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/vgStopGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_chase_buy"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.pearl.view.ToggleImageButton
+                    android:id="@+id/cbStopBtn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_rb_chase_stop"
+                    android:checked="true"
+                    android:clickable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="中奖停止"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共0.000元"
+                    android:textColor="#fc9759"
+                    android:textSize="@dimen/text_large" />
+
+                <TextView
+                    android:id="@+id/tvHit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="选中0期"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvBuy"
+                style="@style/text_lottery_play_func"
+                android:background="@drawable/btn_chase_buy"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="购买"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10">
+
+        <com.noober.background.view.BLRelativeLayout
+            android:id="@+id/team_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            app:bl_corners_radius="4dp"
+            app:bl_solid_color="@color/white">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/agent_yue"
+                android:drawablePadding="7dp"
+                android:text="团队余额："
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/tvMemLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="0.00"
+                android:textColor="@color/red" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/tvMemInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="0 人" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMemInfo"
+                android:layout_margin="5dp"
+                android:text="团队总数"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/tvMemOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_centerHorizontal="true"
+                android:text="0 人" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMemOnline"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:text="代理在线"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/playerOnlineNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="0 人" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playerOnlineNum"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:text="玩家在线"
+                android:textColor="@color/gray" />
+
+        </com.noober.background.view.BLRelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rgDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rbToday"
+                style="@style/RadioButton_Accent_Checked"
+                android:layout_width="90dp"
+                android:text="@string/toady" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rbDay7"
+                style="@style/RadioButton_Accent_UnChecked"
+                android:layout_width="90dp"
+                android:text="@string/neal_week" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/rbDay30"
+                style="@style/RadioButton_Accent_UnChecked"
+                android:layout_width="90dp"
+                android:text="@string/neal_month" />
+
+        </RadioGroup>
+
+        <com.noober.background.view.BLRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            app:bl_corners_radius="4dp"
+            app:bl_solid_color="@color/white">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团队详情"
+                android:textColor="@color/gray" />
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/selectFast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/ic_common_arrow_down"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="3dp"
+                android:text="快选"
+                android:textColor="@color/red"
+                app:bl_corners_radius="3dp"
+                app:bl_stroke_color="@color/red"
+                app:bl_stroke_width="0.5dp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/selectFast"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/gray_line" />
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginTop="3dp"
+                android:text="时间："
+                android:textColor="@color/gray" />
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_toRightOf="@+id/tv3"
+                android:drawableRight="@mipmap/ic_common_arrow_down"
+                android:drawablePadding="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                app:bl_corners_radius="3dp"
+                app:bl_solid_color="@color/gray_line"
+                app:bl_stroke_color="@color/gray_light"
+                app:bl_stroke_width="0.5dp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/tvStartDate"
+                android:text="-" />
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_toRightOf="@+id/tv4"
+                android:drawableRight="@mipmap/ic_common_arrow_down"
+                android:drawablePadding="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                app:bl_corners_radius="3dp"
+                app:bl_solid_color="@color/gray_line"
+                app:bl_stroke_color="@color/gray_light"
+                app:bl_stroke_width="0.5dp" />
+
+            <com.noober.background.view.BLButton
+                android:id="@+id/btnSearch"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/line2"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/sl_btn_primary_sh"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="3dp"
+                android:text="@string/search"
+                android:textColor="@color/search_backcolor" />
+
+
+            <com.noober.background.view.BLRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSearch"
+                android:layout_marginTop="@dimen/dp_10">
+
+
+                <TextView
+                    android:id="@+id/tvDeposite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:padding="3dp"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvWithdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="3dp"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="3dp"
+                    android:text="0" />
+
+
+                <TextView
+                    android:id="@+id/recharge_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDeposite"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:padding="3dp"
+                    android:text="@string/recharge"
+                    android:textColor="@color/gray_content" />
+
+                <TextView
+                    android:id="@+id/withdrawal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDeposite"
+                    android:layout_centerHorizontal="true"
+                    android:padding="3dp"
+                    android:text="@string/withdrawals"
+                    android:textColor="@color/gray_content" />
+
+                <TextView
+                    android:id="@+id/consumption_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDeposite"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:padding="3dp"
+                    android:text="@string/consumption"
+                    android:textColor="@color/gray_content" />
+
+                <View
+                    android:id="@+id/lineH"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/recharge_text"
+                    android:layout_margin="@dimen/dp_4"
+                    android:background="@color/gray_bg" />
+
+                <TextView
+                    android:id="@+id/tvDispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lineH"
+                    android:layout_marginLeft="15dp"
+                    android:padding="3dp"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/tvReturn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lineH"
+                    android:layout_centerHorizontal="true"
+                    android:padding="3dp"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/send_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDispatch"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:padding="3dp"
+                    android:text="@string/send_the_prirce"
+                    android:textColor="@color/gray_content" />
+
+                <TextView
+                    android:id="@+id/return_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDispatch"
+                    android:layout_centerHorizontal="true"
+                    android:padding="3dp"
+                    android:text="@string/return_dispoint"
+                    android:textColor="@color/gray_content" />
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/gray_bg" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="90dp"
+                    android:background="@color/gray_bg" />
+
+            </com.noober.background.view.BLRelativeLayout>
+        </com.noober.background.view.BLRelativeLayout>
+
+
+        <HorizontalScrollView
+            android:id="@+id/hsvFuncs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/rgFuncs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbRecharge"
+                    style="@style/RadioButton_Accent_Checked"
+                    android:layout_width="wrap_content"
+                    android:text="@string/recharge" />
+
+                <RadioButton
+                    android:id="@+id/rbWithdrawals"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/withdrawals" />
+
+                <RadioButton
+                    android:id="@+id/rbBetting"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/betting_liang" />
+
+                <RadioButton
+                    android:id="@+id/rbReturn"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/send_the_prirce" />
+
+                <RadioButton
+                    android:id="@+id/rbActivity"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/activity" />
+
+                <RadioButton
+                    android:id="@+id/rbReturnPoint"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/return_dispoint" />
+
+                <RadioButton
+                    android:id="@+id/rbNewUser"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/new_add" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <com.noober.background.view.BLRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            app:bl_corners_radius="4dp"
+            app:bl_solid_color="@color/white">
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/selectMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/ic_common_arrow_down"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="3dp"
+                android:text="快选"
+                android:textColor="@color/red"
+                app:bl_corners_radius="3dp"
+                app:bl_stroke_color="@color/red"
+                app:bl_stroke_width="0.5dp" />
+
+        </com.noober.background.view.BLRelativeLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+</ScrollView>
+

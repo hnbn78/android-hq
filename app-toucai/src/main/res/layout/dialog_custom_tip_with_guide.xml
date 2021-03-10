@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sh_bd_rec_gray_white_round">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/toolbar_bg_half"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textColor="@color/textColorPrimaryInverse"
+            android:textSize="@dimen/text_title" />
+
+        <LinearLayout
+            android:id="@+id/vgContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_title" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/devider_h_normal"
+            android:layout_above="@+id/vgButton" />
+
+        <LinearLayout
+            android:id="@+id/vgButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/vgContent"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <Button
+                android:id="@+id/btnNegative"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#888888"
+                android:textSize="@dimen/text_title" />
+
+            <View style="@style/devider_v_normal" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_sure"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnPositive"
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="打开支付宝"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_normal" />
+
+                <ImageView
+                    android:id="@+id/guide_sure_bg"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/guide_bg_copy2" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/guide_sure_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgButton"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        android:background="@mipmap/guide_bg_input_tip_right_up"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="打开微信进行充值"
+        android:textSize="12sp" />
+
+</LinearLayout>

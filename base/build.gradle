@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    compile project(":module-act")
+    compile project(":module-http")
+    compile project(":module-db")
+    compile project(":module-push")
+    compile project(":module-x5webview")
+    compile project(":lib-view")
+    compile project(":pickerview")
+
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    //音频播放
+//    compile 'com.github.CarGuo:RecordWave:v1.1.8'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+
+    compile 'com.alibaba:fastjson:1.1.71.android'
+
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.kongzue.dialog_v3:dialog:3.1.8'
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginRight="7dp">
+
+    <RadioButton
+        android:id="@+id/rb_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/trend_btn_selector"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="第一位"
+        android:textColor="@color/trend_text_color"
+        android:textSize="12dp" />
+</RelativeLayout>

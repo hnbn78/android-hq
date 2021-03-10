@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fl="http://schemas.android.com/apk/res-fl"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="10dp"
+              android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:id="@+id/vgTitleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTitleIssue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开奖期数:000000000期"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvIssueHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00:00"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_small"
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/vgNowIssue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:id="@+id/vgIssueBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="2dp"
+            android:visibility="visible"
+            fl:flowGravity="left"
+            fl:horizontalSpacing="10dp"
+            fl:orientation="horizontal"
+            fl:verticalSpacing="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/llWaittingOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等待开奖..."
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_large"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一球购彩"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_small"/>
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/vgPredictBall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="2dp"
+        android:visibility="visible"
+        fl:flowGravity="left"
+        fl:horizontalSpacing="10dp"
+        fl:orientation="horizontal"
+        fl:verticalSpacing="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/llinfo"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgBalls"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="当前成本"
+                style="@style/text_buy_plan_info"/>
+
+            <TextView
+                android:id="@+id/tvCurrCost"
+                android:layout_marginTop="5dp"
+                style="@style/text_buy_plan_info"
+                android:text="00"
+               />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="累计成本"
+                style="@style/text_buy_plan_info"/>
+
+            <TextView
+                android:id="@+id/tvCumulativeCost"
+                android:layout_marginTop="5dp"
+                style="@style/text_buy_plan_info"
+                android:text="00"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="盈亏"
+                style="@style/text_buy_plan_info"/>
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_marginTop="5dp"
+                style="@style/text_buy_plan_info"
+                android:text="00"
+                android:textColor="#ff0000"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

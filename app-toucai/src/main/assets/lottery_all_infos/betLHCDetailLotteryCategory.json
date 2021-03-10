@@ -1,0 +1,156 @@
+{
+  "ballsx":{
+    "01":"猪","13":"猪","25":"猪","37":"猪","49":"猪",
+    "05":"羊","17":"羊","29":"羊","41":"羊",
+    "09":"兔","21":"兔","33":"兔","45":"兔",
+    "02":"狗","14":"狗","26":"狗","38":"狗",
+    "06":"马","18":"马","30":"马","42":"马",
+    "10":"虎","22":"虎","34":"虎","46":"虎",
+    "03":"鸡","15":"鸡","27":"鸡","39":"鸡",
+    "07":"蛇","19":"蛇","31":"蛇","43":"蛇",
+    "11":"牛","23":"牛","35":"牛","47":"牛",
+    "04":"猴","16":"猴","28":"猴","40":"猴",
+    "08":"龙","20":"龙","32":"龙","44":"龙",
+    "12":"鼠","24":"鼠","36":"鼠","48":"鼠"
+  },
+  "ballColor":[
+    0,
+    1,1,2,2,3,3,1,1,2,2,
+    3,1,1,2,2,3,3,1,1,2,
+    3,3,1,1,2,2,3,3,1,1,
+    2,3,3,1,1,2,2,3,3,1,
+    2,2,3,3,1,1,2,2,3
+  ],
+  "lhc": [
+    {
+      "titleName": "特码",
+      "data": [
+        {
+          "showName": "特码",
+          "name": "特码",
+          "lotteryCode": "lhc_tema"
+        }
+      ]
+    },
+    {
+      "titleName": "正码",
+      "data": [
+        {
+          "showName": "正码1",
+          "name": "正码1",
+          "lotteryCode": "lhc_zhengma1"
+        },
+        {
+          "showName": "正码2",
+          "name": "正码2",
+          "lotteryCode": "lhc_zhengma2"
+        },
+        {
+          "showName": "正码3",
+          "name": "正码3",
+          "lotteryCode": "lhc_zhengma3"
+        },
+        {
+          "showName": "正码4",
+          "name": "正码4",
+          "lotteryCode": "lhc_zhengma4"
+        },
+        {
+          "showName": "正码5",
+          "name": "正码5",
+          "lotteryCode": "lhc_zhengma5"
+        },
+        {
+          "showName": "正码6",
+          "name": "正码6",
+          "lotteryCode": "lhc_zhengma6"
+        }
+      ]
+    },
+    {
+      "titleName": "半波",
+      "data": [
+        {
+          "showName": "半波",
+          "name": "半波",
+          "lotteryCode": "lhc_BB"
+        }
+      ]
+    },
+    {
+      "titleName": "生肖",
+      "data": [
+        {
+          "showName": "特肖",
+          "name": "特肖",
+          "lotteryCode": "lhc_SX1"
+        },
+        {
+          "showName": "一肖",
+          "name": "一肖",
+          "lotteryCode": "lhc_SX2"
+        },
+        {
+          "showName": "六肖",
+          "name": "六肖",
+          "lotteryCode": "lhc_SX3"
+        }
+      ]
+    },
+    {
+      "titleName": "尾数",
+      "data": [
+        {
+          "showName": "尾数",
+          "name": "尾数",
+          "lotteryCode": "lhc_WH"
+        }
+      ]
+    },
+    {
+      "titleName": "总分",
+      "data": [
+        {
+          "showName": "总分",
+          "name": "总分",
+          "lotteryCode": "lhc_ZF"
+        }
+      ]
+    },
+    {
+      "titleName": "不中",
+      "data": [
+        {
+          "showName": "五不中",
+          "name": "五不中",
+          "lotteryCode": "lhc_BZ1"
+        },
+        {
+          "showName": "六不中",
+          "name": "六不中",
+          "lotteryCode": "lhc_BZ2"
+        },
+        {
+          "showName": "七不中",
+          "name": "七不中",
+          "lotteryCode": "lhc_BZ3"
+        },
+        {
+          "showName": "八不中",
+          "name": "八不中",
+          "lotteryCode": "lhc_BZ4"
+        },
+        {
+          "showName": "九不中",
+          "name": "九不中",
+          "lotteryCode": "lhc_BZ5"
+        },
+        {
+          "showName": "十不中",
+          "name": "十不中",
+          "lotteryCode": "lhc_BZ6"
+        }
+      ]
+    }
+  ]
+}

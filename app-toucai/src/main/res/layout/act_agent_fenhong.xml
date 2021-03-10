@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <FrameLayout
+        android:id="@+id/vgToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+            android:id="@+id/vgToolbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <ImageButton
+                android:id="@+id/ibLeftBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:onClick="titleLeftClick"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_circle_arrow_white" />
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="联系人"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgToolbarGroup"
+        android:background="@color/red_ffdfd7"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="当前你的分红最低为xx%，最高位xx%"
+        android:textColor="@color/red_fa2727" />
+
+
+    <com.noober.background.view.BLRelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tip"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:padding="6dp"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/white">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="用  户  名："
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="username" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginBottom="5dp"
+            android:padding="3dp"
+            android:text="昵  称："
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_toRightOf="@+id/tv2"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="tom hanks" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginBottom="5dp"
+            android:padding="3dp"
+            android:text="彩票返点："
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/fandian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/tv3"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="0.0" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:padding="3dp"
+            android:text="每天最低量："
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/leastLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_toRightOf="@+id/tv4"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="0.0000 元" />
+
+    </com.noober.background.view.BLRelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="50dp"
+        android:overScrollMode="never" />
+
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/qianding"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="签订契约"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:bl_corners_radius="5dp"
+        app:bl_pressed_solid_color="@color/red_2"
+        app:bl_unPressed_solid_color="@color/red_ff2c66" />
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bet_item"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/sh_bd_rec_white_white_round"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Lottery_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_10"
+                android:gravity="center"
+                android:text="新疆时时彩"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_lottery_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:lineSpacingExtra="8sp"
+                android:text="第180515068期"
+                android:textColor="#999999"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_line"></TextView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_play_method"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:background="@drawable/sh_bd_milk_round"
+                android:gravity="center"
+                android:text="百家乐"
+                android:textSize="@dimen/small_textsize" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_lottery_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="100.00"
+                android:textColor="@color/red_mine"
+                android:textSize="@dimen/big2_textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_lottery_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="+98.00"
+                android:textColor="@color/red_mine"
+                android:textSize="@dimen/small_textsize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_lottery_status"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="进行中"
+            android:textColor="@color/red_mine"
+            android:textSize="@dimen/body_textsize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_chase_times"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@drawable/sh_bd_rec_half_gray_round"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="已追1456455期"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="14dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-3dp"
+            android:src="@mipmap/ic_jiao" />
+    </LinearLayout>
+
+</FrameLayout>

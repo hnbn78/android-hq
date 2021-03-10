@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerLHc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivcoinsLhc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/coins" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="73dp"
+        >
+
+        <com.pearl.view.SimpleCollapse.SimpleNestedScrollView
+            android:id="@+id/sv_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false">
+
+            <LinearLayout
+                android:id="@+id/vgCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_bg"
+                android:clipChildren="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lv_open_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:minHeight="50dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/view_lottery_play_lhc_open_card" />
+                </FrameLayout>
+
+                <!--奖池活动-->
+                <com.desheng.app.toucai.view.AwardpoolViewModule
+                    android:id="@+id/awardLhc"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_wanfa"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:background="@color/red"
+                        android:gravity="center"
+                        android:text="玩法说明"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycleViewLotteryMethod"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_wanfa"
+                        android:overScrollMode="never" />
+
+                    <FrameLayout
+                        android:id="@+id/vgContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="36dp"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </com.pearl.view.SimpleCollapse.SimpleNestedScrollView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_quick_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="73dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <com.desheng.app.toucai.view.NoBubllingTouchEventFrameLayout
+            android:id="@+id/fl_quick_play_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/fl_quick_play_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/black_translucent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_quick_play_cancel"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@mipmap/ic_btn_lhc_quick_play_cancel"
+                        android:textColor="@color/gray" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btn_quick_play_confirm"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="完成"
+                        android:textColor="#F94F79"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C6C6C6" />
+
+                <FrameLayout
+                    android:id="@+id/fl_quick_play_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F8F8F8" />
+
+            </LinearLayout>
+        </com.desheng.app.toucai.view.NoBubllingTouchEventFrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_quick_play_ctrl"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btn_quick_play_ctrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:drawableRight="@mipmap/ic_lhc_quick_play__arrow_up"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="快捷玩法"
+                android:textColor="#434343" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vgBottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.desheng.app.toucai.view.PlaySnakeViewLHC
+            android:id="@+id/vSnakeBar"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:background="#FFFFFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#EDEDED"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/tvClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:src="@mipmap/ic_lhc_play_footer_delete"
+                android:text="清除" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_lhc_play_money_input_round"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="金额(元)"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#D9D9D9" />
+
+                <com.pearl.view.CancelFocusOnPreImeEditText
+                    android:id="@+id/etMoney"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入金额"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:text="1"
+                    android:textColorHint="#CDCDCD"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvBuy"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="#FA0007"
+                android:gravity="center"
+                android:text="确认投注"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

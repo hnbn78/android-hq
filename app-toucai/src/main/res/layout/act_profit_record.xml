@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/vgToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+            android:id="@+id/vgToolbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <ImageButton
+                android:id="@+id/ibLeftBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:onClick="titleLeftClick"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_circle_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitleLeft"
+                style="@style/main_content_text_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ibLeftBtn"
+                android:onClick="titleLeftClick" />
+
+            <RadioGroup
+                android:id="@+id/rg_type"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_profit_record_radio_group"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/rb_cat"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_profit_record_radio_button"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="分类"
+                    android:textColor="@color/profit_record_radio_button"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_tendency"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_profit_record_radio_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="趋势"
+                    android:textColor="@color/profit_record_radio_button"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="盈亏报表"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/title_view"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/vgRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    style="@style/main_content_text_style"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="搜索"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fragContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/searchFragContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

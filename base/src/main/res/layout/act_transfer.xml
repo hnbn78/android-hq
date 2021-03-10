@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账用户:"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tv_transfer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_transfer_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账类型:"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/textColorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tv_transfer_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="充值"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+        <ImageView
+            android:id="@+id/iv_transfer_type"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_common_arrow_down"
+            android:layout_marginRight="@dimen/dp_10"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账金额:"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/textColorPrimary"
+            />
+
+        <EditText
+            android:id="@+id/et_transfer_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入转账金额"
+            android:layout_marginRight="@dimen/dp_10"
+            android:inputType="numberDecimal"
+            android:textSize="14dp"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资金密码:"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/textColorPrimary"
+            />
+
+        <EditText
+            android:id="@+id/et_transfer_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入资金密码"
+            android:layout_marginRight="@dimen/dp_10"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账备注:"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/textColorPrimary"
+            />
+
+        <EditText
+            android:id="@+id/et_transfer_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入备注"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@color/textColorSecondary"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_transfer"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:text="确认转账"
+        android:textColor="@color/white"
+        android:background="@drawable/sh_bd_rec_gray_blue_round"
+        />
+
+</LinearLayout>

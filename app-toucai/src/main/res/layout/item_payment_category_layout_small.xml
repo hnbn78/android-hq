@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="6dp"
+    android:background="@drawable/shape_r5_white"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/paymentIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/paymentCategory"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/paymentIcon"
+        android:text="充值类型"
+        android:textColor="@color/gray_content"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/huilv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:text="1USDT=6.86CNY"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lineBG"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white_f7f7f7">
+
+    <TextView
+        android:id="@+id/tvLineName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@mipmap/line_speed_xinhao"
+        android:drawablePadding="6dp"
+        android:text="线路0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_16" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvLineSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/good_line"
+            android:text="速度"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/good_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

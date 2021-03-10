@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_super_list"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="线下会员人数"
+            android:textColor="@color/gray_content"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="0"
+            />
+
+    </LinearLayout>
+
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:bottomLeftEnabled="true"
+        app:bottomRightEnabled="true"
+        app:cornerRadius="4dp"
+        app:topLeftEnabled="true"
+        app:topRightEnabled="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/smartRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+
+                    <include layout="@layout/item_super_partner_sub_member_header" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f5f5f5" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:src="@mipmap/img_empty" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="6.3sp"
+                    android:text="暂无数据"
+                    android:textColor="#aaaaaa"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.skyline.widget.layout.RoundCornerLayout>
+</LinearLayout>

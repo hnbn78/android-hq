@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="buy_lottery_tab_height">48dp</dimen>
+    <dimen name="course_tab_margin_right">15dp</dimen>
+    <dimen name="personal_top_margin">25dp</dimen>
+    <dimen name="personal_spacing_height">10dp</dimen>
+    <dimen name="drawer_max_width">300dp</dimen>
+
+    <dimen name="charge_margin">15dp</dimen>
+    <dimen name="charge_payway_left_right">18dp</dimen>
+    <dimen name="charge_payway_top_bottom">13dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+
+    <dimen name="home_hot_margin_left">10dp</dimen>
+    <dimen name="lottery_recycler_devider">10dp</dimen>
+    <dimen name="line_recycler_devieder">0.5dp</dimen>
+    <dimen name="recycler_devider_margin_12dp">12dp</dimen>
+    <dimen name="recycler_devider_margin_5dp">5dp</dimen>
+
+    <dimen name="two_line_list_item_height">80dp</dimen>
+
+    <dimen name="leftmargin_16">16dp</dimen>
+    <dimen name="rightmargin">0dp</dimen>
+
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+
+    <!-- text Size -->
+    <dimen name="pop_textsize">20sp</dimen>
+    <dimen name="big_textsize">22sp</dimen>
+    <dimen name="big2_textsize">24sp</dimen>
+    <dimen name="body_textsize">16sp</dimen>
+    <dimen name="title1_textsize">20sp</dimen>
+    <dimen name="title2_textsize">18sp</dimen>
+    <dimen name="home_textsize">18sp</dimen>
+    <dimen name="small_textsize">14sp</dimen>
+    <dimen name="smaller_textsize">12sp</dimen>
+    <dimen name="smaller2_textsize">10sp</dimen>
+    <dimen name="smallist_textsize">8sp</dimen>
+
+    <dimen name="home_menu_textsize">15sp</dimen>
+
+    <dimen name="action_button_height">32dp</dimen>
+    <dimen name="action_button_text_size">14sp</dimen>
+    <dimen name="action_button_min_width">56dp</dimen>
+    <dimen name="action_button_padding_horizontal">4dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- DropPopMenu -->
+    <dimen name="drop_pop_menu_text_size">16sp</dimen>
+    <dimen name="drop_pop_menu_item_height">35dp</dimen>
+    <dimen name="drop_pop_menu_item_horizontal_margin">10dp</dimen>
+    <dimen name="drop_pop_menu_icon_text_margin">10dp</dimen>
+    <dimen name="drop_pop_menu_icon_width">22dp</dimen>
+
+    <dimen name="lhc_quick_play_pannel_Height">50dp</dimen>
+
+    <dimen name="lhc_ball_width">35dp</dimen>
+    <dimen name="lhc_ball_height">35dp</dimen>
+    <dimen name="lhc_ball_radius">17.5dp</dimen>
+    <dimen name="radius_half_value">15dp</dimen>
+    <dimen name="radius_quarter_value">30dp</dimen>
+    <dimen name="radius_small_value">5dp</dimen>
+
+    <dimen name="login_bg_height">640dp</dimen>
+    <dimen name="rejist_bg_height">760dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="content_horizontal_margin">5dp</dimen>
+    <dimen name="content_vertical_margin">10dp</dimen>
+    <dimen name="content_small">5dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_title">19dp</dimen>
+    <dimen name="text_subhead">15dp</dimen>
+    <dimen name="text_body">15dp</dimen>
+    <dimen name="text_caption">13dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+
+    <dimen name="rc_item_divider_height">1dp</dimen>
+</resources>

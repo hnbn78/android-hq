@@ -1,0 +1,618 @@
+<resources>
+    <string name="app_name">头彩</string>
+    <string name="money">¥</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="permission_deny">您已拒绝授权%s读取手机状态和SD卡信息，请进入设置进行授权</string>
+    <string name="myaccount">我的账号</string>
+    <string name="recharge_limit">充值限时：请在15分钟内完成充值</string>
+
+    <string name="recharge_notice">每日23点50分至0点10分之间使用该充值方式，会延迟到账</string>
+
+    <string name="next">下一步</string>
+    <string name="add">添加</string>
+    <string name="alipay">支付宝</string>
+    <string name="consumption">消费</string>
+    <string name="aboutUs">关于头彩</string>
+
+    <string name="pay_question">支付遇到问题，重新下单</string>
+    <string name="question">若您支付过程中遇到问题且未完成支付，请重新下单</string>
+    <string name="question_hard">*若支付困难，请联系24小时客服</string>
+    <string name="bank_scan">银行微信扫码</string>
+    <string name="bank_net">银付网银</string>
+    <string name="bank_scan_qq">银付QQ扫码</string>
+    <string name="bank_scan_qq_web">银付QQWAP</string>
+    <string name="bank_pay_qq">银付QQ扫码</string>
+
+    <string name="third_tv">第三方</string>
+    <string name="pay_tv">支付宝银行</string>
+    <string name="recharge_text">充值限时：请在15分钟内完成充值</string>
+    <string name="recharge_time">每日23点50分至0点10分之间使用充值方式，会延迟到账</string>
+
+
+    <string name="recharge_record">充值记录</string>
+    <string name="account_setting">账户设置</string>
+    <string name="myaccount_change">我的帐变</string>
+    <string name="bank_maragment">银行卡管理</string>
+    <string name="withdrawals_tixian">提现记录</string>
+    <string name="funds_maragment">资金管理</string>
+    <string name="person_center">个人中心</string>
+    <string name="safe_center">安全中心</string>
+    <string name="my_record">我的记录</string>
+    <string name="finsh_despoit">完成充值，确认提交</string>
+
+    <string name="order_time">下单时间</string>
+
+    <string name="all_lottery">全部彩种</string>
+
+    <string name="team_run">团队总揽</string>
+    <string name="team_report">团队报表</string>
+    <string name="betting_shake">摇一摇</string>
+    <string name="betting_clean">清空</string>
+    <string name="betting_number_format">共%d注</string>
+    <string name="setting">设置</string>
+    <string name="buy_lottery_plan">购彩计划</string>
+    <string name="neal_week">最近7天</string>
+    <string name="neal_month">最近一个月</string>
+
+    <string name="betting_money_format">%d元</string>
+    <string name="recharge">充值</string>
+    <string name="bind_card">绑定银行卡</string>
+    <string name="user">用户名</string>
+    <string name="bind_phone">绑定手机号</string>
+    <string name="price">0.0</string>
+    <string name="send_the_prirce">派奖</string>
+    <string name="team_member_text">团队成员：1人(代理0人，玩家1人)</string>
+    <string name="team_member_online">团队在线：0人</string>
+    <string name="team_member_total">团队余额：10000000000元</string>
+    <string name="return_dispoint">返点</string>
+    <string name="return_send_price">返派奖</string>
+    <string name="activity">活动</string>
+    <string name="betting_liang">投注量</string>
+    <string name="new_add">新增用户</string>
+
+    <string name="betting_bet_number_format">%d注</string>
+    <string name="betting_choose_number">请选择正确的号码</string>
+    <string name="betting_has_no_period">暂无期数信息</string>
+    <string name="betting_period_not_start">当前期数未开始</string>
+    <string name="betting_please_input_money">请输入金额</string>
+    <string name="betting_please_return_water">请输入返点</string>
+    <string name="betting_only_can_choose_three">只能选中三个号码</string>
+    <string name="betting_please_input_correct_money">请输入正确的金额</string>
+    <string name="betting_setting">注单设定</string>
+    <string name="betting_odds_label">赔率：</string>
+    <string name="betting_rebate_label">返利：</string>
+    <string name="betting_single_money">单注金额</string>
+    <string name="betting_amount_label">总额：</string>
+    <string name="betting_betnumber">注数：</string>
+    <string name="betting_random">机选</string>
+
+    <string name="team_account_change">团队帐变记录</string>
+
+
+    <string name="betting_setting_tip">若中奖，单注最高中：</string>
+    <string name="betting_slips_back_add">返回继续添加</string>
+    <string name="betting_slips_radom">机选一注</string>
+    <string name="betting_rebate">%.1f</string>
+    <string name="betting_odds">%.2f</string>
+    <string name="betting_no_data">无彩种信息</string>
+    <string name="betting_recent_lottery">近期开奖</string>
+    <string name="betting_recent_lottering">正在开奖</string>
+    <string name="betting_period_end">距%s期截止</string>
+    <string name="betting_rule_tip">玩法提示</string>
+    <string name="betting_rule_explain">中奖说明</string>
+    <string name="betting_rule_example">范例</string>
+    <string name="betting_menu_trend_chart">走势图</string>
+    <string name="betting_menu_recent_lottery">近期开奖</string>
+    <string name="betting_menu_lottery_record">购彩记录</string>
+    <string name="betting_menu_play_rule_explain">玩法说明</string>
+    <string name="betting">投注</string>
+    <string name="betting_slips_name_format1">(%s)共</string>
+    <string name="betting_slips_name_format2">注，共</string>
+    <string name="betting_slips_period_end">第%s期投注截止时间：</string>
+    <string name="betting_slips_balance_format">可用余额</string>
+    <string name="betting_slips_bet_type">下注类型</string>
+    <string name="betting_slips_bet_number">号码</string>
+    <string name="betting_slips_bet_odds">赔率</string>
+    <string name="betting_success">下注成功</string>
+    <string name="bettin_choose_number_first">请先选择号码</string>
+    <string name="betting_play_rule">玩法</string>
+    <string name="betting_back_tip">是否放弃所选的号码？</string>
+    <string name="betting_slips_clean_tip">是否要全部删除？</string>
+    <string name="betting_period_change_toast">期次已变化，当前是(%s)期</string>
+    <string name="betting_position">位置</string>
+
+
+    <string name="charge_balance_label">余额：</string>
+    <string name="charge_charge_money_amount_label">充值金额：</string>
+    <string name="charge_input_money_hint">请输入充值金额</string>
+    <string name="charge_choose_pay_way">选择支付方式</string>
+    <string name="charge_tencent_qrcode">微信扫码支付（需要等待10秒+才显示）</string>
+    <string name="charge_tencent_qrcode_tip">单笔支付1元-3000元</string>
+    <string name="charge_tencent_quickpay">QQ钱包快捷支付</string>
+    <string name="charge_tencent_pay">QQ钱包（需要等待10秒+才显示）</string>
+    <string name="charge_tencent_pay_tip">支持QQ钱包扫码10&#8211;3000</string>
+    <string name="charge_ali_quick_pay">支付宝快捷支付</string>
+    <string name="charge_ali_quick_pay_tip">支付宝快捷支付1&#8211;3000</string>
+    <string name="charge_ali_qrcode">支付宝扫码支付（需要等待10秒+才显示）</string>
+    <string name="charge_ali_qrcode_tip">单笔支付1元-3000元</string>
+    <string name="charge_union_bank">银行转账【推荐】</string>
+    <string name="charge_union_bank_tip">存款100元以上赠送0.6%返利更快捷，0~3分钟到账</string>
+    <string name="charge_union_online">网银在线支付</string>
+    <string name="charge_union_online_tip">存款立即到账</string>
+    <string name="charge_status_success">充值成功</string>
+    <string name="charge_status_auditing">等待审核</string>
+    <string name="charge_status_failed">审核失败</string>
+    <string name="charge_explain">充值说明</string>e
+    <string name="charge_scan_pay_immediately">立即扫码支付</string>
+    <string name="charge_scan_step_label">扫码步骤：</string>
+    <string name="charge_scan_step_tips">1.点"立即扫码支付"将自动为您截屏并保存到相册，同时打开支付宝。\n2.请在微信中打开"扫一扫"。\n3.在扫一扫中点击右上角，选择"从相册选取二维码"选取截屏的图片。4.\n输入您欲充值的金额并进行转账，如未及时到账，请联系在线客服。</string>
+    <string name="cash_audit_detail">稽核详情</string>
+    <string name="cash_limit_tip">最多可提现%s</string>
+    <string name="cash_item_content">提现&#160;%.2f元</string>
+    <string name="cash_detail_no">提现单号</string>
+    <string name="cash_detail_time">提现时间</string>
+
+    <string name="cash_detail_status">提现状态</string>
+    <string name="cash_detail_money">提现金额</string>
+    <string name="cash_status_processing">处理中</string>
+    <string name="cash_status_success">提现成功</string>
+    <string name="cash_status_audit_failed">审核未通过</string>
+
+    <string name="cannot_get_user_bank_info">无法获取用户银行卡信息</string>
+
+    <string name="dialog_loading">努力加载中......</string>
+    <string name="date">日期</string>
+    <string name="doesnot_set">未设置</string>
+
+    <string name="explain">说明</string>
+
+    <string name="forget_password">忘记密码?</string>
+    <string name="fund_password_safe_tip">为了您账户安全，真实姓名需要与绑定银行卡姓名一致</string>
+    <string name="fund_password">资金密码</string>
+    <string name="fund_password_hint">请输入6位数字的密码</string>
+    <string name="fund_password_set_tip">陛下\n您没有设置资金密码</string>
+    <string name="fund_password_set_quick">请第一时间设置资金密码</string>
+    <string name="fund_password_set">去设置</string>
+    <string name="fund_password_pass">知道了</string>
+    <string name="fund_password_set_success">资金密码设置成功</string>
+    <string name="fund_password_modify_success">资金密码修改成功</string>
+
+
+    <string name="free_trial_register">免费试玩</string>
+    <string name="free_trial_set_password_tip">请设置您的试玩密码</string>
+    <string name="free_trial_account_name_label">测试账号</string>
+    <string name="free_trial_password_hint">6&#8211;12个字符字母及数字</string>
+    <string name="free_trial_start_to_play">开始试玩</string>
+    <string name="free_trial_remarks">备注</string>
+    <string name="free_trial_remarks_content">1.每个试玩账号初始金额为2000RMB，不允许充值。\n2.每个IP每天仅允许有3个试玩账号。\n3.每个试玩账号从注册开始，有效时间为72小时，超过时间系统自动 收回。\n4.试玩账号仅供玩具熟悉游戏，不允许充值提款。\n5.试玩账号不享有参加优惠活动的权利。\n6.试玩账号的赔率仅供参考，可能与正式账号赔率不相符。</string>
+    <string name="free_trial_login_tip">你当前使用正式账号，确定进入试玩？</string>
+
+    <string name="hello">hello,您好</string>
+    <string name="home_menu_charge">存款充值</string>
+    <string name="home_menu_free_trial">免费试玩</string>
+    <string name="home_menu_discount_activity">优惠活动</string>
+    <string name="home_menu_online_service">在线客服</string>
+    <string name="has_set">已设置</string>
+
+    <string name="id_number">身份证号</string>
+    <string name="id_number_hint">请输入身份证号</string>
+    <string name="intelligent_tracking_number">追号</string>
+    <string name="intelligent_tracking_period">期数</string>
+    <string name="intelligent_tracking_start">起始</string>
+    <string name="intelligent_tracking_multiple">倍数</string>
+    <string name="intelligent_tracking_amount">金额</string>
+    <string name="intelligent_tracking_begin_time">预计开奖时间</string>
+    <string name="intelligent_stop_track_when_win">中奖后停止追号</string>
+    <string name="intelligent_every">每隔</string>
+    <string name="intelligent_tracking_every_period">期&#160;&#160;&#160;&#160;</string>
+    <string name="intelligent_tracking_period_multiply">倍数*</string>
+    <string name="intelligent_period_end">第%s期投注截止时间：</string>
+
+    <string name="login">登录</string>
+    <string name="login_register">注册</string>
+    <string name="login_input_name">请输入用户名</string>
+    <string name="login_input_password">请输入密码</string>
+    <string name="open_account_area">开户区间：10-12</string>
+
+    <string name="login_fast_register">快速注册|免费试玩</string>
+    <string name="login_to_see_order">登录后才能看到注单</string>
+    <string name="login_password_donot_match">两个新密码输入不一致，请重新输入</string>
+    <string name="login_password_modify_success">登录密码修改成功</string>
+    <string name="logout_dialog_title">是否退出登录</string>
+    <string name="logout">退出</string>
+    <string name="logout_success">退出成功</string>
+    <string name="login_forget_password">请联系在线客服找回密码</string>
+
+    <string name="lottery_number_trend">号码走势</string>
+    <string name="lottery_start_immediately">立即开奖</string>
+    <string name="lottery_go_bet">去购彩</string>
+    <string name="limit_description">限额说明</string>
+    <string name="limit_description_tip1">确认提款时提交的银行信息的正确性\n必须保证银行卡用户名与注册时提交的用户真实姓名一致</string>
+
+    <string name="my_bank_card_owner">持卡人：</string>
+    <string name="my_bank_card_tip">注：一经绑定，将无法解绑，如需修改，请联系客服.</string>
+    <string name="my_bank_card_doesnot_bind">您还没有绑定银行卡</string>
+
+    <string name="network_error">网络异常，请稍后再试</string>
+    <string name="no_data_respond">暂无数据</string>
+    <string name="new_password">新密码</string>
+    <string name="new_password_input_hint">请输入新密码</string>
+    <string name="new_password_again">确认新密码</string>
+    <string name="new_password_again_input_hint">请再次确认新密码</string>
+
+    <string name="number_trend">号码走势</string>
+
+    <string name="kindly_reminder">温馨提示</string>
+
+    <string name="type">类型</string>
+
+    <string name="order_bet_no">注单号</string>
+    <string name="open_type">开户类别：</string>
+
+    <string name="link_issnue">链接有效日期：</string>
+
+    <string name="one_day">一天</string>
+    <string name="seven_day">七天</string>
+    <string name="thiry_day">30天</string>
+    <string name="yongjiu_youxiao">永久</string>
+    <string name="ordinary_account">普通开户</string>
+    <string name="link_account">链接开户</string>
+    <string name="order_issue_no">期号:</string>
+
+    <string name="order_lottery_type">彩种</string>
+    <string name="order_play_rule">玩法名称</string>
+    <string name="order_winning_number">开奖号</string>
+    <string name="order_winning_status">开奖状态</string>
+    <string name="order_bet_number">投注号码</string>
+    <string name="order_bet_money">投注金额</string>
+    <string name="order_bet_money_format">%1$s注 %2$s元</string>
+    <string name="order_bet_count">投注注数</string>
+    <string name="order_bet_rebate">投注返点</string>
+    <string name="order_bet_odds">投注赔率</string>
+    <string name="order_winnig_money">中奖金额</string>
+    <string name="order_bet_datetime">投注时间</string>
+    <string name="order_have_not_open">未开奖</string>
+    <string name="order_have_not_winning">未中奖</string>
+    <string name="order_have_winning">中奖</string>
+    <string name="account">用户名：</string>
+    <string name="plase_input_user">请输入用户名：</string>
+    <string name="geshi_text">格式：大小写字母开头，不能超过10个字符！</string>
+    <string name="format_text">格式：密码前4位必须字母，其他可以为字母和数字</string>
+    <string name="toady">今天</string>
+
+    <string name="order_number_label">订单号：</string>
+    <string name="odd_password">旧密码</string>
+    <string name="odd_password_input_hint">请输入旧密码</string>
+
+    <string name="password">密码:</string>
+    <string name="personal_charge">充值</string>
+    <string name="personal_cash">提现</string>
+    <string name="personal_lottery_record">投注记录</string>
+    <string name="account_change_record">账变记录</string>
+
+    <string name="personal_recharge_record">充值记录</string>
+    <string name="personal_cash_record">提现记录</string>
+    <string name="personal_game_rule">玩法规则</string>
+    <string name="personal_setting">详细设定</string>
+    <string name="personal_reward_detail">奖金详情</string>
+    <string name="personal_notice">信息公告</string>
+    <string name="personal_online_service">在线客服</string>
+    <string name="payee">收款人</string>
+
+    <string name="promotion_activity_time_format">活动时间：%1$s 至 %2$s</string>
+    <string name="promotion_detail">详情</string>
+
+    <string name="please_login">请先登录</string>
+    <string name="please_free_trial_limit">试玩账号不能操作该功能！</string>
+
+    <string name="please_choose_bank_card">请选择银行卡</string>
+
+
+    <string name="pcdd">PC蛋蛋</string>
+
+    <string name="register_test_play">免费试玩</string>
+    <string name="register_input_username">请输入用户名</string>
+    <string name="register_input_password">请输入登录密码</string>
+    <string name="register_input_recommender">请输入推荐人ID（选填）</string>
+    <string name="register_input_verify_code">请输入验证码</string>
+    <string name="register">快速注册</string>
+    <string name="register_agreement_tip">我已经满合法博彩年龄，且同意开户各项条约，</string>
+    <string name="register_agreement">\"开户协议\"</string>
+    <string name="register_verify_code_intput_error">验证码输入错误</string>
+    <string name="register_donot_agree_tip">您尚未同意开户协议</string>
+    <string name="register_success">注册成功</string>
+
+    <string name="real_name">真实姓名</string>
+    <string name="real_name_hint">请输入真实姓名</string>
+
+    <string name="remittance_info">汇款信息</string>
+
+    <string name="recharge_record_detail_trade_no">交易单号</string>
+    <string name="recharge_record_detail_trade_time">交易时间</string>
+    <string name="recharge_record_detail_trade_way">交易方式</string>
+    <string name="recharge_record_detail_trade_status">交易状态</string>
+    <string name="recharge_record_detail_trade_money">交易金额</string>
+    <string name="recharge_type_online">在线充值</string>
+    <string name="recharge_type_transfer">转账汇款</string>
+    <string name="recharge_type_system">系统充值</string>
+
+    <string name="recommended_code_label">推荐码:</string>
+
+
+    <string name="setting_account_safe">账户安全设置</string>
+
+    <string name="setting_super_partner">超级合伙人</string>
+    <string name="setting_share">好友分享</string>
+    <string name="setting_profit_record">盈亏报表</string>
+    <string name="setting_my_bank_card">我的银行卡</string>
+    <string name="setting_login_password">登陆密码</string>
+    <string name="setting_fund_password">资金密码</string>
+    <string name="setting_normal">通用</string>
+    <string name="setting_voice">声音</string>
+    <string name="setting_vibrate">震动</string>
+    <string name="setting_check_version">版本检测</string>
+
+    <string name="open_notice">         尊敬的头彩用户
+
+       万众瞩目的头彩娱乐平台于2017年8月3日正式开业，丰富的娱乐彩种满足您对所有频率彩种的要求，其具有安全快速、公正公平、稳定流畅、无需等待等优势，平台在竞争中不断超越自我，励志成为业内一流的博彩网站之一。我们致力于向广大玩家提供一个公平合理、安全可靠、准确快捷的游戏平台。头彩娱乐因为用心所以专业。
+
+                                                                                                         ---头彩运营部</string>
+    <string name="frist_ball">第一球购彩</string>
+    <string name="user_relus">尊敬的头彩用户
+
+       一、遵守会员规范及法律规定：
+
+您了解您注册成为会员后，即可使用头彩所提供之各项服务(以下称本服务)。当会员使用本 服务时，即表示除了同意遵守本服务条款外，还同意接受头彩对会员规范(包括各项游戏规 则、公告及注意事项等)及相关法令规定之拘束，头彩所有产品与客户服务、软件系统、网 络架构等相关业务事宜，皆由菲律宾政府卡格扬经济特区The Cagayan Economic Zone Auth ority（CEZA） 所授权和监管之合法线上娱乐公司，使用本服务之会员请遵守使用者当地法令 之许可，如有违反之情事恕非本服务之负责范围。
+
+      二、真实登录义务：
+
+基于头彩所提供之各项服务，您同意于注册时依注册申请程序所提示之项目，登录您本人正确、真实及完整之个人资料；当您的个人资料有异动时，请立即更新，以维持您个人资料之正确、真实及完整。如因您登录不实资料或冒用他人名义以致于侵害他人之权利或违法时，应自 负法律责任；您并同意您所提供之个人资料不实或个人资料有异动但没有更新以致于与原登录 之资料不符时，头彩有权随时终止您的会员资格及使用各项会员服务之权利。
+
+      三、服务停止与更改：
+
+1.会员登录资料不实
+
+2.使用他人的名义申请本服务。
+
+3.违反游戏公平原则。
+
+4.参与游戏或比赛时，故意钻研系统漏洞或利用游戏弱点以影响结果。
+
+5.违反本服务条款时。
+
+6.头彩不允许不公平的下注方式、双边下注、无风险下注及任何无风险解冻之下注方式，如 有发现上述问题之玩家，头彩有终止玩家帐号使用之权力。如有任何争议问题，头彩有最 终决定权。无论任何情形，就停止或更改服务或终止会员帐户服务所可能产生之困扰、不便或 损害，本服务对任何会员或第三人均不负任何责任。
+
+      四、服务暂停或中断：
+
+(一)头彩于下列情形之一，暂停或中断本服务之全部或部分，对于使用者不负担任何赔偿责 任：
+
+1.对于本服务相关系统设备进行迁移、更换或维护时。
+
+2.因不可归责于头彩所造成服务停止或中断。
+
+3.因不可抗力所造成服务停止或中断。
+
+(二)如因头彩对于本网站相关系统设备进行迁移、更换或维护而必须暂停或中断全部或一部 之服务时，头彩暂停或中断前将以网站公告提前通知。
+
+(三)对于本服务之暂停或中断，可能造成您使用上的不便、资料遗失或其他经济及时间上之损 失，您平时应采取适当的防护措施，以保障您的权益。
+
+      五、保管义务：
+
+会员有义务妥善保管在头彩之帐号与密码，并为此组帐号与密码登入系统后所进行之一切活 动负责。为维护会员自身权益，请勿将帐号与密码泄露或提供予第三人知悉，或出借或转让他 人使用。
+
+      六、同意游戏规则
+
+： 为避免使用者于本平台投注游戏时产生争议，各项规则于游戏中心均有详细说明，请务必详细 阅读本服务所定之各项规则，会员一经开始使用本服务，即被视为已接受所有之规定。
+
+      七、会员规范之增订及修改：
+
+本服务条款如有增订或修改，您同意自该修订条款于本网站公告之时起受其拘束，本网站将不 对会员个别通知。如您于公告后继续使用本服务，则视为您已经同意该修订条款。
+
+      八、隐私权声明：
+
+头彩致力为客户保护隐私并提供一个最安全的游戏平台，我们在此网站搜集的资料将会为您 提供最卓越的服务，我们不会出卖或租赁您的个人资料给第三方，客户所提供的个人资料均经 过SSL128加密技术处理，并储存在安全的、非公开的作业系统，对于有机会接触客户的个人 资料的协助伙伴也必需遵守我们订立的隐私保密规则。
+
+                                                                                                       ---头彩运营部</string>
+    <string name="lottery_account">开奖期数2018323053期</string>
+
+    <string name="auto_change_line">自动切换线路</string>
+    <string name="show_window">显示悬浮窗（可在设置中修改）</string>
+
+    <string name="line_set">线路设置</string>
+    <string name="line_select">线路选择</string>
+    <string name="current_line">当前线路一</string>
+    <string name="screen">筛选</string>
+    <string name="symble_add">+</string>
+    <string name="symble_reduce">－</string>
+    <string name="supply">共</string>
+    <string name="messaage">消息</string>
+    <string name="time_show">2017-01-22 22:58:27</string>
+    <string name="caihong_open">彩虹娱乐开业公告</string>
+
+    <string name="caihong_service">彩虹用户服务规则</string>
+    <string name="caihong_shuoming">彩虹单挑说明</string>
+
+
+    <string name="pay_bank">支付宝银行</string>
+
+    <string name="third_pay">第三方支付</string>
+    <string name="withdrawals">取款</string>
+    <string name="Withdrawals">取款</string>
+    <string name="top_up">充值</string>
+    <string name="betting_record">投注记录</string>
+    <string name="freeze_funds">冻结资金</string>
+    <string name="total_amount_account">账号总额</string>
+    <string name="lottery_rebates">彩票返点：</string>
+    <string name="lottery_statements">彩票报表</string>
+    <string name="aftr_no">追号记录</string>
+    <string name="bank_card_management">银行卡管理</string>
+    <string name="zhang_change_record">账变记录</string>
+    <string name="despoit_record">存款记录</string>
+    <string name="despoit">存款</string>
+    <string name="withdrawals_record">取款记录</string>
+
+
+    <string name="transfer_record">转账记录</string>
+    <string name="transfer">转账</string>
+    <string name="agence">代理中心</string>
+    <string name="paly">玩家</string>
+    <string name="team_runs">团代总览</string>
+    <string name="open_account_center">开户中心</string>
+
+    <string name="toup_amount">充值金额</string>
+
+
+    <string name="export_excel">导出Excel</string>
+    <string name="save">保存</string>
+
+    <string name="open_account">立即开户</string>
+
+    <string name="btn_next">下一步</string>
+    <string name="agency">代理</string>
+    <string name="to_up_time">取款时间：15分钟完成充值，单笔限额：0-5000元，免手续费</string>
+    <string name="title_buy_lottery">购彩大厅</string>
+    <string name="title_home_hot_choose">热门精选</string>
+    <string name="title_lottery">开奖</string>
+    <string name="title_lottery_order">注单记录</string>
+    <string name="title_info_notice">公告</string>
+
+
+    <string name="title_setting">设置</string>
+    <string name="game_record">游戏记录</string>
+
+
+    <string name="title_lottery_order_item">注单详情</string>
+    <string name="title_bind_bank_card">绑定银行卡</string>
+    <string name="title_recharge_record_item">充值详情</string>
+    <string name="title_take_cash_detail">提现详情</string>
+
+
+    <string name="title_intelligent_tracking">智能追号</string>
+    <string name="title_betting_slips">投注单</string>
+
+    <string name="take_cash_amount">提现金额</string>
+    <string name="take_cash_amount_hint">请输入提现金额</string>
+    <string name="take_cash_fund_password_hint">请输入资金密码</string>
+    <string name="take_cash_immediately">马上提现</string>
+    <string name="take_cash_success">提现成功</string>
+    <string name="input_issue_no">输入期号</string>
+
+    <string name="build_link">生成链接</string>
+    <string name="tip">提示</string>
+    <string name="token_invalid">登录过期，请重新登录</string>
+    <string name="token_login_on_others">账号在其他设备登录，请重新登录</string>
+
+    <string name="newest_notice">最新公告</string>
+    <string name="game_notice">游戏公告</string>
+    <string name="member_notice">会员公告</string>
+    <string name="member_management">会员管理</string>
+
+
+    <string name="setting_program">项目</string>
+    <string name="setting_single_number_limit">单项（号）限额</string>
+    <string name="setting_single_bet_limit">单注限额</string>
+
+    <string name="wait_lottery">待开奖</string>
+    <string name="wechat">微信</string>
+    <string name="revoke_lottery">已撤单</string>
+
+    <string name="unit_monty">¥</string>
+    <string name="unit_yuan">元</string>
+    <string name="unit_jiao">角</string>
+    <string name="unit_fen">分</string>
+    <string name="unit_li">厘</string>
+    <string name="unit_year">年</string>
+    <string name="unit_month">月</string>
+    <string name="unit_day">日</string>
+    <string name="unit_hour">时</string>
+    <string name="unit_minute">分</string>
+    <string name="unit_second">秒</string>
+    <string name="unit_period">期</string>
+    <string name="unit_betting">单注</string>
+
+    <string name="wrong_click">点错了</string>
+
+    <string-array name="main_tab_menu_name">
+        <item>首页</item>
+        <item>购彩</item>
+        <item>开奖</item>
+        <item>注单</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="lottery_order_tab_menu_name">
+        <item>全部</item>
+        <item>已中奖</item>
+        <item>待开奖</item>
+        <item>已撤单</item>
+    </string-array>
+    <string-array name="lottery_order_tab_menu_value">
+        <item></item>
+        <item>02</item>
+        <item>00</item>
+        <item>03</item>
+    </string-array>
+    <string-array name="charge_tab_menu_name">
+        <item>微信/QQ</item>
+        <item>支付宝</item>
+        <item>银行转账/在线支付</item>
+    </string-array>
+    <string-array name="charge_amount">
+        <item>50</item>
+        <item>100</item>
+        <item>300</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+    </string-array>
+    <string-array name="intelligent_tracking_tab_menu_name">
+        <item>普通追号</item>
+        <item>高级追号</item>
+    </string-array>
+    <string name="pref_key_account_userid">key_account_userid</string>
+    <string name="pref_key_account_token">key_account_token</string>
+    <string name="pref_key_account_balance">key_account_balance</string>
+    <string name="pref_default_value_account_balance">0.00</string>
+    <string name="pref_key_account_usercode">key_account_usercode</string>
+    <string name="pref_key_voice">key_voice</string>
+    <string name="pref_key_vibrate">key_vibrate</string>
+    <string name="pref_default_value_search_his_local" />
+    <string name="pref_key_set_fund_password">key_set_fund_password</string>
+    <string name="pref_key_free_trial">key_free_trial</string>
+    <string name="pref_key_app_has_started">key_app_has_started</string>
+    <string name="pref_key_account_recommended_code">key_account_recommended_code</string>
+
+
+    <string name="play_straight_tip">投注说明：\n1、单式玩法只能输入数字\n2、手动输入的每一注号码之间会自动生成间隔符号[,]\n3、粘贴或输入格式不正确的选号会自动被清除</string>
+
+    <string name="about_us_text">\t以品牌缔造优势，以优质确保体验。\n\t头彩娱乐是一家有着境外实体产业支撑的在线娱乐平台，公司的产业涉足酒店，旅游，KTV，赌场以及在线娱乐等业务，皆由菲律宾政府卡格扬经济特区The Cagayan Economic Zone Authority 所授权和监管的合法在线娱乐公司。\n\t公司在行业内深耕多年，积累了足够多的行业经验与服务理念。在加强线下服务的同时，公司也在不断的拓展在线产业，为客户提供多元化的服务与享受。 \n\t头彩娱乐是业内首家真正境外娱乐平台，不仅仅体现在办公境外化上，公司的法人也为境外人士，且平台也真正以公司化操作运营，并在菲律宾取得了合法营业执照，为平台的长久发展提供了保证。\n\t目前业内虽有多家平台也在境外运营，但是平台实际控制人的中国公民身份决定了平台不可能长久运行，所以就有了业内的即便是境外平台，也会发生关门或者跑路，不仅给广大客户造成了财产损失，也带来了精神伤害，在业内造成了信任危机。\n\t 有鉴于此，头彩娱乐希望通过自身的诚信经营，用心服务，带动整个行业的信誉至上，客户至上之风气，为广大客户营造一个信誉，安全，舒适的娱乐环境。\n\t头彩娱乐竭诚为所有会员提供最专业最顶级的彩票投注服务：\n1、365天×24小时专业的客服服务，全天候处理会员出入款的相关事宜，严格训练的客服及财务团队，让每位玩家有宾至如归的感觉!\n2、多渠道的与客户的互动交流，了解客户的需求，随时关注客户的意见及建议。</string>
+
+    <string name="please_choose_bank">请选择付款银行</string>
+    <string name="money_record">资金记录</string>
+    <string name="inner_msg">站内消息</string>
+
+    <!--3.3版本添加-->
+    <string name="share_makemoney_method_1"></string>
+    <string name="share_makemoney_method_2"><font color='#FF2C66'><bolt>方式二: </bolt></font>  点击下方的复制链接发送好友并点击链接注册并下载游戏)</string>
+
+    <string name="text_0">0</string>
+    <string name="text_1">1</string>
+    <string name="text_2">2</string>
+    <string name="text_3">3</string>
+    <string name="text_4">4</string>
+    <string name="text_5">5</string>
+    <string name="text_6">6</string>
+    <string name="text_7">7</string>
+    <string name="text_8">8</string>
+    <string name="text_9">9</string>
+
+    <string name="text_erweima">二\n维\n码</string>
+
+    <string name="text_erweima_tips">分享海报或链接发送给朋友让他成为你的战友，开始头彩之旅</string>
+    <string name="new_mission_text">恭喜玩家您已经领取了头彩送给您的新手大礼,快来开始游戏吧!</string>
+
+    <string name="regist_xieyi_tips"> <Data><![CDATA["阅读并接受<font color='#39A7FB'>《头彩用户协议》</font>" ]]></Data></string>
+
+</resources>

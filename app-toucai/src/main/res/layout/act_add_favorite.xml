@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/srlRefresh"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lvWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#E8E8E8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="我的喜爱"
+                    android:textColor="@color/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="按住拖动调整排序"
+                    android:textColor="@color/textColorSecondary"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:nestedScrollingEnabled="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#E8E8E8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="最近游戏"
+                    android:textColor="@color/textColorPrimary"/>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvRecent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:nestedScrollingEnabled="false"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:id="@+id/ivEmpty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/img_empty"
+                        />
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <com.pearl.view.PagerSlidingTabStrip
+                android:id="@+id/tsTabs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:background="#FFE8E8E8"
+                app:pstsDividerColor="@android:color/transparent"
+                app:pstsIndicatiorWidth="30dp"
+                app:pstsIndicatorColor="@color/colorPrimary"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsTabPaddingLeftRight="10dp"
+                app:pstsTextColor="@color/tab_text_normal"
+                app:selectedTabTextColor="@color/tab_text_selected"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpContent"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:background="#F5F5F5"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/vgInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvIssueNo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0000-00期"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray_1"/>
+
+        <TextView
+            android:id="@+id/tvPlayName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="彩票-玩法"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray_1"/>
+
+        <TextView
+            android:id="@+id/tvOrderContent"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="号码:"
+            android:textSize="@dimen/text_normal"
+            android:visibility="gone"
+            android:textColor="@color/text_gray_1"/>
+
+        <TextView
+            android:id="@+id/tvOrderMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="投注金额"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/text_gray_1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvBuyMore"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:text="再来一注"
+            android:background="@drawable/sl_btn_red_rounded"
+            android:padding="3dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/vgInfo"
+        android:layout_marginTop="10dp"
+        style="@style/devider_h_light"/>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivQrCode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center_horizontal|center"
+            android:hint="支付金额（元）"
+            android:textSize="@dimen/text_large"/>
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center_horizontal|center"
+            android:hint="0.00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_xxlarge"/>
+
+        <View
+            style="@style/devider_h_light"
+            android:layout_height="10dp"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rlOrderlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/order_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_large"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/devider_h_light"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="订单编号"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_large"
+                />
+
+            <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_large"
+                />
+        </RelativeLayout>
+
+        <View
+            style="@style/devider_h_light"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/btConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/sl_btn_accent_img"
+                android:text="@string/finsh_despoit"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:id="@+id/btQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_accent_u"
+                android:text="@string/pay_question"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/question"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/question_hard"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

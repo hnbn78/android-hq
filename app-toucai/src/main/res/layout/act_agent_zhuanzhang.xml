@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/vgToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/toolbar_bg">
+
+        <RelativeLayout
+            android:id="@+id/vgToolbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <ImageButton
+                android:id="@+id/ibLeftBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:onClick="titleLeftClick"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_circle_arrow_white" />
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="联系人"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.noober.background.view.BLRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgToolbarGroup"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:padding="10dp"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/white">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="账号："
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="username"
+            android:textColor="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="转账类型："
+            android:textColor="@color/gray" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_toRightOf="@+id/tv2"
+            android:drawableRight="@mipmap/ic_common_arrow_down"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="3dp"
+            android:text="充值"
+            android:textColor="@color/gray"
+            app:bl_stroke_color="@color/white_f7f7f7"
+            app:bl_stroke_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="彩票返点："
+            android:textColor="@color/gray" />
+
+        <com.noober.background.view.BLEditText
+            android:id="@+id/fandian"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_toRightOf="@+id/tv3"
+            android:hint="xxxxxxx"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="14dp"
+            app:bl_stroke_color="@color/white_f7f7f7"
+            app:bl_stroke_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="调整返点："
+            android:textColor="@color/gray" />
+
+        <com.noober.background.view.BLEditText
+            android:id="@+id/leastLimit"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_toRightOf="@+id/tv4"
+            android:hint="xxxxxxx"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="14dp"
+            app:bl_stroke_color="@color/white_f7f7f7"
+            app:bl_stroke_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="调整返点："
+            android:textColor="@color/gray" />
+
+        <com.noober.background.view.BLEditText
+            android:id="@+id/tipsView"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/tv4"
+            android:hint="xxxxxxx"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/red"
+            android:textSize="14dp"
+            app:bl_stroke_color="@color/white_f7f7f7"
+            app:bl_stroke_width="1dp" />
+
+    </com.noober.background.view.BLRelativeLayout>
+
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确认转账"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:bl_corners_radius="5dp"
+        app:bl_pressed_solid_color="@color/red_2"
+        app:bl_unPressed_solid_color="@color/red_ff2c66" />
+
+
+</LinearLayout>

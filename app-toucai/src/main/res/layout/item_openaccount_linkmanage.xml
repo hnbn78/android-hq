@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    app:bl_corners_radius="5dp"
+    app:bl_solid_color="@color/red_ffdfd7">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:drawableLeft="@mipmap/agent_fenhong_rule"
+        android:drawablePadding="6dp"
+        android:padding="5dp"
+        android:text="注册码 " />
+
+    <TextView
+        android:id="@+id/linkStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/tv1"
+        android:ellipsize="end"
+        android:maxWidth="180dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/red" />
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/copeBtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="5dp"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="5dp"
+        android:text="复制"
+        android:textColor="@color/white"
+        app:bl_corners_radius="15dp"
+        app:bl_pressed_solid_color="@color/red_2"
+        app:bl_unPressed_solid_color="@color/red_ff2c66"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="用户类别"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="彩票返点"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="过期时间"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="操作"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+    <com.noober.background.view.BLLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="@dimen/dp_10"
+        app:bl_corners_bottomLeftRadius="5dp"
+        app:bl_corners_bottomRightRadius="5dp"
+        app:bl_solid_color="@color/white">
+
+        <TextView
+            android:id="@+id/usertype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="代理"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/fandian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="9.66"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/diedLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="永不过期"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/delBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="删除"
+            android:textColor="@color/blue_2396f7" />
+
+    </com.noober.background.view.BLLinearLayout>
+
+</com.noober.background.view.BLRelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp">
+
+        <com.desheng.app.toucai.view.MultiScrollNumber
+            android:id="@+id/scroll_number1"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel11"
+                android:layout_width="26dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:id="@+id/iv1_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/num_0"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp">
+
+        <com.desheng.app.toucai.view.MultiScrollNumber
+            android:id="@+id/scroll_number2"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel22"
+                android:layout_width="26dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:id="@+id/iv2_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/num_0"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp">
+
+        <com.desheng.app.toucai.view.MultiScrollNumber
+            android:id="@+id/scroll_number3"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel33"
+                android:layout_width="26dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/iv3_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/num_0"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp">
+
+        <com.desheng.app.toucai.view.MultiScrollNumber
+            android:id="@+id/scroll_number4"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel44"
+                android:layout_width="26dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/iv4_num1"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/num_0"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="7dp">
+
+        <com.desheng.app.toucai.view.MultiScrollNumber
+            android:id="@+id/scroll_number5"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:background="@mipmap/ma_bg" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true">
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheel55"
+                android:layout_width="26dp"
+                android:layout_height="34dp"
+                android:layout_centerHorizontal="true" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv5_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/num_0"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

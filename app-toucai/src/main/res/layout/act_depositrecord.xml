@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/vgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        >
+
+        <TextView
+            android:id="@+id/all_lottery_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:drawableRight="@mipmap/bet_detail_head_btn_down"
+            android:text="@string/all" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgType"
+        android:layout_centerInParent="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/start_et"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center_vertical"
+            android:hint="2018-3-9"
+            android:onClick="date"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/conncect_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/start_et"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/to"
+
+            />
+
+        <TextView
+            android:id="@+id/end_et"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/conncect_tv"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_toEndOf="@+id/conncect_tv"
+            android:layout_toRightOf="@+id/conncect_tv"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center_vertical"
+            android:hint="2018-3-9"
+            android:onClick="date" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/issue_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_relativelayout"
+        android:layout_centerInParent="true"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/issue_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editText2"
+            android:text="@string/account"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/search_tv"
+            android:layout_alignBottom="@+id/search_tv"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/issue_tv"
+            android:layout_toRightOf="@+id/issue_tv"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:ems="10"
+            android:hint="@string/input_issue_no"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/myaccount_color"
+            android:text="@string/search"
+            android:textColor="@color/search_backcolor"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issue_no"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

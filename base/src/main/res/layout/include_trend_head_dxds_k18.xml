@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="261.0dip"
+        android:layout_height="29.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="和值"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="单"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="双"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="大"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="小"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="和"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="大单"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="大双"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="小单"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_edit_black"
+            android:gravity="center"
+            android:text="小双"
+            android:textColor="@color/white"
+            android:textSize="10.0dip" />
+</LinearLayout>

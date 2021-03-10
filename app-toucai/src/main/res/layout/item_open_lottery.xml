@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@color/white"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/logo"
+        android:text="时时彩"
+        android:textStyle="bold"
+        android:textColor="@color/contents_text"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvIssueNoLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="20180223-046期"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="13dp" />
+
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/llBallsBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/logo"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="7dp" />
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@mipmap/ic_next"
+        />
+
+    <View
+        android:id="@+id/vDevider"
+        style="@style/devider_h_light"
+        android:layout_below="@id/llBallsBlue"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+</RelativeLayout>

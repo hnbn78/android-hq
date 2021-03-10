@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sh_bd_rec_gray_white_round"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sh_bg_rect_primary_half_round"
+        android:gravity="center"
+        android:text="查看分红比例"
+        android:textColor="@color/textColorPrimaryInverse" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:transcriptMode="normal">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sl_btn_primary_round_sh"
+        android:text="关闭"
+        android:textColor="@color/textColorPrimaryInverse" />
+
+</LinearLayout>

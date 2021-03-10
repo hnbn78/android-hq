@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="#dadada"
+        android:visibility="gone" />
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/vWebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:background="@color/white" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/back_go"
+        android:visibility="gone"/>
+
+</RelativeLayout>

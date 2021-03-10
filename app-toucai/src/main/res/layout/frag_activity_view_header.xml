@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.skyline.widget.layout.RoundCornerLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        app:bottomLeftEnabled="false"
+        app:bottomRightEnabled="false"
+        app:cornerRadius="5dp"
+        app:topLeftEnabled="true"
+        app:topRightEnabled="true">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_item_list_frag_tab_activity_default" />
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_activity_in_progress" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="14.5dp"
+            android:layout_marginBottom="6.5dp"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </com.skyline.widget.layout.RoundCornerLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:padding="9.5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="-1sp"
+                android:text="七月来签到  头彩送您999元现金红包!"
+                android:textColor="#575757"
+                android:textSize="13sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1sp"
+                android:text="活动截止日 2018-05-14  12:00:00"
+                android:textColor="#989898"
+                android:textSize="11sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_join"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_frag_tab_activity_join"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="立即参与"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

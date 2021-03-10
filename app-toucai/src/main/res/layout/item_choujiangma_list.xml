@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <TextView
+        android:id="@+id/choujiangindex"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:background="@drawable/shape_circle_red2"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:minWidth="18dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/choujiangma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:singleLine="true"
+        android:text="抽奖码 :"
+        android:textColor="@color/red_2" />
+
+
+</LinearLayout>

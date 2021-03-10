@@ -1,0 +1,1649 @@
+{
+  "index": [
+    "SSC",
+    "11X5",
+    "K3",
+    "3DFC",
+    "PK10",
+    "pl3"
+  ],
+  "specialMap": {
+  },
+  "SSC": [
+    {
+      "titleName": "五星",
+      "data": [
+        {
+          "showName": "五星直选复式",
+          "name": "直选复式",
+          "lotteryCode": "wxzhixfs"
+        },
+        {
+          "showName": "五星直选单式",
+          "name": "直选单式",
+          "lotteryCode": "wxzhixds"
+        },
+        {
+          "showName": "五星直选组合",
+          "name": "直选组合",
+          "lotteryCode": "wxzhixzh"
+        },
+        {
+          "showName": "五星组选120",
+          "name": "组选120",
+          "lotteryCode": "wxzux120"
+        },
+        {
+          "showName": "五星组选60",
+          "name": "组选60",
+          "lotteryCode": "wxzux60"
+        },
+        {
+          "showName": "五星组选30",
+          "name": "组选30",
+          "lotteryCode": "wxzux30"
+        },
+        {
+          "showName": "五星组选20",
+          "lotteryCode": "wxzux20",
+          "name": "组选20"
+        },
+        {
+          "showName": "五星组选10",
+          "lotteryCode": "wxzux10",
+          "name": "组选10"
+        },
+        {
+          "showName": "五星组选5",
+          "lotteryCode": "wxzux5",
+          "name": "组选5"
+        },
+        {
+          "showName": "五星大小单双",
+          "name": "总和大小单双",
+          "lotteryCode": "ssc5x_sumdxds"
+        }
+      ]
+    },
+    {
+      "titleName": "后四",
+      "data": [
+        {
+          "showName": "后四直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sixzhixfsh"
+        },
+        {
+          "showName": "后四直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sixzhixdsh"
+        },
+        {
+          "showName": "后四直选组合",
+          "name": "直选组合",
+          "lotteryCode": "sixzhixzhh"
+        },
+        {
+          "showName": "后四组选24",
+          "name": "组选24",
+          "lotteryCode": "sixzux24h"
+        },
+        {
+          "showName": "后四组选12",
+          "name": "组选12",
+          "lotteryCode": "sixzux12h"
+        },
+        {
+          "showName": "后四组选6",
+          "name": "组选6",
+          "lotteryCode": "sixzux6h"
+        },
+        {
+          "showName": "后四组选4",
+          "name": "组选4",
+          "lotteryCode": "sixzux4h"
+        }
+      ]
+    },
+    {
+      "titleName": "前三",
+      "data": [
+        {
+          "showName": "前三直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sxzhixfsq"
+        },
+        {
+          "showName": "前三直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sxzhixdsq"
+        },
+        {
+          "showName": "前三直选和值",
+          "name": "直选和值",
+          "lotteryCode": "sxzhixhzq"
+        },
+        {
+          "showName": "前三直选跨度",
+          "name": "直选跨度",
+          "lotteryCode": "ssc_zxkd_qs"
+        },
+        {
+          "showName": "前三组三",
+          "name": "组三",
+          "lotteryCode": "sxzuxzsq"
+        },
+        {
+          "showName": "前三组六",
+          "name": "组六",
+          "lotteryCode": "sxzuxzlq"
+        },
+        {
+          "showName": "前三混合组选",
+          "name": "混合组选",
+          "lotteryCode": "sxhhzxq"
+        },
+        {
+          "showName": "前三组选和值",
+          "name": "组选和值",
+          "lotteryCode": "qsm_zux_hz"
+        },
+        {
+          "showName": "前三组选包胆",
+          "name": "组选包胆",
+          "lotteryCode": "ssc_zuxbd_qs"
+        },
+        {
+          "showName": "前三特殊号",
+          "name": "特殊号",
+          "lotteryCode": "ssctesh_qs"
+        },
+        {
+          "showName": "前三和值尾数",
+          "name": "和值尾数",
+          "lotteryCode": "sschzws_qs"
+        }
+      ]
+    },
+    {
+      "titleName": "中三",
+      "data": [
+        {
+          "showName": "中三直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sxzhixfsz"
+        },
+        {
+          "showName": "中三直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sxzhixdsz"
+        },
+        {
+          "showName": "中三直选和值",
+          "name": "直选和值",
+          "lotteryCode": "sxzhixhzz"
+        },
+        {
+          "showName": "中三直选跨度",
+          "name": "直选跨度",
+          "lotteryCode": "ssc_zxkd_zs"
+        },
+        {
+          "showName": "中三组三",
+          "name": "组三",
+          "lotteryCode": "sxzuxzsz"
+        },
+        {
+          "showName": "中三组六",
+          "name": "组六",
+          "lotteryCode": "sxzuxzlz"
+        },
+        {
+          "showName": "中三混合组选",
+          "name": "混合组选",
+          "lotteryCode": "sxhhzxz"
+        },
+        {
+          "showName": "中三组选和值",
+          "name": "组选和值",
+          "lotteryCode": "zsm_zux_hz"
+        },
+        {
+          "showName": "中三组选包胆",
+          "name": "组选包胆",
+          "lotteryCode": "ssc_zuxbd_zs"
+        },
+        {
+          "showName": "中三特殊号",
+          "name": "特殊号",
+          "lotteryCode": "ssctesh_zs"
+        },
+        {
+          "showName": "中三和值尾数",
+          "name": "和值尾数",
+          "lotteryCode": "sschzws_zs"
+        }
+      ]
+    },
+    {
+      "titleName": "后三",
+      "data": [
+        {
+          "showName": "后三直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sxzhixfsh"
+        },
+        {
+          "showName": "后三直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sxzhixdsh"
+        },
+        {
+          "showName": "后三直选和值",
+          "name": "直选和值",
+          "lotteryCode": "sxzhixhzh"
+        },
+        {
+          "showName": "后三直选跨度",
+          "name": "直选跨度",
+          "lotteryCode": "ssc_zxkd_hs"
+        },
+        {
+          "showName": "后三组三",
+          "name": "组三",
+          "lotteryCode": "sxzuxzsh"
+        },
+        {
+          "showName": "后三组六",
+          "name": "组六",
+          "lotteryCode": "sxzuxzlh"
+        },
+        {
+          "showName": "后三混合组选",
+          "name": "混合组选",
+          "lotteryCode": "sxhhzxh"
+        },
+        {
+          "showName": "后三组选和值",
+          "name": "组选和值",
+          "lotteryCode": "hsm_zux_hz"
+        },
+        {
+          "showName": "后三组选包胆",
+          "name": "组选包胆",
+          "lotteryCode": "ssc_zuxbd_hs"
+        },
+        {
+          "showName": "后三特殊号",
+          "name": "特殊号",
+          "lotteryCode": "ssctesh_hs"
+        },
+        {
+          "showName": "后三和值尾数",
+          "name": "和值尾数",
+          "lotteryCode": "sschzws_hs"
+        }
+      ]
+    },
+    {
+      "titleName": "二星",
+      "data": [
+        {
+          "showName": "前二直选复式",
+          "name": "前二直选复式",
+          "lotteryCode": "exzhixfsq"
+        },
+        {
+          "showName": "前二直选单式",
+          "name": "前二直选单式",
+          "lotteryCode": "exzhixdsq"
+        },
+        {
+          "showName": "前二直选和值",
+          "name": "前二直选和值",
+          "lotteryCode": "exzhixhzq"
+        },
+        {
+          "showName": "前二直选大小单双",
+          "name": "前二直选大小单双",
+          "lotteryCode": "dxdsq"
+        },
+        {
+          "showName": "前二直选跨度",
+          "name": "前二直选跨度",
+          "lotteryCode": "ssc_zxkd_qer"
+        },
+        {
+          "showName": "前二组选复式",
+          "name": "前二组选复式",
+          "lotteryCode": "exzuxfsq"
+        },
+        {
+          "showName": "前二组选单式",
+          "name": "前二组选单式",
+          "lotteryCode": "exzuxdsq"
+        },
+        {
+          "showName": "前二组选和值",
+          "name": "前二组选和值",
+          "lotteryCode": "em_zux_qhz"
+        },
+        {
+          "showName": "前二组选包胆",
+          "name": "前二组选包胆",
+          "lotteryCode": "ssc_zxbd_qer"
+        },
+        {
+          "showName": "后二直选复式",
+          "name": "后二直选复式",
+          "lotteryCode": "exzhixfsh"
+        },
+        {
+          "showName": "后二直选单式",
+          "name": "后二直选单式",
+          "lotteryCode": "exzhixdsh"
+        },
+        {
+          "showName": "后二直选和值",
+          "name": "后二直选和值",
+          "lotteryCode": "exzhixhzh"
+        },
+        {
+          "showName": "后二大小单双",
+          "name": "后二大小单双",
+          "lotteryCode": "dxdsh"
+        },
+        {
+          "showName": "后二直选跨度",
+          "name": "后二直选跨度",
+          "lotteryCode": "ssc_zxkd_her"
+        },
+        {
+          "showName": "后二组选复式",
+          "name": "后二组选复式",
+          "lotteryCode": "exzuxfsh"
+        },
+        {
+          "showName": "后二组选单式",
+          "name": "后二组选单式",
+          "lotteryCode": "exzuxdsh"
+        },
+        {
+          "showName": "后二组选和值",
+          "name": "后二组选和值",
+          "lotteryCode": "em_zux_hhz"
+        },
+        {
+          "showName": "后二组选包胆",
+          "name": "后二组选包胆",
+          "lotteryCode": "ssc_zxbd_her"
+        }
+      ]
+    },
+    {
+      "titleName": "定位胆",
+      "data": [
+        {
+          "showName": "定位胆",
+          "name": "定位胆",
+          "lotteryCode": "dw"
+        }
+      ]
+    },
+    {
+      "titleName": "不定胆",
+      "data": [
+        {
+          "showName": "五星一码不定位",
+          "name": "五星一码不定位",
+          "lotteryCode": "bdd_bdd_wx1"
+        },
+        {
+          "showName": "五星二码不定位",
+          "name": "五星二码不定位",
+          "lotteryCode": "bdd_bdd_wx2"
+        },
+        {
+          "showName": "五星三码不定位",
+          "name": "五星三码不定位",
+          "lotteryCode": "bdd_bdd_wx3"
+        },
+        {
+          "showName": "前四一码不定位",
+          "name": "前四一码不定位",
+          "lotteryCode": "bdd_bdd_qsix1"
+        },
+        {
+          "showName": "前四二码不定位",
+          "name": "前四二码不定位",
+          "lotteryCode": "bdd_bdd_qsix2"
+        },
+        {
+          "showName": "后四一码不定位",
+          "name": "后四一码不定位",
+          "lotteryCode": "bdd_bdd_hsix1"
+        },
+        {
+          "showName": "后四二码不定位",
+          "name": "后四二码不定位",
+          "lotteryCode": "bdd_bdd_hsix2"
+        },
+        {
+          "showName": "前三一码不定位",
+          "name": "前三一码不定位",
+          "lotteryCode": "bdw1mq"
+        },
+        {
+          "showName": "后三一码不定位",
+          "name": "后三一码不定位",
+          "lotteryCode": "bdw1mh"
+        },
+        {
+          "showName": "前三二码不定位",
+          "name": "前三二码不定位",
+          "lotteryCode": "bdw2mq"
+        },
+        {
+          "showName": "后三二码不定位",
+          "name": "后三二码不定位",
+          "lotteryCode": "bdw2mh"
+        }
+      ]
+    },
+    {
+      "titleName": "任选",
+      "data": [
+        {
+          "showName": "任二复式",
+          "name": "任二复式",
+          "lotteryCode": "rx2fs"
+        },
+        {
+          "showName": "任二单式",
+          "name": "任二单式",
+          "lotteryCode": "rx2ds"
+        },
+        {
+          "showName": "任二组选",
+          "name": "任二组选",
+          "lotteryCode": "rx2zx"
+        },
+        {
+          "showName": "任二直选和值",
+          "name": "任二直选和值",
+          "lotteryCode": "rx2_zx_hz"
+        },
+        {
+          "showName": "任二组选和值",
+          "name": "任二组选和值",
+          "lotteryCode": "rx2_zux_hz"
+        },
+        {
+          "showName": "任三复式",
+          "name": "任三复式",
+          "lotteryCode": "rx3fs"
+        },
+        {
+          "showName": "任三单式",
+          "name": "任三单式",
+          "lotteryCode": "rx3ds"
+        },
+        {
+          "showName": "任三组三",
+          "name": "任三组三",
+          "lotteryCode": "rx3z3"
+        },
+        {
+          "showName": "任三组六",
+          "name": "任三组六",
+          "lotteryCode": "rx3z6"
+        },
+        {
+          "showName": "任三混合组选",
+          "name": "任三混合组选",
+          "lotteryCode": "rx3hh"
+        },
+        {
+          "showName": "任三直选和值",
+          "name": "任三直选和值",
+          "lotteryCode": "rx3_zx_hz"
+        },
+        {
+          "showName": "任三组选和值",
+          "name": "任三组选和值",
+          "lotteryCode": "rx3_zux_hz"
+        },
+        {
+          "showName": "任四复式",
+          "name": "任四复式",
+          "lotteryCode": "rx4fs"
+        },
+        {
+          "showName": "任四单式",
+          "name": "任四单式",
+          "lotteryCode": "rx4ds"
+        },
+        {
+          "showName": "任四组选24",
+          "name": "任四组选24",
+          "lotteryCode": "rx4_zux_z24"
+        },
+        {
+          "showName": "任四组选12",
+          "name": "任四组选12",
+          "lotteryCode": "rx4_zux_z12"
+        },
+        {
+          "showName": "任四组选6",
+          "name": "任四组选6",
+          "lotteryCode": "rx4_zux_z6"
+        },
+        {
+          "showName": "任四组选4",
+          "name": "任四组选4",
+          "lotteryCode": "rx4_zux_z4"
+        }
+      ]
+    },
+    {
+      "titleName": "趣味",
+      "data": [
+        {
+          "showName": "一帆风顺",
+          "name": "一帆风顺",
+          "lotteryCode": "qwyffs"
+        },
+        {
+          "showName": "好事成双",
+          "name": "好事成双",
+          "lotteryCode": "qwhscs"
+        },
+        {
+          "showName": "三星报喜",
+          "name": "三星报喜",
+          "lotteryCode": "qwsxbx"
+        },
+        {
+          "showName": "四季发财",
+          "name": "四季发财",
+          "lotteryCode": "qwsjfc"
+        }
+      ]
+    },
+    {
+      "titleName": "龙虎",
+      "data": [
+        {
+          "showName": "龙虎万千",
+          "name": "万千",
+          "lotteryCode": "lhwq"
+        },
+        {
+          "showName": "龙虎万百",
+          "name": "万百",
+          "lotteryCode": "lhwb"
+        },
+        {
+          "showName": "龙虎万十",
+          "name": "万十",
+          "lotteryCode": "lhws"
+        },
+        {
+          "showName": "龙虎万个",
+          "name": "万个",
+          "lotteryCode": "lhwg"
+        },
+        {
+          "showName": "龙虎千百",
+          "name": "千百",
+          "lotteryCode": "lhqb"
+        },
+        {
+          "showName": "龙虎千十",
+          "name": "千十",
+          "lotteryCode": "lhqs"
+        },
+        {
+          "showName": "龙虎千个",
+          "name": "千个",
+          "lotteryCode": "lhqg"
+        },
+        {
+          "showName": "龙虎百十",
+          "name": "百十",
+          "lotteryCode": "lhbs"
+        },
+        {
+          "showName": "龙虎百个",
+          "name": "百个",
+          "lotteryCode": "lhbg"
+        },
+        {
+          "showName": "龙虎十个",
+          "name": "十个",
+          "lotteryCode": "lhsg"
+        },
+        {
+          "showName": "龙虎",
+          "name": "龙虎",
+          "lotteryCode": "allInOne_longhu"
+        }
+      ]
+    },
+    {
+      "titleName": "新龙虎",
+      "data": [
+        {
+          "showName": "新龙虎万千",
+          "name": "万千",
+          "lotteryCode": "1v2gflonghuhe"
+        },
+        {
+          "showName": "新龙虎万百",
+          "name": "万百",
+          "lotteryCode": "1v3gflonghuhe"
+        },
+        {
+          "showName": "新龙虎万十",
+          "name": "万十",
+          "lotteryCode": "1v4gflonghuhe"
+        },
+        {
+          "showName": "新龙虎万个",
+          "name": "万个",
+          "lotteryCode": "1v5gflonghuhe"
+        },
+        {
+          "showName": "新龙虎千百",
+          "name": "千百",
+          "lotteryCode": "2v3gflonghuhe"
+        },
+        {
+          "showName": "新龙虎千十",
+          "name": "千十",
+          "lotteryCode": "2v4gflonghuhe"
+        },
+        {
+          "showName": "新龙虎千个",
+          "name": "千个",
+          "lotteryCode": "2v5gflonghuhe"
+        },
+        {
+          "showName": "新龙虎百十",
+          "name": "百十",
+          "lotteryCode": "3v4gflonghuhe"
+        },
+        {
+          "showName": "新龙虎百个",
+          "name": "百个",
+          "lotteryCode": "3v5gflonghuhe"
+        },
+        {
+          "showName": "新龙虎十个",
+          "name": "十个",
+          "lotteryCode": "4v5gflonghuhe"
+        },
+        {
+          "showName": "新龙虎",
+          "name": "新龙虎",
+          "lotteryCode": "allInOne_xinlonghu"
+        }
+      ]
+    }
+  ],
+  "11X5": [
+    {
+      "titleName": "三码",
+      "data": [
+        {
+          "showName": "三码直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sanmzhixfsq"
+        },
+        {
+          "showName": "三码直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sanmzhixdsq"
+        },
+        {
+          "showName": "三码组选复式",
+          "name": "组选复式",
+          "lotteryCode": "sanmzuxfsq"
+        },
+        {
+          "showName": "三码组选单式",
+          "name": "组选单式",
+          "lotteryCode": "sanmzuxdsq"
+        }
+      ]
+    },
+    {
+      "titleName": "二码",
+      "data": [
+        {
+          "showName": "二码直选复式",
+          "name": "直选复式",
+          "lotteryCode": "ermzhixfsq"
+        },
+        {
+          "showName": "二码直选单式",
+          "name": "直选单式",
+          "lotteryCode": "ermzhixdsq"
+        },
+        {
+          "showName": "二码组选复式",
+          "name": "组选复式",
+          "lotteryCode": "ermzuxfsq"
+        },
+        {
+          "showName": "二码组选单式",
+          "name": "组选单式",
+          "lotteryCode": "ermzuxdsq"
+        }
+      ]
+    },
+    {
+      "titleName": "不定胆",
+      "data": [
+        {
+          "showName": "前三不定胆",
+          "name": "前三位",
+          "lotteryCode": "bdw"
+        }
+      ]
+    },
+    {
+      "titleName": "定位胆",
+      "data": [
+        {
+          "showName": "定位胆",
+          "name": "定位胆",
+          "lotteryCode": "dwd"
+        }
+      ]
+    },
+    {
+      "titleName": "任选",
+      "data": [
+        {
+          "showName": "任选复式一中一",
+          "name": "复式一中一",
+          "lotteryCode": "rx1fs"
+        },
+        {
+          "showName": "任选复式二中二",
+          "name": "复式二中二",
+          "lotteryCode": "rx2fs"
+        },
+        {
+          "showName": "任选复式三中三",
+          "name": "复式三中三",
+          "lotteryCode": "rx3fs"
+        },
+        {
+          "showName": "任选复式四中四",
+          "name": "复式四中四",
+          "lotteryCode": "rx4fs"
+        },
+        {
+          "showName": "任选复式五中五",
+          "name": "复式五中五",
+          "lotteryCode": "rx5fs"
+        },
+        {
+          "showName": "任选复式六中五",
+          "name": "复式六中五",
+          "lotteryCode": "rx6fs"
+        },
+        {
+          "showName": "任选复式七中五",
+          "name": "复式七中五",
+          "lotteryCode": "rx7fs"
+        },
+        {
+          "showName": "任选复式八中五",
+          "name": "复式八中五",
+          "lotteryCode": "rx8fs"
+        },
+        {
+          "showName": "任选单式一中一",
+          "name": "单式一中一",
+          "lotteryCode": "rx1ds"
+        },
+        {
+          "showName": "任选单式二中二",
+          "name": "单式二中二",
+          "lotteryCode": "rx2ds"
+        },
+        {
+          "showName": "任选单式三中三",
+          "name": "单式三中三",
+          "lotteryCode": "rx3ds"
+        },
+        {
+          "showName": "任选单式四中四",
+          "name": "单式四中四",
+          "lotteryCode": "rx4ds"
+        },
+        {
+          "showName": "任选单式五中五",
+          "name": "单式五中五",
+          "lotteryCode": "rx5ds"
+        },
+        {
+          "showName": "任选单式六中五",
+          "name": "单式六中五",
+          "lotteryCode": "rx6ds"
+        },
+        {
+          "showName": "任选单式七中五",
+          "name": "单式七中五",
+          "lotteryCode": "rx7ds"
+        },
+        {
+          "showName": "任选单式八中五",
+          "name": "单式八中五",
+          "lotteryCode": "rx8ds"
+        }
+      ]
+    }
+  ],
+  "K3": [
+    {
+      "titleName": "二不同号",
+      "data": [
+        {
+          "showName": "二不同号标准",
+          "name": "标准",
+          "lotteryCode": "ebthdx"
+        }
+      ]
+    },
+    {
+      "titleName": "二同号",
+      "data": [
+        {
+          "showName": "二同号单选",
+          "name": "标准选号",
+          "lotteryCode": "ethdx"
+        },
+        {
+          "showName": "二同号复选",
+          "name": "二同号复选",
+          "lotteryCode": "ethfx"
+        }
+      ]
+    },
+    {
+      "titleName": "三不同号",
+      "data": [
+        {
+          "showName": "三不同号标准",
+          "name": "标准",
+          "lotteryCode": "sbthdx"
+        }
+      ]
+    },
+    {
+      "titleName": "三同号",
+      "data": [
+        {
+          "showName": "三同号单选",
+          "name": "单选",
+          "lotteryCode": "sthdx"
+        },
+        {
+          "showName": "三同号通选",
+          "name": "通选",
+          "lotteryCode": "sthtx"
+        }
+      ]
+    },
+    {
+      "titleName": "三连号",
+      "data": [
+        {
+          "showName": "三连号通选",
+          "name": "通选",
+          "lotteryCode": "slhtx"
+        }
+      ]
+    },
+    {
+      "titleName": "和值",
+      "data": [
+        {
+          "showName": "和值",
+          "name": "和值",
+          "lotteryCode": "hezhi"
+        },
+        {
+          "showName": "和值大小",
+          "name": "大小",
+          "lotteryCode": "dx_dx_fs"
+        },
+        {
+          "showName": "和值单双",
+          "name": "单双",
+          "lotteryCode": "ds_ds_fs"
+        }
+      ]
+    },
+    {
+      "titleName": "猜中位",
+      "data": [
+        {
+          "showName": "猜中位",
+          "name": "猜中位",
+          "lotteryCode": "bdw_bdw_fs"
+        }
+      ]
+    }
+  ],
+  "3DFC": [
+    {
+      "titleName": "三码",
+      "data": [
+        {
+          "showName": "直选复式",
+          "name": "三码直选复式",
+          "lotteryCode": "sanxzhixfs"
+        },
+        {
+          "showName": "直选单式",
+          "name": "三码直选单式",
+          "lotteryCode": "sanxzhixds"
+        },
+        {
+          "showName": "直选和值",
+          "name": "三码直选和值",
+          "lotteryCode": "sanxzhixhz"
+        },
+        {
+          "showName": "组选组三",
+          "name": "三码组选组三",
+          "lotteryCode": "sanxzs"
+        },
+        {
+          "showName": "组选组六",
+          "name": "三码组选组六",
+          "lotteryCode": "sanxzl"
+        },
+        {
+          "showName": "混合组选",
+          "name": "三码混合组选",
+          "lotteryCode": "sanxhhzx"
+        },
+        {
+          "showName": "组选和值",
+          "name": "三码组选和值",
+          "lotteryCode": "sm_zux_hz"
+        }
+      ]
+    },
+    {
+      "titleName": "二码",
+      "data": [
+        {
+          "showName": "直选复式",
+          "name": "后二直选复式",
+          "lotteryCode": "exzhixfsh"
+        },
+        {
+          "showName": "直选单式",
+          "name": "后二直选单式",
+          "lotteryCode": "exzhixdsh"
+        },
+        {
+          "showName": "组选复式",
+          "name": "后二组选复式",
+          "lotteryCode": "exzuxfsh"
+        },
+        {
+          "showName": "组选单式",
+          "name": "后二组选单式",
+          "lotteryCode": "exzuxdsh"
+        },
+        {
+          "showName": "直选复式",
+          "name": "前二直选复式",
+          "lotteryCode": "exzhixfsq"
+        },
+        {
+          "showName": "直选单式",
+          "name": "前二直选单式",
+          "lotteryCode": "exzhixdsq"
+        },
+        {
+          "showName": "组选复式",
+          "name": "前二组选复式",
+          "lotteryCode": "exzuxfsq"
+        },
+        {
+          "showName": "组选单式",
+          "name": "前二组选单式",
+          "lotteryCode": "exzuxdsq"
+        }
+      ]
+    },
+    {
+      "titleName": "定位胆",
+      "data": [
+        {
+          "showName": "定位胆",
+          "name": "定位胆",
+          "lotteryCode": "dw"
+        }
+      ]
+    },
+    {
+      "titleName": "不定胆",
+      "data": [
+        {
+          "showName": "一码不定胆",
+          "name": "一码不定胆",
+          "lotteryCode": "yimabdw"
+        },
+        {
+          "showName": "二码不定胆",
+          "name": "二码不定胆",
+          "lotteryCode": "bdd_bdd_bdd2"
+        }
+      ]
+    },
+    {
+      "titleName": "大小单双",
+      "data": [
+        {
+          "showName": "前二大小单双",
+          "name": "前二大小单双",
+          "lotteryCode": "3d_dxds_q2"
+        },
+        {
+          "showName": "后二大小单双",
+          "name": "后二大小单双",
+          "lotteryCode": "3d_dxds_h2"
+        }
+      ]
+    }
+  ],
+  "PK10": [
+    {
+      "titleName": "前一",
+      "data": [
+        {
+          "showName": "前一",
+          "name": "前一复式",
+          "lotteryCode": "qianyi"
+        }
+      ]
+    },
+    {
+      "titleName": "前二",
+      "data": [
+        {
+          "showName": "前二",
+          "name": "前二复式",
+          "lotteryCode": "qianerzxfs"
+        },
+        {
+          "showName": "前二",
+          "name": "前二单式",
+          "lotteryCode": "qianerzxds"
+        }
+      ]
+    },
+    {
+      "titleName": "前三",
+      "data": [
+        {
+          "showName": "前三",
+          "name": "前三复式",
+          "lotteryCode": "qiansanzxfs"
+        },
+        {
+          "showName": "前三",
+          "name": "前三单式",
+          "lotteryCode": "qiansanzxds"
+        }
+      ]
+    },
+    {
+      "titleName": "前四",
+      "data": [
+        {
+          "showName": "前四",
+          "name": "前四复式",
+          "lotteryCode": "zx_q4_fs"
+        },
+        {
+          "showName": "前四",
+          "name": "前四单式",
+          "lotteryCode": "zx_q4_ds"
+        }
+      ]
+    },
+    {
+      "titleName": "前五",
+      "data": [
+        {
+          "showName": "前五",
+          "name": "前五复式",
+          "lotteryCode": "zx_q5_fs"
+        },
+        {
+          "showName": "前五",
+          "name": "前五单式",
+          "lotteryCode": "zx_q5_ds"
+        }
+      ]
+    },
+    {
+      "titleName": "定位胆",
+      "data": [
+        {
+          "showName": "1~5名",
+          "name": "定位胆1~5名",
+          "lotteryCode": "dwqian"
+        },
+        {
+          "showName": "定位胆",
+          "name": "定位胆6~10名",
+          "lotteryCode": "dwhou"
+        }
+      ]
+    },
+    {
+      "titleName": "龙虎",
+      "data": [
+        {
+          "showName": "龙虎1v10",
+          "name": "1v10",
+          "lotteryCode": "lh_lh_1v10"
+        },
+        {
+          "showName": "龙虎2v9",
+          "name": "2v9",
+          "lotteryCode": "lh_lh_2v9"
+        },
+        {
+          "showName": "龙虎3v8",
+          "name": "3v8",
+          "lotteryCode": "lh_lh_3v8"
+        },
+        {
+          "showName": "龙虎4v7",
+          "name": "4v7",
+          "lotteryCode": "lh_lh_4v7"
+        },
+        {
+          "showName": "龙虎5v6",
+          "name": "5v6",
+          "lotteryCode": "lh_lh_5v6"
+        },
+        {
+          "showName": "龙虎",
+          "name": "龙虎",
+          "lotteryCode": "allInOne_longhu_pk10"
+        }
+      ]
+    },
+    {
+      "titleName": "大小",
+      "data": [
+        {
+          "showName": "第一名",
+          "name": "大小第一名",
+          "lotteryCode": "dxd1"
+        },
+        {
+          "showName": "第二名",
+          "name": "大小第二名",
+          "lotteryCode": "dxd2"
+        },
+        {
+          "showName": "第三名",
+          "name": "大小第三名",
+          "lotteryCode": "dxd3"
+        },
+        {
+          "showName": "大小单双",
+          "name": "大小单双",
+          "lotteryCode": "allInOne_daxiaodanshuang_pk10"
+        }
+      ]
+    },
+    {
+      "titleName": "单双",
+      "data": [
+        {
+          "showName": "第一名",
+          "name": "单双第一名",
+          "lotteryCode": "dsd1"
+        },
+        {
+          "showName": "第二名",
+          "name": "单双第二名",
+          "lotteryCode": "dsd2"
+        },
+        {
+          "showName": "第三名",
+          "name": "单双第三名",
+          "lotteryCode": "dsd3"
+        }
+      ]
+    }
+  ],
+  "pl3": [
+    {
+      "titleName": "五星",
+      "data": [
+        {
+          "showName": "五星直选复式",
+          "name": "直选复式",
+          "lotteryCode": "wxzhixfs"
+        },
+        {
+          "showName": "五星直选单式",
+          "name": "直选单式",
+          "lotteryCode": "wxzhixds"
+        },
+        {
+          "showName": "五星直选组合",
+          "name": "直选组合",
+          "lotteryCode": "wxzhixzh"
+        },
+        {
+          "showName": "五星组选120",
+          "name": "组选120",
+          "lotteryCode": "wxzux120"
+        },
+        {
+          "showName": "五星组选60",
+          "name": "组选60",
+          "lotteryCode": "wxzux60"
+        },
+        {
+          "showName": "五星组选30",
+          "name": "组选30",
+          "lotteryCode": "wxzux30"
+        },
+        {
+          "showName": "五星组选20",
+          "lotteryCode": "wxzux20",
+          "name": "组选20"
+        },
+        {
+          "showName": "五星组选10",
+          "lotteryCode": "wxzux10",
+          "name": "组选10"
+        },
+        {
+          "showName": "五星组选5",
+          "lotteryCode": "wxzux5",
+          "name": "组选5"
+        }
+      ]
+    },
+    {
+      "titleName": "后四",
+      "data": [
+        {
+          "showName": "后四直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sixzhixfsh"
+        },
+        {
+          "showName": "后四直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sixzhixdsh"
+        },
+        {
+          "showName": "后四直选组合",
+          "name": "直选组合",
+          "lotteryCode": "sixzhixzhh"
+        },
+        {
+          "showName": "后四组选24",
+          "name": "组选24",
+          "lotteryCode": "sixzux24h"
+        },
+        {
+          "showName": "后四组选12",
+          "name": "组选12",
+          "lotteryCode": "sixzux12h"
+        },
+        {
+          "showName": "后四组选6",
+          "name": "组选6",
+          "lotteryCode": "sixzux6h"
+        },
+        {
+          "showName": "后四组选4",
+          "name": "组选4",
+          "lotteryCode": "sixzux4h"
+        }
+      ]
+    },
+    {
+      "titleName": "前三",
+      "data": [
+        {
+          "showName": "前三直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sxzhixfsq"
+        },
+        {
+          "showName": "前三直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sxzhixdsq"
+        },
+        {
+          "showName": "前三直选和值",
+          "name": "直选和值",
+          "lotteryCode": "sxzhixhzq"
+        },
+        {
+          "showName": "前三组三",
+          "name": "组三",
+          "lotteryCode": "sxzuxzsq"
+        },
+        {
+          "showName": "前三组六",
+          "name": "组六",
+          "lotteryCode": "sxzuxzlq"
+        },
+        {
+          "showName": "前三混合组选",
+          "name": "混合组选",
+          "lotteryCode": "sxhhzxq"
+        },
+        {
+          "showName": "前三混组选和值",
+          "name": "混组选和值",
+          "lotteryCode": "qsm_zux_hz"
+        }
+      ]
+    },
+    {
+      "titleName": "中三",
+      "data": [
+        {
+          "showName": "中三直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sxzhixfsz"
+        },
+        {
+          "showName": "中三直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sxzhixdsz"
+        },
+        {
+          "showName": "中三直选和值",
+          "name": "直选和值",
+          "lotteryCode": "sxzhixhzz"
+        },
+        {
+          "showName": "中三组三",
+          "name": "组三",
+          "lotteryCode": "sxzuxzsz"
+        },
+        {
+          "showName": "中三组六",
+          "name": "组六",
+          "lotteryCode": "sxzuxzlz"
+        },
+        {
+          "showName": "中三混合组选",
+          "name": "混合组选",
+          "lotteryCode": "sxhhzxz"
+        }
+      ]
+    },
+    {
+      "titleName": "后三",
+      "data": [
+        {
+          "showName": "后三直选复式",
+          "name": "直选复式",
+          "lotteryCode": "sxzhixfsh"
+        },
+        {
+          "showName": "后三直选单式",
+          "name": "直选单式",
+          "lotteryCode": "sxzhixdsh"
+        },
+        {
+          "showName": "后三直选和值",
+          "name": "直选和值",
+          "lotteryCode": "sxzhixhzh"
+        },
+        {
+          "showName": "后三组三",
+          "name": "组三",
+          "lotteryCode": "sxzuxzsh"
+        },
+        {
+          "showName": "后三组六",
+          "name": "组六",
+          "lotteryCode": "sxzuxzlh"
+        },
+        {
+          "showName": "后三混合组选",
+          "name": "混合组选",
+          "lotteryCode": "sxhhzxh"
+        },
+        {
+          "showName": "后三组选和值",
+          "name": "组选和值",
+          "lotteryCode": "hsm_zux_hz"
+        }
+      ]
+    },
+    {
+      "titleName": "二星",
+      "data": [
+        {
+          "showName": "前二直选复式",
+          "name": "前二直选复式",
+          "lotteryCode": "exzhixfsq"
+        },
+        {
+          "showName": "前二直选单式",
+          "name": "前二直选单式",
+          "lotteryCode": "exzhixdsq"
+        },
+        {
+          "showName": "前二直选和值",
+          "name": "前二直选和值",
+          "lotteryCode": "exzhixhzq"
+        },
+        {
+          "showName": "前二直选大小单双",
+          "name": "前二直选大小单双",
+          "lotteryCode": "dxdsq"
+        },
+        {
+          "showName": "前二组选复式",
+          "name": "前二组选复式",
+          "lotteryCode": "exzuxfsq"
+        },
+        {
+          "showName": "前二组选单式",
+          "name": "前二组选单式",
+          "lotteryCode": "exzuxdsq"
+        },
+        {
+          "showName": "前二组选和值",
+          "name": "前二组选和值",
+          "lotteryCode": "em_zux_qhz"
+        },
+        {
+          "showName": "后二直选复式",
+          "name": "直选复式",
+          "lotteryCode": "exzhixfsh"
+        },
+        {
+          "showName": "后二直选单式",
+          "name": "后二直选单式",
+          "lotteryCode": "exzhixdsh"
+        },
+        {
+          "showName": "后二直选和值",
+          "name": "后二直选和值",
+          "lotteryCode": "exzhixhzh"
+        },
+        {
+          "showName": "后二大小单双",
+          "name": "后二大小单双",
+          "lotteryCode": "dxdsh"
+        },
+        {
+          "showName": "后二组选复式",
+          "name": "后二组选复式",
+          "lotteryCode": "exzuxfsh"
+        },
+        {
+          "showName": "后二组选单式",
+          "name": "后二组选单式",
+          "lotteryCode": "exzuxdsh"
+        },
+        {
+          "showName": "后二组选和值",
+          "name": "后二组选和值",
+          "lotteryCode": "em_zux_hhz"
+        }
+      ]
+    },
+    {
+      "titleName": "定位胆",
+      "data": [
+        {
+          "showName": "定位胆",
+          "name": "定位胆",
+          "lotteryCode": "dw"
+        }
+      ]
+    },
+    {
+      "titleName": "不定胆",
+      "data": [
+        {
+          "showName": "前三一码不定位",
+          "name": "前三一码不定位",
+          "lotteryCode": "bdw1mq"
+        },
+        {
+          "showName": "后三一码不定位",
+          "name": "后三一码不定位",
+          "lotteryCode": "bdw1mh"
+        },
+        {
+          "showName": "前三二码不定位",
+          "name": "前三二码不定位",
+          "lotteryCode": "bdw2mq"
+        },
+        {
+          "showName": "后三二码不定位",
+          "name": "后三二码不定位",
+          "lotteryCode": "bdw2mh"
+        }
+      ]
+    },
+    {
+      "titleName": "任选",
+      "data": [
+        {
+          "showName": "任二复式",
+          "name": "任二复式",
+          "lotteryCode": "rx2fs"
+        },
+        {
+          "showName": "任二单式",
+          "name": "任二单式",
+          "lotteryCode": "rx2ds"
+        },
+        {
+          "showName": "任二组选",
+          "name": "任二组选",
+          "lotteryCode": "rx2zx"
+        },
+        {
+          "showName": "任二直选和值",
+          "name": "任二直选和值",
+          "lotteryCode": "rx2_zx_hz"
+        },
+        {
+          "showName": "任二组选和值",
+          "name": "任二组选和值",
+          "lotteryCode": "rx2_zux_hz"
+        },
+        {
+          "showName": "任三复式",
+          "name": "任三复式",
+          "lotteryCode": "rx3fs"
+        },
+        {
+          "showName": "任三单式",
+          "name": "任三单式",
+          "lotteryCode": "rx3ds"
+        },
+        {
+          "showName": "任三组三",
+          "name": "任三组三",
+          "lotteryCode": "rx3z3"
+        },
+        {
+          "showName": "任三组六",
+          "name": "任三组六",
+          "lotteryCode": "rx3z6"
+        },
+        {
+          "showName": "任三混合组选",
+          "name": "任三混合组选",
+          "lotteryCode": "rx3hh"
+        },
+        {
+          "showName": "任三直选和值",
+          "name": "任三直选和值",
+          "lotteryCode": "rx3_zx_hz"
+        },
+        {
+          "showName": "任三组选和值",
+          "name": "任三组选和值",
+          "lotteryCode": "rx3_zux_hz"
+        },
+        {
+          "showName": "任四复式",
+          "name": "任四复式",
+          "lotteryCode": "rx4fs"
+        },
+        {
+          "showName": "任四单式",
+          "name": "任四单式",
+          "lotteryCode": "rx4ds"
+        },
+        {
+          "showName": "任四组选24",
+          "name": "任四组选24",
+          "lotteryCode": "rx4_zux_z24"
+        },
+        {
+          "showName": "任四组选12",
+          "name": "任四组选12",
+          "lotteryCode": "rx4_zux_z12"
+        },
+        {
+          "showName": "任四组选6",
+          "name": "任四组选6",
+          "lotteryCode": "rx4_zux_z6"
+        },
+        {
+          "showName": "任四组选4",
+          "name": "任四组选4",
+          "lotteryCode": "rx4_zux_z4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#68000000</color>
+
+    <!-- 黑色调 -->
+    <color name="black">#000000</color>
+    <color name="black_222222">#222222</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_444444">#444444</color>
+    <color name="black_555555">#555555</color>
+    <color name="black_666666">#666666</color>
+    <color name="black_777777">#777777</color>
+    <color name="black_888888">#888888</color>
+    <color name="black_999999">#999999</color>
+    <color name="black_959595">#959595</color>
+    <color name="black_cccccc">#CCCCCC</color>
+    <color name="black_464646">#464646</color>
+    <color name="black_a8a8a8">#A8A8A8</color>
+    <color name="black_b4a892">#B4A892</color>
+    <color name="black_afafaf">#AFAFAF</color>
+    <color name="black_a7a7a7">#A7A7A7</color>
+    <color name="black_e2e2e2">#E2E2E2</color>
+    <color name="black_e5e5e5">#E5E5E5</color>
+    <color name="black_404247">#404247</color>
+    <color name="black_2a2d32">#2A2D32</color>
+    <color name="black_c8c8c8">#C8C8C8</color>
+    <color name="black_4d4d4d">#4D4D4D</color>
+    <color name="black_f7f9fc">#F7F9FC</color>
+    <color name="black_060606">#060606</color>
+
+    <!-- 白色调 -->
+    <color name="white">#ffffff</color>
+    <color name="white_f3f3f3">#f3f3f3</color>
+    <color name="white_f3f2f2">#F3F2F2</color>
+    <color name="white_f4f4f4">#f4f4f4</color>
+    <color name="white_f5f5f5">#F5F5F5</color>
+    <color name="white_f7f7f7">#f7f7f7</color>
+    <color name="white_dddddd">#DDDDDD</color>
+    <color name="white_686868">#686868</color>
+    <color name="white_eeeeee">#eeeeee</color>
+    <color name="white_ebebeb">#EBEBEB</color>
+    <color name="white_f4e4e4">#F4E4E4</color>
+    <color name="white_fafafa">#FAFAFA</color>
+    <color name="white_f9fafc">#F9FAFC</color>
+
+    <!-- 红色调 -->
+    <color name="red_dd1006">#DD1006</color>
+    <color name="red_ffccff">#FFCCFF</color>
+    <color name="red_ffdfd7">#FFDFD7</color>
+    <color name="red_ff7600">#FF7600</color>
+    <color name="red_ee314b">#EE314B</color>
+    <color name="red_e12b2b">#E12B2B</color>
+    <color name="red_e4302d">#E4302D</color>
+    <color name="red_fff3f0">#FFF3F0</color>
+    <color name="red_fa2727">#FA2727</color>
+    <color name="red_ffe9e9">#FFE9E9</color>
+    <color name="red_c73e3e">#C73E3E</color>
+    <color name="red_ff2c66">#FF2C66</color>
+    <color name="red_e51e12">#E51E12</color>
+    <color name="red_e43d32">#E43D32</color>
+    <color name="red_c20c20">#C20C20</color>
+    <color name="red_e1ococ">#E10C0C</color>
+    <color name="red_d70c2f">#D70C2F</color>
+    <color name="red_ff2c66_qianse">#22D70C2F</color>
+
+    <!-- 黄色调 -->
+    <color name="yellow_f0af15">#F0AF15</color>
+    <color name="yellow_FFF3EA">#FFF3EA</color>
+
+    <!-- 橙色调 -->
+    <color name="orange_ff7a21">#FF7A21</color>
+
+    <!-- 蓝色调 -->
+    <color name="blue_0c6ce2">#0C6CE2</color>
+    <color name="blue_f3fbfe">#F3FBFE</color>
+
+    <!-- 绿色调 -->
+    <color name="green_09af1c">#09AF1C</color>
+
+
+
+    <color name="main_tab_select_text_color">#EC0022</color>
+    <color name="main_tab_unselect_text_color">#A8A8A8</color>
+
+
+
+    <!-- color for material dialog -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="black_de">#DE000000</color>
+    <color name="window_background">#00000000</color>
+
+    <color name="zise_562C81">#562C81</color>
+
+    <!-- DropPopMenu -->
+    <color name="drop_pop_menu_bg_color">#a0000000</color>
+</resources>

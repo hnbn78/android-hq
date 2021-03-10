@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/issue_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:text="20150211-1000期"
+        android:textColor="@color/gray_content"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="13dp"
+        android:layout_marginLeft="@dimen/dp_10"/>
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/llBallsBlue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" />
+
+    <TextView
+        android:id="@+id/tv_xingtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:text="形态|形态|形态"
+        android:textColor="@color/gray_content"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+</LinearLayout>

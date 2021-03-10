@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/sh_bd_rec_half_red_round"
+        >
+
+        <TextView
+            android:id="@+id/tv_pay_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title2_textsize"
+            android:layout_centerVertical="true"
+            android:text="支付宝支付"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_deposit_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="订单编号:1234564515646"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/sh_bd_rec_gray_light_white"
+        >
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值金额"
+            android:textSize="@dimen/title2_textsize"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_deposit_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="+100"
+            android:textSize="@dimen/big_textsize"
+            />
+
+        <TextView
+            android:id="@+id/tv_deposit_date"
+            android:layout_below="@+id/tv_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="2015-5-30"
+            android:textSize="@dimen/smaller_textsize"
+            android:textColor="@color/gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_deposit_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值失败"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_deposit_amount"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/gray"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

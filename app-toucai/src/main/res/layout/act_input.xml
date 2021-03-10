@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/gray_bg"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="@dimen/def_height"
+        android:textSize="@dimen/text_normal"
+        android:background="@color/white"
+        android:maxLines="1"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        />
+
+</LinearLayout>

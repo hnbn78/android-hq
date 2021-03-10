@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:stretchColumns="0,1,2,3">
+
+    <TableRow>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_da"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_circle"
+                android:text="大"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_xiao"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_circle"
+                android:text="小"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_dan"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_circle"
+                android:text="单"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_shuang"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_circle"
+                android:text="双"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+    </TableRow>
+</TableLayout>

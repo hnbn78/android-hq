@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    app:bl_corners_radius="5dp"
+    app:bl_solid_color="@color/red_ffdfd7">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/agent_username"
+            android:drawablePadding="6dp"
+            android:text="用户名 :" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:ellipsize="end"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="zhangsan"
+            android:textColor="@color/red" />
+
+        <com.noober.background.view.BLTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/username"
+            android:ellipsize="end"
+            android:maxWidth="180dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="代理"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:visibility="gone"
+            app:bl_corners_radius="15dp"
+            app:bl_solid_color="@color/blue_2396f7" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="详情"
+            android:textColor="@color/blue_2396f7" />
+    </RelativeLayout>
+
+    <com.noober.background.view.BLRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        app:bl_corners_bottomLeftRadius="5dp"
+        app:bl_corners_bottomRightRadius="5dp"
+        app:bl_solid_color="@color/white">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="编号:"
+            android:textSize="13dp"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv2"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:paddingLeft="@dimen/dp_10"
+            android:singleLine="true"
+            android:text="hx5569994646664646484"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="7dp"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="下单时间:"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv3"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:paddingLeft="@dimen/dp_10"
+            android:singleLine="true"
+            android:text="2019--9-15 12:12:56"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_marginTop="7dp"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="彩种/玩法:"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/lotteryType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv4"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="彩票类型"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_marginTop="7dp"
+            android:background="@color/white_f7f7f7"
+            android:padding="3dp"
+            android:text="期号:"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/qihao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv6"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="20190612-1234"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/qihao"
+            android:background="@color/white_f7f7f7"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="状态:"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv7"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="中奖"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv6"
+            android:layout_marginTop="7dp"
+            android:background="@color/white_f7f7f7"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="奖金:"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv6"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv8"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="454654.2225"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv6"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_alignLeft="@+id/tv7"
+            android:background="@color/white_f7f7f7"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="金额:"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv6"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv9"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="446.2225"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv8"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/white_f7f7f7"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="注数/倍数:"
+            android:textColor="@color/gray"
+            android:textSize="13dp"
+            />
+
+        <TextView
+            android:id="@+id/beishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv8"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/tv5"
+            android:ellipsize="end"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="10"
+            android:textColor="@color/gray"
+            android:textSize="13dp"/>
+
+
+    </com.noober.background.view.BLRelativeLayout>
+</com.noober.background.view.BLRelativeLayout>

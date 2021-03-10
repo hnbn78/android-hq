@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:id="@+id/tv_bonus_date_name"
+            android:text="日期：" />
+
+        <TextView
+            android:id="@+id/tv_bonus_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="用户名："
+            android:id="@+id/tv_username_name"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="分红比例："
+            android:id="@+id/tv_bonus_rate_name"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_bonus_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="团队盈亏："
+            android:id="@+id/tv_profit_name"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="分红金额："
+            android:id="@+id/tv_bonus_count_name"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_bonus_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:id="@+id/tv_status_name"
+            android:text="状态："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_ling"
+        style="@style/devider_h_dark"
+        android:layout_below="@+id/vgInfo"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
+

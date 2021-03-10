@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.objectboxVersion = '1.1.0'
+    repositories {
+        mavenCentral()
+        //maven{ url 'http://maven.aliyun.com/nexus/content/groups/public'}
+        jcenter()
+        maven { url "http://objectbox.net/beta-repo/" }
+        maven { url "https://jitpack.io" }
+        maven {
+            url 'https://dl.google.com/dl/android/maven2/'
+            name 'Google'
+        }
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+        classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        //growing io
+        classpath 'com.growingio.android:vds-gradle-plugin:2.4.3'
+
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://dl.google.com/dl/android/maven2/'
+            name 'Google'
+        }
+        //maven{ url 'http://maven.aliyun.com/nexus/content/groups/public'}
+        jcenter {
+            url "http://jcenter.bintray.com/"
+        }
+        maven { url "http://objectbox.net/beta-repo/" }
+        maven { url "https://jitpack.io" }
+
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        eachDependency { DependencyResolveDetails details ->
+            if (details.requested.group == 'com.android.support') {
+                details.useVersion "27.1.0"
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//android.useDeprecatedNdk=true

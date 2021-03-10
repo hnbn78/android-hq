@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_10"
+    android:background="@color/white_f7f7f7">
+
+    <com.noober.background.view.BLRelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:bl_corners_radius="5dp"
+        android:padding="@dimen/dp_10"
+        app:bl_solid_color="@color/white">
+
+        <LinearLayout
+            android:id="@+id/vgType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout_AllAccount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvAllAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@mipmap/invert_triangle"
+                    android:text="账户" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_AllCategory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="账单类别:"
+                    android:textColor="@color/black" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/tvAllCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:drawableRight="@mipmap/invert_triangle"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text=" 全部 "
+                    app:bl_corners_radius="3dp"
+                    app:bl_solid_color="@color/white_f7f7f7"
+                    app:bl_stroke_color="@color/gray_light"
+                    app:bl_stroke_width="1dp" />
+
+            </RelativeLayout>
+
+            <com.noober.background.view.BLButton
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="5dp"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="5dp"
+                android:text="查询"
+                android:textColor="#fff"
+                app:bl_corners_radius="5dp"
+                app:bl_solid_color="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/time_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vgType"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时         间："
+                android:layout_centerVertical="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/tv3"
+                android:background="@drawable/sh_edit_bg_round_n"
+                android:gravity="center"
+                android:onClick="date"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvStartDate"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="-"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/tvTo"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/tvTo"
+                android:layout_toRightOf="@+id/tvTo"
+                android:background="@drawable/sh_edit_bg_round_n"
+                android:gravity="center"
+                android:onClick="date" />
+
+        </RelativeLayout>
+    </com.noober.background.view.BLRelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

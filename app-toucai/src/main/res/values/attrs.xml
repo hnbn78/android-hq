@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingLayout">
+        <attr name="background_view" format="reference" />
+        <attr name="sliding_mode" format="enum">
+            <enum name="both" value="0" />
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="sliding_pointer_mode" format="enum">
+            <enum name="one" value="0" />
+            <enum name="more" value="1" />
+        </attr>
+        <attr name="top_max" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FriendlySwipeRefreshLayout">
+        <attr name="progressOffset" format="dimension|reference" />
+        <attr name="progressDistanceOffset" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="InsetBackgroundFrameLayout">
+        <attr name="insetBackground" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelFullDatePickerStyle">
+
+        <!-- 顯示民國年 -->
+        <attr name="showTaiwanYear" format="boolean" />
+        <!-- 小於0的數字前面加0 -->
+        <attr name="addZeroIfSmallThanTen" format="boolean" />
+        <!-- 選單日期是否即時顯示 -->
+        <attr name="setCurrentTimeVisible" format="boolean" />
+        <!-- 能不能設定今天以前的時間 -->
+        <attr name="canSetUpPastTime" format="boolean" />
+        <!-- 能不能設定今天以後的時間 -->
+        <attr name="canSetUpFutureTime" format="boolean" />
+        <!-- 是否顯示年月日字串 -->
+        <attr name="showDateLastString" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="WheelTwoDimensionPickerStyle">
+
+        <!-- 是否總是顯示兩個滾輪 -->
+        <attr name="alwaysShowTwoWheel" format="boolean" />
+        <!-- 如果滾輪樣式是純粹顯示文字，左邊滾輪的顯示行數 預設為一行 -->
+        <attr name="leftWheelVisibleLine" format="integer" />
+        <!-- 如果滾輪樣式是純粹顯示文字，右邊滾輪的顯示行數 預設為一行 -->
+        <attr name="rightWheelVisibleLine" format="integer" />
+        <!-- 如果滾輪樣式是純粹顯示文字，兩邊滾輪的文字大小 格式為dip -->
+        <attr name="wheelTwoDimensionTextSize" format="integer" />
+        <!-- 是否即時顯示所選資料 -->
+        <attr name="isCurrentSelectVisible" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="WheelSinglePickerStyle">
+
+        <!-- 如果滾輪樣式是純粹顯示文字，滾輪的顯示行數 預設為一行 -->
+        <attr name="visibleLine" format="integer" />
+        <!-- 如果滾輪樣式是純粹顯示文字，兩邊滾輪的文字大小 格式為dip -->
+        <attr name="singleTextSize" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TriangleViewStyle">
+        <attr name="triangleColor" format="reference|color" />
+        <attr name="shapeArrow">
+
+            <!-- show event in current month. -->
+            <enum name="UP" value="0" />
+            <!-- show event in current month and preious month. -->
+            <enum name="DOWN" value="1" />
+            <!-- show event in current month and rechargeThird month. -->
+            <enum name="RIGHT" value="2" />
+            <!-- show event in all month. -->
+            <enum name="LEFT" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="WheelTimerStyle">
+        <!-- 是否總是顯示兩個滾輪 -->
+        <attr name="timeMode">
+            <!-- 選擇模式 -->
+            <enum name="select" value="0" />
+            <!-- 倒數模式 -->
+            <enum name="countDown" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="DatePicker">
+        <attr name="picker_text_color" format="color" />
+        <attr name="picker_select_textColor" format="color" />
+        <attr name="picker_split" format="color" />
+        <attr name="picker_split_height" format="dimension" />
+    </declare-styleable>
+    <!--     自定义下拉框 -->
+    <declare-styleable name="dropdownlist">
+        <!--         没下拉的指示图标和下拉的指示图片-->
+        <attr name="offIcon" format="reference" />
+        <attr name="onIcon" format="reference" />
+        <!--         没下拉的背景和下拉的背景-->
+        <attr name="offBackground" format="reference" />
+        <attr name="onBackground" format="reference" />
+        <!--         下拉框背景-->
+        <attr name="dropBackground" format="reference" />
+        <!--         下拉框内容字体-->
+        <attr name="itemTextSize" format="dimension" />
+        <attr name="itemTextColor" format="color" />
+        <attr name="itemPaddingLeft" format="dimension" />
+        <!--         下拉框长度-->
+        <attr name="dropListLength" format="dimension" />
+        <!--         指示图标在左边或右边-->
+        <attr name="direction">
+            <enum name="LEFT" value="0" />
+            <enum name="RIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ChartView">
+        <attr name="xylinecolor" format="color" />
+        <!-- xy坐标轴宽度 -->
+        <attr name="xylinewidth" format="dimension" />
+        <!-- xy坐标轴文字颜色 -->
+        <attr name="xytextcolor" format="color" />
+        <!-- xy坐标轴文字大小 -->
+        <attr name="xytextsize" format="dimension" />
+        <!-- 折线图中折线的颜色 -->
+        <attr name="linecolor" format="color" />
+        <!-- x轴各个坐标点水平间距 -->
+        <attr name="interval" format="dimension" />
+        <!-- 背景颜色 -->
+        <attr name="bgcolor" format="color" />
+        <!--是否在ACTION_UP时，根据速度进行自滑动，建议关闭，过于占用GPU-->
+        <attr name="isScroll" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DraggableFlagView">
+        <attr name="color1" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundConerImageView">
+        <attr name="borderRadius" format="dimension" />
+        <attr name="type">
+            <enum name="normal" value="-1" />
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="JDAdverView">
+        <attr name="gap" format="integer" />
+        <attr name="animDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiScrollNumber">
+        <attr name="primary_number" format="integer"/>
+        <attr name="target_number" format="integer"/>
+        <attr name="number_size" format="integer"/>
+        <!--<attr name="number_color" format="color"/>-->
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_headerLayout" format="reference"/>
+        <attr name="el_contentLayout" format="reference" />
+        <attr name="el_duration" format="integer" />
+    </declare-styleable>
+
+    <!-- 按钮自定义属性 -->
+    <declare-styleable name="StateButton">
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference" />
+        <attr name="pressedTextColor" format="color|reference" />
+        <attr name="unableTextColor" format="color|reference" />
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference" />
+        <attr name="strokeDashGap" format="dimension|reference" />
+        <attr name="normalStrokeWidth" format="dimension|reference" />
+        <attr name="pressedStrokeWidth" format="dimension|reference" />
+        <attr name="unableStrokeWidth" format="dimension|reference" />
+        <attr name="normalStrokeColor" format="color|reference" />
+        <attr name="pressedStrokeColor" format="color|reference" />
+        <attr name="unableStrokeColor" format="color|reference" />
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference" />
+        <attr name="pressedBackgroundColor" format="color|reference" />
+        <attr name="unableBackgroundColor" format="color|reference" />
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference" />
+        <attr name="round" format="boolean|reference" />
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleView">
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="angle" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="arrowPosition" format="dimension" />
+        <attr name="bubbleColor" format="color" />
+        <attr name="arrowLocation" format="enum">
+            <enum name="left" value="0x00" />
+            <enum name="right" value="0x01" />
+            <enum name="top" value="0x02" />
+            <enum name="bottom" value="0x03" />
+        </attr>
+    </declare-styleable>
+
+</resources>

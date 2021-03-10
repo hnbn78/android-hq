@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vgDigit"
+    style="@style/GridLayout_cell_wrapper"
+    android:padding="1.5dp"
+    app:layout_columnWeight="1">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDigit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_lottery_play_view_digits_item_dice_none"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/lottery_play_digits_text"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</RelativeLayout>

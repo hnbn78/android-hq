@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/open_type"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/receiver"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small" />
+
+        <RadioGroup
+            android:id="@+id/rgShoujianren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="上级" />
+
+            <RadioButton
+                android:id="@+id/rbMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="下级" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_receiver"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/receiver"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/tv_receiver_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/sh_edittext_bg"
+            android:inputType="textVisiblePassword"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/text_small" />
+
+        <Button
+            android:id="@+id/btn_add_account"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/sh_bd_rec_gray_blue_round"
+            android:text="@string/add_member"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/topic"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small" />
+
+        <EditText
+            android:id="@+id/et_input_topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sh_edittext_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/input_tips"
+            android:inputType="text"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/message_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small" />
+
+        <EditText
+            android:id="@+id/et_input_content"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/sh_edittext_bg"
+            android:gravity="top"
+            android:inputType="text"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/sh_bd_rec_gray_blue_round"
+        android:text="@string/send"
+        android:textColor="@color/white" />
+
+</LinearLayout>

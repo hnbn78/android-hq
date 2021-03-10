@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/gray_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="66dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="96dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/gray_line">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp" />
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ishot"
+            android:layout_width="23dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/cq9_item_hot_icon"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:translationZ="1dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/gray_content"
+        android:textSize="13dp" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/ivHead"
+        android:layout_width="256.5dp"
+        android:layout_height="163.5dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_success_head"/>
+
+    <ImageView
+        android:id="@+id/ivBottom"
+        android:layout_width="256.5dp"
+        android:layout_height="39.6dp"
+        android:layout_below="@+id/ivHead"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_success_bottom"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivBottom"
+        android:layout_alignTop="@+id/ivBottom"
+        android:layout_alignRight="@+id/ivBottom"
+        android:layout_alignBottom="@+id/ivBottom"
+        android:text="完成并登录 3s"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_large"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

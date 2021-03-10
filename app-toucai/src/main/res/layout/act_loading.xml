@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@mipmap/bg_loading_1"
+        />
+
+
+    <TextView
+        android:id="@+id/tvTestLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="@dimen/dp_4"
+        android:textColor="@color/yellow"
+        android:text="验收环境, 请勿发布"/>
+
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:background="@drawable/sh_bg_shadow_round"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="3s跳过"/>
+</RelativeLayout>

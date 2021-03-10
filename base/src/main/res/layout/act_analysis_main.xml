@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.desheng.base.panel.ActAnalysisMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/flMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/white_dddddd"/>
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_tab"
+            android:background="#262626"
+            tl:tl_iconHeight="23dp"
+            tl:tl_iconWidth="23dp"
+            tl:tl_indicator_color="@color/white_dddddd"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="@color/colorPrimaryInverse"
+            tl:tl_textUnselectColor="@color/gray"
+            tl:tl_textsize="12sp"
+            tl:tl_underline_color="@android:color/transparent"
+            tl:tl_underline_height="0dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

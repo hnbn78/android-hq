@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_top_r10_color_yellow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/bg_edzh" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/ic_circle_close_1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_r10_withe"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TVgameType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="游戏账户余额(元)"
+                    android:textColor="@color/gray_content" />
+
+                <TextView
+                    android:id="@+id/QipaiAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="1999999.00"
+                    android:textColor="@color/red"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_border1dp_f4e4e4_r6"
+                android:digits="1234567890"
+                android:hint="单笔充值金额最低1元 最高100000元"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="6dp"
+                android:textColorLink="@color/gray_line"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_transfer_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_bt"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:drawableLeft="@mipmap/ic_regist_pwd_1"
+                android:drawablePadding="6dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:hint="请输入资金密码"
+                android:background="@drawable/shape_border1dp_f4e4e4_r6"
+                android:padding="3dp"
+                android:textColorHint="@color/gray"
+                android:inputType="textPassword"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:text="快捷选择"
+                android:textColor="@color/gray_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp">
+
+                <Button
+                    android:id="@+id/num10"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/button_select_ds_zhuanzhang"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/gray_content" />
+
+                <Button
+                    android:id="@+id/num100"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_toRightOf="@+id/num10"
+                    android:background="@drawable/button_select_ds_zhuanzhang"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="@color/gray_content" />
+
+                <Button
+                    android:id="@+id/num1000"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_toRightOf="@+id/num100"
+                    android:background="@drawable/button_select_ds_zhuanzhang"
+                    android:gravity="center"
+                    android:text="1000"
+                    android:textColor="@color/gray_content" />
+
+                <Button
+                    android:id="@+id/all"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_select_ds_zhuanzhang_all"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/gray_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="主账户余额(元)"
+                    android:textColor="@color/gray_content" />
+
+                <TextView
+                    android:id="@+id/mainAcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:gravity="center"
+                    android:text="1999999.00"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/recharge"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="充值"
+                    android:textColor="@color/red" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp">
+
+                <Button
+                    android:id="@+id/gotoGame"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_select_ds_zhuanzhang"
+                    android:padding="8dp"
+                    android:text="直接进入游戏"
+                    android:textColor="@color/gray_content" />
+
+                <Button
+                    android:id="@+id/chargegotoGame"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_select_ds_zhuanzhang_game"
+                    android:padding="8dp"
+                    android:text="转入直接进入游戏"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

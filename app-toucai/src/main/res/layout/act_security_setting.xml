@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_10"
+        android:visibility="gone"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/fingerprint_login" />
+
+        <ToggleButton
+            android:id="@+id/finger_switch"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgLoginPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/change_login_password_info"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgFundsPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/funds_password" />
+
+            <TextView
+                android:id="@+id/tvFundsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/change_funds_password_info"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow" />
+
+        <TextView
+            android:id="@+id/tvAddFundsPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end|center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:gravity="center"
+            android:drawablePadding="@dimen/dp_8"
+            android:layout_marginRight="10dp"
+            android:text="修改密码"
+            android:textColor="@color/colorPrimary" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

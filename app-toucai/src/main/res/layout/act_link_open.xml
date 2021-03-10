@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/open_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal"
+            android:text="@string/open_type"
+            />
+
+        <TextView
+            android:id="@+id/agency_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/play_tv"
+            android:layout_alignBottom="@+id/play_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/agency_icon"
+            android:layout_toRightOf="@+id/agency_icon"
+            android:text="@string/agency"
+            android:textSize="@dimen/text_normal" />
+
+        <CheckBox
+            android:id="@+id/agency_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/open_type"
+            android:button="@null"
+            android:checked="false"
+
+            android:layout_toRightOf="@+id/open_type"
+            android:background="@drawable/checkbox_style" />
+
+        <CheckBox
+            android:id="@+id/play_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:button="@null"
+            android:checked="false"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/agency_tv"
+            android:layout_toRightOf="@+id/agency_tv"
+            android:background="@drawable/checkbox_style" />
+
+        <TextView
+            android:id="@+id/play_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/play_icon"
+            android:layout_toRightOf="@+id/play_icon"
+            android:text="@string/paly"
+            android:textSize="@dimen/text_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:padding="10dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tvOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal"
+            android:text="@string/link_issnue"
+           android:padding="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+           android:paddingLeft="40dp"
+            >
+
+            <RadioButton
+                android:id="@+id/rbOne"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+
+                android:text="@string/one_day"
+
+                android:textSize="@dimen/text_normal" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"></View>
+            <RadioButton
+                android:id="@+id/rbSeven"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:textSize="@dimen/text_normal"
+                android:background="@drawable/sl_rb_bg"
+
+                android:text="@string/seven_day"
+                android:gravity="center"
+                android:button="@null"
+                />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"></View>
+            <RadioButton
+                android:id="@+id/rbThirty"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+
+                android:text="@string/thiry_day"
+
+                android:textSize="@dimen/text_normal" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"></View>
+            <RadioButton
+                android:id="@+id/rbUmilt"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+
+                android:text="@string/yongjiu_youxiao"
+
+                android:textSize="@dimen/text_normal" />
+        </RadioGroup>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlLayoutReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:padding="10dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tvReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal"
+            android:text="@string/lottery_rebates"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:id="@+id/etInputAmount"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+
+            android:layout_toEndOf="@+id/tvReturn"
+            android:layout_toRightOf="@+id/tvReturn"
+            android:background="@drawable/sh_edittext"
+            android:hint="@string/betting_please_return_water"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tvQujian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etInputAmount"
+            android:layout_alignStart="@+id/etInputAmount"
+            android:layout_below="@+id/etInputAmount"
+            android:padding="5dp"
+            android:text="@string/open_account_area"
+            android:textSize="@dimen/text_normal" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btBuildlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_input"
+        android:layout_margin="40dp"
+
+        android:layout_marginTop="30dp"
+        android:background="@drawable/sh_build_link"
+        android:padding="5dp"
+        android:text="@string/build_link"
+        android:textColor="@color/myaccount_title"
+        android:textSize="@dimen/text_normal" />
+
+
+
+
+
+</LinearLayout>

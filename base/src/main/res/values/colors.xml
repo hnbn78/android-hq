@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--//背景-->
+    <color name="colorPrimaryInverse">#f4f4f4</color>
+
+    <!--//标题色-->
+    <color name="colorPrimary">#36abf9</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <!--//标题色-->
+    <color name="colorPrimaryDarker">#11837D</color>
+
+    <!--//界面次色-->
+    <color name="colorSecondary">#13958F</color>
+    <color name="colorSecondaryDarker">#13958F</color>
+    <color name="colorSecondaryInverse">#13958F</color>
+    <!--//界面三等色-->
+    <color name="colorTertiary">#13958F</color>
+    <color name="colorTertiaryDarker">#13958F</color>
+    <color name="colorTertiaryInverse">#13958F</color>
+
+    <color name="color_tab_charge">@color/myaccount_color_lighter</color>
+
+    <!--我的色调-->
+    <color name="myaccount_color">#169390</color>
+    <color name="myaccount_color_lighter">#19A49F</color>
+    <color name="myaccount_title">#F0F0F0</color>
+    <color name="myaccount_color_darker">#169390</color>
+    <color name="myaccount_backcolor">#F4F4F4</color>
+
+    <color name="textColorPrimary">#000</color>
+    <color name="textColorPrimaryInverse">#fff</color>
+    <color name="textColorSecondary">#7D7F81</color>
+    <color name="textColorTertiary">#A8A8A8</color>
+
+    <color name="text_login">#535353</color>
+    <color name="text_login_error">#FC4C4F</color>
+
+    <!--标题栏背景-->
+    <color name="bg_blue">#F9506A</color>
+
+    <!--分割线颜色-->
+    <color name="colorDevider">#F1F1F1</color>
+    <color name="line_color">#85716f70</color>
+
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_red">#FF0000</color>
+    <color name="orange_normal">#13958F</color>
+    <color name="search_backcolor">#ffffff</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_c8c8c8">#C8C8C8</color>
+
+    <color name="tab_text_normal">#333333</color>
+    <color name="tab_text_selected">#666666</color>
+    <color name="color">#ff00ff</color>
+    <color name="bg_trend_primary">#FDAC08</color>
+    <!--文字黑色-->
+    <color name="text_dark">#000</color>
+    <!--文字灰色-->
+    <color name="text_gray_0">#A8A8A8</color>
+    <!--文字灰色-->
+    <color name="text_gray_1">#7D7F81</color>
+    <!--文字蓝色-->
+    <color name="text_blue">#159E8F</color>
+    <!--文字金色-->
+    <color name="text_golden">#996633</color>
+
+    <color name="enable">#87c9fb</color>
+
+    <color name="purple_mine">#5491eb</color>
+    <color name="blue_mine">#36abf9</color>
+    <color name="orange_mine">#fa9c37</color>
+    <color name="red_mine">#ff3e3d</color>
+    <color name="gray_mine">#cdcdcd</color>
+    <color name="shanfu_mine">#45BBD1</color>
+
+    <color name="chase_tab_text_selected">#f7587f</color>
+
+    <color name="green_ball">#75BD98</color>
+    <color name="blue_ball">#6295FC</color>
+    <color name="red_ball">#F77573</color>
+    <color name="red_ball2">#44F77573</color>
+    <color name="red_FF6867">#FF6867</color>
+    <color name="red_FB2828">#FB2828</color>
+    <color name="red_FFE5E5">#FFE5E5</color>
+
+    <color name="black_low">#868686</color>
+    <color name="login_bottom_text_color">#A7D2CB</color>
+
+    <color name="trend_line">#CEECF5</color>
+    <color name="text_color_bulue_huayi">#3482D7</color>
+
+</resources>
+

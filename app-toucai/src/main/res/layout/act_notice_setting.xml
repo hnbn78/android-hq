@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vgSystemNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/system_notice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/system_notice_info"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tbSystemNotice"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgActivityNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_notice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/activity_notice_info"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tbActivityNotice"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+ <RelativeLayout
+        android:id="@+id/vgBalanceNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_notice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/balance_notice_info"
+                android:textColor="@color/text_999"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tbBalanceNotice"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="声音" />
+
+        <ToggleButton
+            android:id="@+id/tbVoice"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="振动" />
+
+        <ToggleButton
+            android:id="@+id/tbVibration"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/line_float" />
+
+        <ToggleButton
+            android:id="@+id/tbLine"
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingEnd="@dimen/dp_10"
+        android:visibility="gone"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="做号投注" />
+
+        <ToggleButton
+            android:layout_width="45dp"
+            android:layout_height="23dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/togglebutton_toucai"
+            android:checked="false"
+            android:text="null"
+            android:textOff=""
+            android:textOn="" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

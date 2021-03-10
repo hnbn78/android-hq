@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="88.5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvDigitPowerLab"
+        style="@style/text_digit_power_lab"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:text="号码"
+        android:textSize="13sp" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/iv_long"
+            android:layout_width="59.5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/ic_bg_longhu" />
+
+        <View
+            android:id="@+id/iv_hu"
+            android:layout_width="59.5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_bg_longhu_up_to_down" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/glDigits"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/vgDigitCell0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vgDigitCell1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:id="@+id/vgNumBalls0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/tvBg0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bg_lottery_play_view_board_jd_item_long" />
+
+                    <TextView
+                        android:id="@+id/tvNum0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/lottery_play_board_jd_long_text"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+
+                    <View
+                        android:id="@+id/vCenter0"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvBall0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/lottery_play_board_jd_long_text"
+                        android:textSize="10sp" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vgDigitCell1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/vgDigitCell0"
+                app:layout_constraintRight_toLeftOf="@+id/vgDigitCell2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:id="@+id/vgNumBalls1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/tvBg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bg_lottery_play_view_board_jd_item_he" />
+
+                    <TextView
+                        android:id="@+id/tvNum1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/lottery_play_board_jd_he_text"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+                    <View
+                        android:id="@+id/vCenter1"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvBall1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/lottery_play_board_jd_he_text"
+                        android:textSize="10sp" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vgDigitCell2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/vgDigitCell1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:id="@+id/vgNumBalls2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/tvBg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bg_lottery_play_view_board_jd_item_hu" />
+
+                    <TextView
+                        android:id="@+id/tvNum2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/lottery_play_board_jd_hu_text"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+
+                    <View
+                        android:id="@+id/vCenter2"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvBall2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/lottery_play_board_jd_hu_text"
+                        android:textSize="10sp" />
+                </FrameLayout>
+            </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            />
+
+        <EditText
+            android:id="@+id/input_tv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:onClick="date"
+            android:textSize="@dimen/text_small"
+            android:layout_marginRight="5dp"
+            android:hint="请输入"
+
+            />
+
+        <TextView
+            android:id="@+id/agentcy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/black"
+            android:text="代理下级："
+            />
+
+        <EditText
+            android:id="@+id/agentcy_input"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:onClick="date"
+            android:textSize="@dimen/text_small"
+            android:layout_weight="1"
+            android:hint="请输入" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="@string/search"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sl_btn_primary_sh"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/search_backcolor"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

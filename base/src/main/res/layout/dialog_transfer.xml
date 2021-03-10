@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/ic_close"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@mipmap/ic_bet_list_cell_delect" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/padding_xlarge"
+            android:textColor="@color/black"
+            android:text="转入AGIN视讯" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_transfer_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/text_normal"
+            android:text="AGIN视讯余额（元）" />
+
+        <TextView
+            android:id="@+id/tv_transfer_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_normal"
+            android:text="钱包余额（元）" />
+
+        <TextView
+            android:id="@+id/tv_transfer_in_amount"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_transfer_in"
+            android:text="1000.00"
+            android:textColor="@color/blue_mine"
+            android:textSize="@dimen/text_xxlarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_transfer_out_amount"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_transfer_out"
+            android:gravity="center"
+            android:text="1000.00"
+            android:textSize="@dimen/text_xxlarge"
+            android:textColor="@color/blue_mine"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line_01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@+id/tv_transfer_out_amount"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:id="@+id/tv_transfer_in_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/text_normal"
+            android:layout_below="@+id/line_01"
+            android:text="转入金额（元）" />
+
+        <TextView
+            android:id="@+id/tv_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/text_normal"
+            android:layout_below="@+id/line_01"
+            android:text="带回钱包" />
+
+        <EditText
+            android:id="@+id/et_transfer"
+            android:layout_below="@+id/tv_transfer_in_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_10"
+            android:hint="可转入金额 1000000.00"
+            android:inputType="numberDecimal"
+            android:textSize="17dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_transfer_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="全部转入"
+            android:layout_below="@+id/tv_wallet"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_large"
+            />
+
+        <View
+            android:id="@+id/line_bt"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@+id/et_transfer"
+            android:background="@color/gray_line"/>
+
+
+        <EditText
+            android:id="@+id/et_transfer_pwd"
+            android:layout_below="@+id/line_bt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_10"
+            android:hint="请输入资金密码"
+            android:inputType="textPassword"
+            android:textSize="17dp"
+            android:textColorHint="@color/gray"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_corner_primary"
+        android:text="确认转入"
+        android:textColor="@color/white"
+        android:textSize="@dimen/padding_xlarge"
+        android:layout_margin="@dimen/dp_10"
+        />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:padding="@dimen/dp_10"
+    app:bl_corners_radius="6dp"
+    app:bl_solid_color="@color/white">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="7dp"
+        android:background="@mipmap/gonggao_icon3" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="标题"
+        android:textColor="@color/blue_light"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="6dp"
+        android:text="2020/5/7"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvDate"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:text="平台运营部"
+        android:textColor="@color/gray"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/tvDate"
+        android:layout_toLeftOf="@+id/tvname"
+        android:background="@mipmap/gongao_icon2" />
+</com.noober.background.view.BLRelativeLayout>

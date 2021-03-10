@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vgDigit"
+    style="@style/GridLayout_cell_wrapper"
+    app:layout_columnWeight="1">
+
+    <LinearLayout
+        android:id="@+id/vgNumBalls"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_lottery_play_view_niuniu_jd_item"
+        android:paddingTop="8dp"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/vCenter"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/lottery_play_digits_jd_text"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0.44"
+            android:textColor="@color/lottery_play_digits_jd_text"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</RelativeLayout>

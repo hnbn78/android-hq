@@ -1,0 +1,13 @@
+include ':app-toucai'
+include ':base'
+include ':module-act'
+include ':module-http'
+include ':module-cache'
+include ':module-db'
+include ':module-push'
+include ':module-x5webview'
+include ':pickerview'
+include ':lib-view'
+include ':lib-core'
+
+

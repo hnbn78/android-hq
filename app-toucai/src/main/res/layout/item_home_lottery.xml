@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vgLottery"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/sh_bd_gray_white_rect_thin"
+    tools:showIn="@layout/item_game_lottery_group_home">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_lottery_default"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="重庆时时彩"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:layout_alignTop="@+id/ivIcon"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/textColorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:layout_alignBottom="@+id/ivIcon"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:singleLine="true"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/text_small"
+        />
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/ivIcon"
+        android:scaleType="fitStart"
+        />
+</RelativeLayout>

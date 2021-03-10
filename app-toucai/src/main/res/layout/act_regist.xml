@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/vBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_regist"/>
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="103.5dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/ic_logo_login"/>
+
+            <RadioGroup
+                android:id="@+id/rgRegist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLogo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sl_bg_rb_left_half"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="手机号注册"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_large"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sl_bg_rb_right_half"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="账号注册"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_large"
+                    />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/vgContentGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rgRegist"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+
+                <!--手机号-->
+                <RelativeLayout
+                    android:id="@+id/vgPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    >
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        style="@style/et_regist"
+                        android:layout_toRightOf="@+id/tvPhoneLab"
+                        android:hint="请输入手机号"
+                        android:inputType="phone"/>
+
+                    <ImageView
+                        android:id="@+id/ivPhone"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_regist_phone"/>
+
+                    <TextView
+                        android:id="@+id/tvPhoneLab"
+                        style="@style/tv_regist_lab"
+                        android:layout_toRightOf="@+id/ivPhone"
+                        android:text="手机号"/>
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vgUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/etAccount"
+
+                        style="@style/et_regist"
+                        android:layout_toRightOf="@+id/tvAccountLab"
+                        android:hint="6-10位字母,数字或下划线"
+                        android:inputType="text"/>
+
+                    <ImageView
+                        android:id="@+id/ivAccount"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_regist_user"/>
+
+                    <TextView
+                        android:id="@+id/tvAccountLab"
+                        style="@style/tv_regist_lab"
+                        android:layout_toRightOf="@+id/ivAccount"
+                        android:text="账号"/>
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/vgPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                   >
+
+                    <EditText
+                        android:id="@+id/etPwd"
+                        style="@style/et_regist"
+
+                        android:layout_toRightOf="@+id/tvPwdClear"
+                        android:hint="6-24位字母和数字"
+                        android:inputType="textPassword"/>
+
+                    <ImageView
+                        android:id="@+id/ivPwd"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_regist_pwd"/>
+
+                    <ImageView
+                        android:id="@+id/ivPwdClear"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/ic_pwd_clear_gray"/>
+
+                    <TextView
+                        android:id="@+id/tvPwdClear"
+                        style="@style/tv_regist_lab"
+                        android:layout_toRightOf="@+id/ivPwd"
+                        android:text="密码"/>
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vgRePassword"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="45dp">
+
+
+                    <EditText
+                        android:id="@+id/etRePwd"
+                        style="@style/et_regist"
+                        android:layout_toRightOf="@+id/tvRePwd"
+                        android:hint="请重复您的密码"
+                        android:inputType="textPassword"/>
+
+                    <ImageView
+                        android:id="@+id/ivRePwd"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_regist_pwd"/>
+
+                    <TextView
+                        android:id="@+id/tvRePwd"
+                        style="@style/tv_regist_lab"
+                        android:layout_toRightOf="@+id/ivRePwd"
+                        android:text="重复密码"/>
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/vgVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivVercifyLab"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_regist_verify"/>
+
+                    <EditText
+                        android:id="@+id/etVerify"
+
+                        style="@style/et_regist"
+                        android:layout_toLeftOf="@+id/ivVercifyCode"
+                        android:layout_toRightOf="@+id/tvVercifyCode"
+                        android:hint="验证码"
+                        android:inputType="text"
+                        android:maxLength="10"/>
+
+                    <ImageView
+                        android:id="@+id/ivVercifyCode"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvVercifyCode"
+                        style="@style/tv_regist_lab"
+                        android:layout_toRightOf="@+id/ivVercifyLab"
+                        android:text="验证码"/>
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/vgSmsVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivSmsVercifyLab"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_regist_verify"/>
+
+                    <EditText
+                        android:id="@+id/etSmsVerify"
+
+                        style="@style/et_regist"
+                        android:layout_toLeftOf="@+id/ivSmsVercifyCode"
+                        android:layout_toRightOf="@+id/tvSmsVercifyCode"
+                        android:hint="短信验证码"
+                        android:inputType="text"
+                        android:maxLength="10"/>
+
+                    <ImageView
+                        android:id="@+id/ivSmsVercifyCode"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/btn_vercify_send"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvSmsVercifyCode"
+                        style="@style/tv_regist_lab"
+                        android:layout_toRightOf="@+id/ivSmsVercifyLab"
+                        android:text="验证码"/>
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/vgAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <com.pearl.view.ToggleImageButton
+                        android:id="@+id/cbAgreement"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/sl_checkbox_check"
+                        android:checked="true"
+                        android:scaleType="fitXY"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_small"/>
+
+                    <TextView
+                        android:id="@+id/tvAgreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="同意开户协议"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_normal"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/ivRegistBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/sh_btn_rec_red_round"
+                    android:gravity="center"
+                    android:text="注 册"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_xlarge"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/vgToLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivRegistBtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvLoginLab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="已有账号?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_normal"/>
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="立即登录"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_normal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignTop="@+id/tvContact"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tvContact"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_contact"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

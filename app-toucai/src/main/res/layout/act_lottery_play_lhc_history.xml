@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/vgToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@mipmap/bg_lhc_title">
+
+        <RelativeLayout
+            android:id="@+id/vgToolbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height">
+
+            <ImageButton
+                android:id="@+id/ibLeftBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:onClick="titleLeftClick"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_back_circle_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitleLeft"
+                style="@style/main_content_text_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ibLeftBtn"
+                android:onClick="titleLeftClick" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLotteryTitleCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="六合彩"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <Space
+                    android:layout_width="4dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:rotation="90"
+                    android:src="@mipmap/ic_lhc_arrow_right" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/title_view"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/vgRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageButton
+                    android:id="@+id/ibLotteryPlayRightBtn"
+                    android:layout_width="20dp"
+                    android:layout_height="12.5dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/btn_play_category_menu"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvRightBtn"
+                    style="@style/main_content_text_style"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

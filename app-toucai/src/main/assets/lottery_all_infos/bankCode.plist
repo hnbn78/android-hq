@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HXB</key>
+	<string>华夏银行</string>
+	<key>PSBC</key>
+	<string>邮政银行</string>
+	<key>CITIC</key>
+	<string>中信银行</string>
+	<key>CIB</key>
+	<string>兴业银行</string>
+	<key>PINGAN</key>
+	<string>平安银行</string>
+	<key>CMBC</key>
+	<string>民生银行</string>
+	<key>SPDB</key>
+	<string>浦发银行</string>
+	<key>CEB</key>
+	<string>光大银行</string>
+	<key>GDB</key>
+	<string>广发银行</string>
+	<key>COMM</key>
+	<string>交通银行</string>
+	<key>BOC</key>
+	<string>中国银行</string>
+	<key>CCB</key>
+	<string>建设银行</string>
+	<key>ABC</key>
+	<string>农业银行</string>
+	<key>ICBC</key>
+	<string>工商银行</string>
+	<key>CMB</key>
+	<string>招商银行</string>
+	<key>BOCM</key>
+	<string>中国银行</string>
+	<key>BOB</key>
+	<string>北京银行</string>
+	<key>NBBANK</key>
+	<string>宁波银行</string>
+	<key>SHB</key>
+	<string>上海银行</string>
+</dict>
+</plist>

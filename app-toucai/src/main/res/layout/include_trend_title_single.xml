@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.pearl.view.trendchart.TrendScrollViewWidget
+        android:id="@+id/game_trend_scroll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <com.desheng.base.view.trendchart.TrendView
+            android:id="@+id/game_trend_trend_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.pearl.view.trendchart.TrendScrollViewWidget>
+</LinearLayout>

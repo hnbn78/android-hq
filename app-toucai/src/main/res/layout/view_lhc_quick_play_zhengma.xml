@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2,3">
+
+    <TableRow
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_da"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_da"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_xiao"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_xiao"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_dan"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_dan"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_shuang"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_shuang"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_shu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_shu"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_long"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_long"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_hou"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_hou"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_niu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_niu"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_she"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_she"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_ji"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_ji"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_hu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_hu"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_ma"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_ma"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_gou"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_gou"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_tu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_tu"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_yang"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_yang"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_zhu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_playzhengma_zhu"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+    </TableRow>
+
+
+</TableLayout>

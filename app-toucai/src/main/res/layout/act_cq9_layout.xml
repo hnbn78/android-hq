@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/vgToolbarGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/vgToolbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_gravity="bottom">
+
+            <EditText
+                android:id="@+id/search_blank"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/shape_pt_search_et_bg"
+                android:drawableLeft="@mipmap/search_icon_gray"
+                android:drawablePadding="8dp"
+                android:hint="输入游戏名称"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_content"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibLeftBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:onClick="titleLeftClick"
+                android:padding="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_back_normal" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="全部游戏"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/searchbar"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp_10"
+                android:src="@mipmap/search_icon" />
+
+            <TextView
+                android:id="@+id/searchCancel"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/vgToolbarGroup"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/red_ff2c66"
+        app:tabIndicatorHeight="0dp"
+        app:tabPaddingTop="5dp"
+        app:tabSelectedTextColor="@color/red_ff2c66"
+        app:tabTextAppearance="@style/indcatorTextStyle"
+        app:tabTextColor="@color/gray" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@+id/tabLayout"
+        android:background="@color/gray_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:overScrollMode="never" />
+
+    <FrameLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vgToolbarGroup"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

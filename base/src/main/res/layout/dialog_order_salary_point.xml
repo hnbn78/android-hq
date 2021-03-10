@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sh_bd_rec_gray_white_round"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/sh_bg_rect_primary_half_round"
+        >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="单单工资设置"
+            android:textColor="@color/textColorPrimaryInverse" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="关闭"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@color/textColorPrimaryInverse" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="用户名:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vgCOntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="当前用户单单工资比例"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/etPoint"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="%" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sl_btn_primary_round_sh"
+        android:text="签订契约"
+        android:textColor="@color/textColorPrimaryInverse" />
+
+</LinearLayout>

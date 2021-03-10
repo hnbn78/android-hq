@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lottery_play_menu">
+        <item>投注记录</item>
+        <item>近期开奖</item>
+        <item>走势图</item>
+    </string-array>
+    <string-array name="lottery_play_menu_lhc">
+        <item>近期开奖</item>
+        <item>投注记录</item>
+    </string-array>
+    <string-array name="lottery_play_menu_jd">
+        <item>投注记录</item>
+        <item>近期开奖</item>
+        <item>走势图</item>
+    </string-array>
+
+
+    <!--通过FrameAnimation播放的八十张图片-->
+    <array name="toucai_progress">
+        <item>@mipmap/loading_00005</item>
+        <item>@mipmap/loading_00006</item>
+        <item>@mipmap/loading_00007</item>
+        <item>@mipmap/loading_00008</item>
+        <item>@mipmap/loading_00009</item>
+        <item>@mipmap/loading_00010</item>
+        <item>@mipmap/loading_00011</item>
+        <item>@mipmap/loading_00012</item>
+        <item>@mipmap/loading_00011</item>
+        <item>@mipmap/loading_00010</item>
+        <item>@mipmap/loading_00009</item>
+        <item>@mipmap/loading_00008</item>
+        <item>@mipmap/loading_00007</item>
+        <item>@mipmap/loading_00006</item>
+        <item>@mipmap/loading_00005</item>
+    </array>
+
+    <string-array name="model_entries">
+        <item>厘</item>
+        <item>分</item>
+        <item>角</item>
+        <item>元</item>
+    </string-array>
+
+    <string-array name="agent_center_features">
+        <item>团队总览</item>
+        <item>开户中心</item>
+        <item>团队报表</item>
+        <item>会员管理</item>
+        <item>团队账变记录</item>
+        <item>团队投注记录</item>
+        <item>第三方团队报表</item>
+        <item>在线会员</item>
+        <item>分红管理</item>
+        <item>工资管理</item>
+        <item>日分红</item>
+    </string-array>
+
+    <integer-array name="agent_center_features_icon_res">
+        <item>@mipmap/agent_center_features_icon1</item>
+        <item>@mipmap/agent_center_features_icon2</item>
+        <item>@mipmap/agent_center_features_icon3</item>
+        <item>@mipmap/agent_center_features_icon4</item>
+        <item>@mipmap/agent_center_features_icon5</item>
+        <item>@mipmap/agent_center_features_icon6</item>
+        <item>@mipmap/agent_center_features_icon7</item>
+        <item>@mipmap/agent_center_features_icon10</item>
+        <item>@mipmap/agent_center_features_icon8</item>
+        <item>@mipmap/agent_center_features_icon9</item>
+        <item>@mipmap/agent_center_features_icon11</item>
+    </integer-array>
+
+
+    <string-array name="home_myaccount_features">
+        <item>投注记录</item>
+        <item>追号记录</item>
+        <item>银行卡钱包管理</item>
+        <item>报表中心</item>
+        <item>个人账变</item>
+        <item>第三方游戏报表</item>
+        <item>充值提现记录</item>
+        <item>站内消息</item>
+        <item>设置</item>
+        <item>线路切换</item>
+        <item>联系人</item>
+    </string-array>
+
+    <string-array name="home_myaccount_features_no_im">
+        <item>投注记录</item>
+        <item>追号记录</item>
+        <item>银行卡钱包管理</item>
+        <item>报表中心</item>
+        <item>个人账变</item>
+        <item>第三方游戏报表</item>
+        <item>充值提现记录</item>
+        <item>站内消息</item>
+        <item>设置</item>
+        <item>线路切换</item>
+    </string-array>
+
+    <integer-array name="home_myaccount_features_icon_res">
+        <item>@mipmap/home_myaccount_features_icon_tzjl</item>
+        <item>@mipmap/home_myaccount_features_icon_zhjl</item>
+        <item>@mipmap/home_myaccount_features_icon_yhkgl</item>
+        <item>@mipmap/home_myaccount_features_icon_bbzhx</item>
+        <item>@mipmap/home_myaccount_features_icon_grzhb</item>
+        <item>@mipmap/home_myaccount_features_icon_dsfyxbb</item>
+        <item>@mipmap/home_myaccount_features_icon_cztxjl</item>
+        <item>@mipmap/icon_zhnx</item>
+        <item>@mipmap/icon_sz</item>
+        <item>@mipmap/home_myaccount_features_icon_xlth</item>
+        <item>@mipmap/home_myaccount_features_icon_lxr</item>
+    </integer-array>
+
+    <integer-array name="home_myaccount_features_icon_res_no_im">
+        <item>@mipmap/home_myaccount_features_icon_tzjl</item>
+        <item>@mipmap/home_myaccount_features_icon_zhjl</item>
+        <item>@mipmap/home_myaccount_features_icon_yhkgl</item>
+        <item>@mipmap/home_myaccount_features_icon_bbzhx</item>
+        <item>@mipmap/home_myaccount_features_icon_grzhb</item>
+        <item>@mipmap/home_myaccount_features_icon_dsfyxbb</item>
+        <item>@mipmap/home_myaccount_features_icon_cztxjl</item>
+        <item>@mipmap/icon_zhnx</item>
+        <item>@mipmap/icon_sz</item>
+        <item>@mipmap/home_myaccount_features_icon_xlth</item>
+    </integer-array>
+
+</resources>

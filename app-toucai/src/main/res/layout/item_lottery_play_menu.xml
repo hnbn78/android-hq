@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        >
+
+        <View
+            style="@style/devider_h_light"
+            android:layout_width="0dp"
+            android:layout_height="0.75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="五星"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/black"/>
+
+        <View
+            style="@style/devider_h_light"
+            android:layout_width="0dp"
+            android:layout_height="0.75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <com.zhy.view.flowlayout.FlowLayout
+        android:id="@+id/sflCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="2dp"
+      >
+
+    </com.zhy.view.flowlayout.FlowLayout>
+
+    <!--
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玩法"
+            android:textColor="#000"
+            />
+    -->
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_f7f7f7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vgToolbarContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ibLeftBtn"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:onClick="titleLeftClick"
+            android:padding="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back_circle_arrow_white" />
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="公告"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.noober.background.view.BLRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        app:bl_corners_radius="6dp"
+        app:bl_solid_color="@color/white">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="7dp"
+            android:background="@mipmap/gonggao_icon3" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="标题"
+            android:textColor="@color/blue_light"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="2020/5/7"
+            android:textColor="@color/gray"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvDate"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:text="平台运营部"
+            android:textColor="@color/gray"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/tvDate"
+            android:layout_toLeftOf="@+id/tvname"
+            android:background="@mipmap/gongao_icon2" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvname"
+            android:layout_marginTop="@dimen/sp_14"
+            android:background="@drawable/xuxian" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line">
+
+            <WebView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                />
+
+        </RelativeLayout>
+
+    </com.noober.background.view.BLRelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+{
+  "SSC": {
+    "allInOne_longhu": [
+      {
+        "showName": "龙虎万千",
+        "name": "万千",
+        "lotteryCode": "lhwq"
+      },
+      {
+        "showName": "龙虎万百",
+        "name": "万百",
+        "lotteryCode": "lhwb"
+      },
+      {
+        "showName": "龙虎万十",
+        "name": "万十",
+        "lotteryCode": "lhws"
+      },
+      {
+        "showName": "龙虎万个",
+        "name": "万个",
+        "lotteryCode": "lhwg"
+      },
+      {
+        "showName": "龙虎千百",
+        "name": "千百",
+        "lotteryCode": "lhqb"
+      },
+      {
+        "showName": "龙虎千十",
+        "name": "千十",
+        "lotteryCode": "lhqs"
+      },
+      {
+        "showName": "龙虎千个",
+        "name": "千个",
+        "lotteryCode": "lhqg"
+      },
+      {
+        "showName": "龙虎百十",
+        "name": "百十",
+        "lotteryCode": "lhbs"
+      },
+      {
+        "showName": "龙虎百个",
+        "name": "百个",
+        "lotteryCode": "lhbg"
+      },
+      {
+        "showName": "龙虎十个",
+        "name": "十个",
+        "lotteryCode": "lhsg"
+      }
+    ],
+    "allInOne_xinlonghu": [
+      {
+        "showName": "新龙虎万千",
+        "name": "万千",
+        "lotteryCode": "1v2gflonghuhe"
+      },
+      {
+        "showName": "新龙虎万百",
+        "name": "万百",
+        "lotteryCode": "1v3gflonghuhe"
+      },
+      {
+        "showName": "新龙虎万十",
+        "name": "万十",
+        "lotteryCode": "1v4gflonghuhe"
+      },
+      {
+        "showName": "新龙虎万个",
+        "name": "万个",
+        "lotteryCode": "1v5gflonghuhe"
+      },
+      {
+        "showName": "新龙虎千百",
+        "name": "千百",
+        "lotteryCode": "2v3gflonghuhe"
+      },
+      {
+        "showName": "新龙虎千十",
+        "name": "千十",
+        "lotteryCode": "2v4gflonghuhe"
+      },
+      {
+        "showName": "新龙虎千个",
+        "name": "千个",
+        "lotteryCode": "2v5gflonghuhe"
+      },
+      {
+        "showName": "新龙虎百十",
+        "name": "百十",
+        "lotteryCode": "3v4gflonghuhe"
+      },
+      {
+        "showName": "新龙虎百个",
+        "name": "百个",
+        "lotteryCode": "3v5gflonghuhe"
+      },
+      {
+        "showName": "新龙虎十个",
+        "name": "十个",
+        "lotteryCode": "4v5gflonghuhe"
+      }
+    ]
+  },
+  "PK10": {
+    "allInOne_longhu_pk10": [
+      {
+        "showName": "龙虎1v10",
+        "name": "1v10",
+        "lotteryCode": "lh_lh_1v10"
+      },
+      {
+        "showName": "龙虎2v9",
+        "name": "2v9",
+        "lotteryCode": "lh_lh_2v9"
+      },
+      {
+        "showName": "龙虎3v8",
+        "name": "3v8",
+        "lotteryCode": "lh_lh_3v8"
+      },
+      {
+        "showName": "龙虎4v7",
+        "name": "4v7",
+        "lotteryCode": "lh_lh_4v7"
+      },
+      {
+        "showName": "龙虎5v6",
+        "name": "5v6",
+        "lotteryCode": "lh_lh_5v6"
+      }
+    ],
+    "allInOne_daxiaodanshuang_pk10": [
+      {
+        "showName": "第一名",
+        "name": "大小第一名",
+        "lotteryCode": "dxd1"
+      },
+      {
+        "showName": "第二名",
+        "name": "大小第二名",
+        "lotteryCode": "dxd2"
+      },
+      {
+        "showName": "第三名",
+        "name": "大小第三名",
+        "lotteryCode": "dxd3"
+      },
+      {
+        "showName": "第一名",
+        "name": "单双第一名",
+        "lotteryCode": "dsd1"
+      },
+      {
+        "showName": "第二名",
+        "name": "单双第二名",
+        "lotteryCode": "dsd2"
+      },
+      {
+        "showName": "第三名",
+        "name": "单双第三名",
+        "lotteryCode": "dsd3"
+      }
+    ]
+  }
+}

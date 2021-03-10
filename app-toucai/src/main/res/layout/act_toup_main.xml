@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/payRc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp" />
+
+
+        <LinearLayout
+            android:id="@+id/llEmptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@mipmap/data_load_erro_gray" />
+
+            <Button
+                android:id="@+id/tvRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/shape_border1dp_corner5dp_white"
+                android:text="点击重试"
+                android:textColor="@color/gray_bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

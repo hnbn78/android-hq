@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FF2B65"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="玩法说明"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvWanfaContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:paddingRight="@dimen/dp_4"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="0.00"
+        android:textColor="#ff2b65"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@mipmap/wanfa_detail"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:text="详情"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/ivAuSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="6dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_lhc_shake"
+        android:visibility="gone" />
+
+</LinearLayout>

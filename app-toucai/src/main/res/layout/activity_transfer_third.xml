@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/ab_sh_border_round_white"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/transfer_out"
+            android:textColor="@color/gray_content"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:id="@+id/tv_transfer_in_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/transfer_in"
+            android:textColor="@color/gray_content"
+            android:textSize="@dimen/text_large" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_transfer_in_tip"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_choose_trans_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_transfer_out"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_transfer_wallet" />
+
+            <TextView
+                android:id="@+id/tv_transfer_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="钱包"
+                android:textColor="#8b5757" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@mipmap/ic_trans_arrow" />
+
+        <LinearLayout
+            android:id="@+id/layout_choose_trans_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_transfer_in"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_transfer_ag" />
+
+            <TextView
+                android:id="@+id/tv_transfer_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="AGIN视讯"
+                android:textColor="#8b5757" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/ab_sh_border_round_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="15dp"
+            android:text="转账金额（元）"
+            android:textColor="@color/gray_mine"
+            android:textSize="@dimen/text_large" />
+
+        <EditText
+            android:id="@+id/et_transfer_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/ic_rmb"
+            android:drawablePadding="8dp"
+            android:gravity="left"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_mine"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="10dp"
+            android:background="@color/gray_line" />
+
+        <EditText
+            android:id="@+id/et_transfer_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_bt"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/ic_regist_pwd_1"
+            android:drawablePadding="6dp"
+            android:hint="请输入资金密码"
+            android:padding="3dp"
+            android:textColorHint="@color/gray"
+            android:inputType="textPassword"
+            android:textSize="17dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="10dp"
+            android:background="@color/gray_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape_round_corner_primary"
+        android:text="确认转账"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_xxlarge" />
+
+    <Button
+        android:id="@+id/btn_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/ab_sh_border_corner_white_gray"
+        android:text="我要充值"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xxlarge" />
+
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+            <com.desheng.app.toucai.view.PlayHeadView
+                android:id="@+id/vHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:outlineProvider="bounds" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13.5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="1"
+                    android:text="位置"
+                    android:textColor="#7a7a7a"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/vgMPower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <CheckedTextView
+                        android:id="@+id/tvMDegitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_checkbox_lottery_play_digits_combind"
+                        android:padding="10dp"
+                        android:text="万位"
+                        android:textColor="@color/lottery_play_combind_checkable_text"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/vgKPower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckedTextView
+                        android:id="@+id/tvKDegitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_checkbox_lottery_play_digits_combind"
+                        android:padding="10dp"
+                        android:text="千位"
+                        android:textColor="@color/lottery_play_combind_checkable_text"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/vgBPower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckedTextView
+                        android:id="@+id/tvBDegitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_checkbox_lottery_play_digits_combind"
+                        android:padding="10dp"
+                        android:text="百位"
+                        android:textColor="@color/lottery_play_combind_checkable_text"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/vgSPower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckedTextView
+                        android:id="@+id/tvSDegitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_checkbox_lottery_play_digits_combind"
+                        android:padding="10dp"
+                        android:text="十位"
+                        android:textColor="@color/lottery_play_combind_checkable_text"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/vgGPower"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <CheckedTextView
+                        android:id="@+id/tvGDegitBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_checkbox_lottery_play_digits_combind"
+                        android:padding="10dp"
+                        android:text="个位"
+                        android:textColor="@color/lottery_play_combind_checkable_text"
+                        android:textSize="15sp" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd"/>
+
+            <com.desheng.app.toucai.view.PlayDigitView
+                android:id="@+id/vgDigit0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.desheng.app.toucai.view.PlayDigitView
+                android:id="@+id/vgDigit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/devider4"
+                style="@style/vPlayDevier" />
+
+            <com.desheng.app.toucai.view.PlayFootView
+                android:id="@+id/vFootView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="@dimen/dp_10" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

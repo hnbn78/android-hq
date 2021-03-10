@@ -1,0 +1,12 @@
+<style type="text/css">
+video{
+  background-image: url('covers/ali_scan_cover.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+</style>

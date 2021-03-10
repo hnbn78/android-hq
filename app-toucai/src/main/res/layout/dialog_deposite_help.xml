@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/vgContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <com.pearl.view.pager.AbSlidingPlayView
+            android:id="@+id/mAbSlidingPlayView"
+            android:layout_width="188dp"
+            android:layout_height="368dp"
+            android:layout_centerInParent="true"
+            >
+        </com.pearl.view.pager.AbSlidingPlayView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llBtns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/ivLeftBtn"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_sliding_left_arrow"
+            android:textColor="@color/white"
+            android:scaleType="centerCrop"
+            android:textSize="20sp"/>
+
+
+        <ImageView
+            android:id="@+id/ivRightBtn"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_sliding_right_arrow"
+            android:textColor="@color/white"
+            android:scaleType="centerCrop"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</FrameLayout>

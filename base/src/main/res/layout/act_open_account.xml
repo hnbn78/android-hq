@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbOrdinary"
+                style="@style/RadioButton_Accent_Checked"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:text="@string/ordinary_account" />
+
+            <RadioButton
+                android:id="@+id/rbLink"
+                style="@style/RadioButton_Accent_UnChecked"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:text="@string/link_account" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnLinkManage"
+            style="@style/RadioButton_Accent_UnChecked"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:text="@string/link_manage" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/vgContainer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/vgContainer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

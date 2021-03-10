@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/item_wh"
+              android:layout_height="@dimen/item_wh"
+              android:background="@color/bg_trend_primary"
+              android:orientation="horizontal">
+
+    <View
+        android:id="@+id/vline3"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="#FF888888"/>
+
+    <RelativeLayout
+        android:id="@+id/vgCellContent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/vline6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="#FF888888"/>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/vline6"
+            android:layout_above="@+id/vline4"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/text_tiny"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/vline4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FF888888"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

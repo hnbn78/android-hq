@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--//背景-->
+    <color name="colorPrimaryInverse">#f4f4f4</color>
+    <!--//标题色-->
+    <color name="colorPrimary">#2D7FDA</color>
+    <!--//标题色-->
+    <color name="colorPrimaryDarker">#FF4044</color>
+    <!--//灰色-->
+    <color name="colorBg">#8A9090</color>
+    <!--分割线颜色-->
+    <color name="colorDevider">#F1F1F1</color>
+    <color name="line_color">#85716f70</color>
+
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_red">#FF0000</color>
+
+    <color name="myaccount_color">#19A49F</color>
+    <color name="myaccount_title">#F0F0F0</color>
+    <color name="orange_normal">#13958F</color>
+    <color name="background_color">#169390</color>
+    <color name="myaccount_backcolor">#F4F4F4</color>
+    <color name="search_backcolor">#ffffff</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_c8c8c8">#C8C8C8</color>
+
+    <color name="tab_text_normal">#333333</color>
+    <color name="tab_text_selected">#666666</color>
+    <color name="color">#ff00ff</color>
+    <color name="bg_trend_primary">#FDAC08</color>
+
+    <color name="lhc_card_num_text">#FF4746</color>
+    <color name="lhc_card_zodiac_text">#424242</color>
+
+    <color name="lhc_banbo_board_title_red_big">#F14A40</color>
+    <color name="lhc_banbo_board_title_red_small">#F14A40</color>
+    <color name="lhc_banbo_board_title_red_single">#F14A40</color>
+    <color name="lhc_banbo_board_title_red_double">#F14A40</color>
+    <color name="lhc_banbo_board_title_red_multi_single">#F14A40</color>
+    <color name="lhc_banbo_board_title_red_multi_double">#F14A40</color>
+
+    <color name="lhc_banbo_board_title_green_big">#47A33E</color>
+    <color name="lhc_banbo_board_title_green_small">#47A33E</color>
+    <color name="lhc_banbo_board_title_green_single">#47A33E</color>
+    <color name="lhc_banbo_board_title_green_double">#47A33E</color>
+    <color name="lhc_banbo_board_title_green_multi_single">#47A33E</color>
+    <color name="lhc_banbo_board_title_green_multi_double">#47A33E</color>
+
+    <color name="lhc_banbo_board_title_blue_big">#2D7FDA</color>
+    <color name="lhc_banbo_board_title_blue_small">#2D7FDA</color>
+    <color name="lhc_banbo_board_title_blue_single">#2D7FDA</color>
+    <color name="lhc_banbo_board_title_blue_double">#2D7FDA</color>
+    <color name="lhc_banbo_board_title_blue_multi_single">#2D7FDA</color>
+    <color name="lhc_banbo_board_title_blue_multi_double">#2D7FDA</color>
+
+    <color name="lhc_weishu_0">#F14A40</color>
+    <color name="lhc_weishu_1">#F14A40</color>
+    <color name="lhc_weishu_2">#F14A40</color>
+    <color name="lhc_weishu_3">#F14A40</color>
+    <color name="lhc_weishu_4">#F14A40</color>
+    <color name="lhc_weishu_5">#F14A40</color>
+    <color name="lhc_weishu_6">#F14A40</color>
+    <color name="lhc_weishu_7">#F14A40</color>
+    <color name="lhc_weishu_8">#F14A40</color>
+    <color name="lhc_weishu_9">#F14A40</color>
+
+    <color name="lhc_buzhong_selected">#F4F4F4</color>
+    <color name="lhc_buzhong_1">#F14A40</color>
+    <color name="lhc_buzhong_2">#47A33E</color>
+    <color name="lhc_buzhong_3">#2D7FDA</color>
+
+    <color name="lhc_ball_unselected">#F4F4F4</color>
+    <color name="lhc_ball_red">#F14A40</color>
+    <color name="lhc_ball_green">#47A33E</color>
+    <color name="lhc_ball_blue">#2D7FDA</color>
+
+    <color name="transparent_gray">#55000000</color>
+
+    <!--登录radio-->
+    <color name="radio_login_selected">#F7587F</color>
+    <color name="radio_login_nomal">#55000000</color>
+
+    <color name="text_login_error">#FC4C4F</color>
+    <color name="orange_f98f36">#f98f36</color>
+    <color name="orange_ED5735">#ED5735</color>
+
+    <color name="app_bg">#F5F5F5</color>
+
+    <color name="profit_chart_1">#1d74c5</color>
+    <color name="profit_chart_2">#b370e7</color>
+    <color name="profit_chart_3">#f6497e</color>
+    <color name="profit_chart_4">#ffc438</color>
+    <color name="profit_chart_5">#3bc95c</color>
+    <!--<color name="profit_chart_6">#c1d824</color>-->
+    <!--<color name="profit_chart_7">#52d884</color>-->
+    <!--<color name="profit_chart_8">#52ded2</color>-->
+    <!--<color name="profit_chart_9">#52bdf6</color>-->
+    <!--<color name="profit_chart_10">#527cf6</color>-->
+    <color name="profit_chart_other">#cfcfcf</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- 其它背景色或分割线相关 -->
+    <color name="bg_content">#f3f3f3</color>
+    <color name="divider_line">#d9d9d9</color>
+
+    <!-- 字体色 -->
+    <color name="text_title">#1b1b1b</color>
+    <color name="text_content">#818181</color>
+    <color name="text_sub">#919191</color>
+    <color name="text_hint">#c7c7c7</color>
+    <color name="text_black">#404040</color>
+
+</resources>

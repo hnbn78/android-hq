@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sh_bd_rec_gray_white_round"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sh_bg_rect_primary_half_round"
+        android:gravity="center"
+        android:text="投注内容"
+        android:textColor="@color/textColorPrimaryInverse" />
+
+    <LinearLayout
+        android:id="@+id/vgContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/sl_btn_primary_round_sh"
+            android:maxWidth="80dp"
+            android:text="确定"
+            android:textColor="@color/textColorPrimaryInverse" />
+    </LinearLayout>
+</RelativeLayout>

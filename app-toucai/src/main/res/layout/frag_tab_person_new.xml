@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_bg"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ivPersonalHeadBg"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:background="@mipmap/myaccount_background">
+
+                <ImageView
+                    android:id="@+id/ivSaoMa"
+                    android:layout_width="25dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@mipmap/ic_sysao"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivPotrait"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:background="@mipmap/ic_default_potrait"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivPotrait"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="掘金者"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvLastLoginTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAccount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="上次登陆时间：2018-05-14"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_balance_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="30dp"
+                        android:text="⏳..."
+                        android:textColor="@color/group_bg"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="30dp"
+                        android:text="钱包余额（元）"
+                        android:textColor="@color/dashline_color"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+                <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/app_bg" />-->
+                <ImageView
+                    android:id="@+id/refreshIv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/icon_refresh" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_third_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="30dp"
+                        android:text="⏳..."
+                        android:textColor="@color/group_bg"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="30dp"
+                        android:text="第三方资产（元）"
+                        android:textColor="@color/dashline_color"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vgAccountSetContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10">
+
+                <FrameLayout
+                    android:id="@+id/fl_recharge"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/iv_recharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/btn_recharge" />
+
+                    <TextView
+                        android:id="@+id/tv_recharge"
+                        style="@style/tv_middle_menu_title"
+                        android:paddingBottom="6dp"
+                        android:text="@string/recharge" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_transfer"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/iv_transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/btn_transfer" />
+
+                    <TextView
+                        android:id="@+id/tv_transfer"
+                        style="@style/tv_middle_menu_title"
+                        android:paddingBottom="6dp"
+                        android:text="@string/transfer" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_withdraw"
+                    style="@style/vg_menu_group">
+
+                    <ImageView
+                        android:id="@+id/iv_withdraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/btn_withdraw" />
+
+                    <TextView
+                        android:id="@+id/tv_withdraw"
+                        style="@style/tv_middle_menu_title"
+                        android:paddingBottom="6dp"
+                        android:text="@string/withdrawals_ti" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:text="我的账号"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myAccountRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:text="代理中心"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myAgentAccountRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:focusable="false" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

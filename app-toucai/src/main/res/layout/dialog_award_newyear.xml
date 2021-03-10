@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_awad_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dialog_awad_bg_newyear" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="恭喜您"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:minLines="2"
+            android:maxLines="3"
+            android:textStyle=""
+            android:textSize="15dp"
+            android:lineSpacingExtra="4dp"/>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="230dp">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:textColor="@color/red_e1ococ"
+                android:background="@drawable/shape_btn_gray_r15_solid"
+                android:text="取消"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/btnOk"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:textColor="@color/red_e1ococ"
+                android:background="@drawable/shape_btn_orange_r15_solid"
+                android:text="继续投注"
+                android:layout_marginLeft="40dp"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

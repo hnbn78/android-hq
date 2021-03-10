@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="@dimen/item_whx2"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/v_line_2"
+                android:layout_width="100dp"
+                android:layout_height="0.5dp"
+                android:background="#FF888888"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="期号"
+                android:background="@color/bg_trend_primary"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_whx2"
+            android:background="#aaddbb"
+            >
+
+            <com.pearl.view.trendchart.HeaderHorizontalScrollView
+                android:id="@+id/trend_header_scroll"
+                android:layout_width="fill_parent"
+                android:background="@color/bg_trend_primary"
+                android:layout_height="@dimen/item_whx2"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.pearl.view.trendchart.HeadCustomGridView
+                        android:id="@+id/grid_trend_header1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"/>
+
+                    <com.pearl.view.trendchart.HeadCustomGridView
+                        android:id="@+id/grid_trend_header2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_wh"/>
+                </LinearLayout>
+
+            </com.pearl.view.trendchart.HeaderHorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/trend_RadioGroup_header_scroll"
+                android:layout_width="match_parent"
+                android:background="@color/bg_trend_primary"
+                android:layout_height="36dp"
+                android:layout_marginLeft="0.5dp"
+                android:scrollbars="none">
+
+                <RadioGroup
+                    android:id="@+id/trend_RadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    android:background="@color/bg_trend_primary"
+                    android:gravity="center">
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/rb_btn1"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@drawable/trend_btn_selector"-->
+                        <!--android:textColor="@color/trend_text_color"-->
+                        <!--android:button="@null"-->
+                        <!--android:text="第一位"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:checked="true"/>-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/rb_btn2"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@drawable/trend_btn_selector"-->
+                        <!--android:textColor="@color/trend_text_color"-->
+                        <!--android:text="第二位"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_marginLeft="7dp"-->
+                        <!--android:button="@null"-->
+                        <!--/>-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/rb_btn3"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@drawable/trend_btn_selector"-->
+                        <!--android:textColor="@color/trend_text_color"-->
+                        <!--android:text="第三位"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_marginLeft="7dp"-->
+                        <!--android:button="@null"/>-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/rb_btn4"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@drawable/trend_btn_selector"-->
+                        <!--android:textColor="@color/trend_text_color"-->
+                        <!--android:text="第四位"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_marginLeft="7dp"-->
+                        <!--android:button="@null"/>-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/rb_btn5"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@drawable/trend_btn_selector"-->
+                        <!--android:textColor="@color/trend_text_color"-->
+                        <!--android:text="第五位"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_marginLeft="7dp"-->
+                        <!--android:button="@null"/>-->
+
+                </RadioGroup>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <com.pearl.view.trendchart.LeftNumberSynchScrollView
+                android:id="@+id/scroll_left"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <com.pearl.view.trendchart.LeftNumberCustomListView
+                        android:id="@+id/lv_number"
+                        android:layout_width="90dp"
+                        android:layout_height="fill_parent"/>
+                </LinearLayout>
+            </com.pearl.view.trendchart.LeftNumberSynchScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="20"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trenRecyclerview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                />
+
+            <com.pearl.view.trendchart.TrendScrollViewWidget
+                android:id="@+id/scroll_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                android:scrollbars="none">
+
+                <com.pearl.view.trendchart.TrendView
+                    android:id="@+id/vTrend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+            </com.pearl.view.trendchart.TrendScrollViewWidget>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

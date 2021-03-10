@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f7f7f7">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:id="@+id/vgHomeHead"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@mipmap/btn_login_new"
+                    android:text="立即登录"
+                    android:textColor="#fff"
+                    android:visibility="gone"/>
+
+                <com.youth.banner.Banner
+                    android:id="@+id/vBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:delay_time="3000"
+                    app:indicator_height="6dp"
+                    app:indicator_width="6dp"
+                    app:scroll_time="500" />
+
+                <com.noober.background.view.BLRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:elevation="2dp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="4dp"
+                    app:bl_corners_radius="5dp"
+                    app:bl_solid_color="@color/white">
+
+                    <ImageView
+                        android:id="@+id/ivuserIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@mipmap/home_user_icon" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_toRightOf="@+id/ivuserIcon"
+                        android:textSize="12dp"
+                        android:text="用户名：" />
+
+                    <TextView
+                        android:id="@+id/tvusername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_toRightOf="@+id/tv1"
+                        android:textSize="12dp"
+                        android:text="用户名"
+                        android:textColor="@color/blue_light" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv1"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12dp"
+                        android:layout_toRightOf="@+id/ivuserIcon"
+                        android:text="余    额：" />
+
+                    <TextView
+                        android:id="@+id/tvAccountYue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv1"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tv2"
+                        android:text="⏳..."
+                        android:textSize="12dp"
+                        android:textColor="@color/red_fa2727" />
+
+
+                    <ImageView
+                        android:id="@+id/IvZhuanzhang"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/home_zhuangzh" />
+
+                    <ImageView
+                        android:id="@+id/IvTixian"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toLeftOf="@+id/IvZhuanzhang"
+                        android:background="@mipmap/home_tixian" />
+
+                    <ImageView
+                        android:id="@+id/IvChongzhi"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_toLeftOf="@+id/IvTixian"
+                        android:background="@mipmap/home_charge" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/IvChongzhi"
+                        android:layout_alignBottom="@+id/tv3"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:layout_toLeftOf="@+id/IvChongzhi"
+                        android:background="@color/white_f7f7f7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/IvZhuanzhang"
+                        android:layout_alignLeft="@+id/IvZhuanzhang"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:text="转账"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/IvTixian"
+                        android:layout_alignLeft="@+id/IvTixian"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:text="提现"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/IvChongzhi"
+                        android:layout_alignLeft="@+id/IvChongzhi"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"
+                        android:text="充值"
+                        android:textSize="13dp" />
+
+
+                    <View
+                        android:id="@+id/line9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv3"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/white_f7f7f7" />
+
+                    <ImageView
+                        android:id="@+id/iv_gonggao"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/line9"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@mipmap/home_gonggao_blue"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                    <com.desheng.app.toucai.view.AnimTextView
+                        android:id="@+id/vMarquee"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/line9"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_toRightOf="@+id/iv_gonggao"
+                        android:layout_weight="1"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="5dp" />
+
+
+                    <TextView
+                        android:id="@+id/moreNotices"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/line9"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@mipmap/btn_login_new2"
+                        android:gravity="center"
+                        android:text="更多"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                </com.noober.background.view.BLRelativeLayout>
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="0.5dp"
+                    android:background="@drawable/shape_top_r6_white"
+                    android:overScrollMode="never"
+                    app:tabIndicatorColor="@color/blue_light"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabPaddingTop="5dp"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/blue_light"
+                    app:tabTextAppearance="@style/home_tab_style"
+                    app:tabTextColor="@color/gray_content" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/shape_bottom_r10_withe"
+                    >
+
+                    <com.desheng.app.toucai.view.CustomViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <FrameLayout
+            android:id="@+id/layout_new_misson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="120dp"
+            android:visibility="gone">
+
+            <include layout="@layout/view_icon_new_mission" />
+        </FrameLayout>
+
+    </RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

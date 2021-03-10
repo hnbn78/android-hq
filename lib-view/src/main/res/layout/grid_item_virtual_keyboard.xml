@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ab_white">
+
+    <TextView
+        android:id="@+id/btn_keys"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_gird_item"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="#333333"
+        android:textSize="32sp" />
+
+    <RelativeLayout
+        android:id="@+id/imgDelete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/ab_white"
+        >
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="46dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/keyboard_delete_img" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

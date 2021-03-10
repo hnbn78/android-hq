@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="汇总"
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:id="@+id/tv_status_name"
+            android:text="团队盈亏："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_foot_team_profit_lost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="分红金额："
+            android:id="@+id/tv_bonus_count_name"
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_foot_bonus_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+</LinearLayout>

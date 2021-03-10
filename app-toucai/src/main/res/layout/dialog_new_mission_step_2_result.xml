@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+            android:id="@+id/vgBg"
+            android:layout_width="300dp"
+            android:layout_height="408dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/bd_new_mission_one_result"
+        >
+
+       <TextView
+           android:id="@+id/tvAlready"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="124dp"
+           android:textColor="#CC2321"
+           android:textSize="@dimen/text_normal"
+           android:text="恭喜您已获取红包"/>
+
+        <Button
+            android:id="@+id/btnUse"
+            android:text="点击使用"
+            android:layout_below="@+id/tvAlready"
+            android:layout_marginTop="63dp"
+            style="@style/btn_mission"/>
+
+        <TextView
+            android:id="@+id/tvUseInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnUse"
+            android:textSize="@dimen/text_normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:text="跳转投注页开始投注吧!"/>
+
+        <Button
+            android:id="@+id/btnMore"
+            android:text="再领"
+            android:layout_below="@+id/tvUseInfo"
+            android:layout_marginTop="20dp"
+            style="@style/btn_mission"/>
+
+        <TextView
+            android:id="@+id/tvMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnMore"
+            android:textSize="@dimen/text_normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:text="继续完成任务,领取大奖!"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivDeleteBtn"
+        android:layout_below="@+id/vgBg"
+        style="@style/iv_mission_delete"/>
+
+</RelativeLayout>

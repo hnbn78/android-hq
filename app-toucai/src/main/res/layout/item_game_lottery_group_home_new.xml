@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vgLotteryGroupNew"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/dp_10">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        app:tabIndicatorColor="@color/red_ff2c66"
+        app:tabIndicatorHeight="2dp"
+        app:tabPaddingTop="5dp"
+        app:tabSelectedTextColor="@color/red_ff2c66"
+        app:tabTextAppearance="@style/indcatorTextStyle2"
+        app:tabTextColor="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/yellow_FFF3EA" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tabLayout"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

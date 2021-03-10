@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sh_bd_rec_gray_white_round"
+                android:paddingBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sh_bg_rect_primary_half_round"
+        android:gravity="center"
+        android:text="调整返点"
+        android:textColor="@color/textColorPrimaryInverse"/>
+
+    <LinearLayout
+        android:id="@+id/vgContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:text="账号："
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"/>
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_back_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgContent"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:text="当前返点："
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"/>
+
+        <TextView
+            android:id="@+id/tv_back_point"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vgCOntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_back_point"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/etPoint"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:hint="调整返点"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_normal"
+            />
+
+        <TextView
+            android:id="@+id/tvRange"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:text="0.0~0.0"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/vgCOntent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:maxWidth="80dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/sl_btn_primary_round_sh"
+            android:text="取消"
+            android:textColor="@color/textColorPrimaryInverse" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxWidth="80dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sl_btn_primary_round_sh"
+            android:text="确定"
+            android:textColor="@color/textColorPrimaryInverse" />
+    </LinearLayout>
+
+</RelativeLayout>

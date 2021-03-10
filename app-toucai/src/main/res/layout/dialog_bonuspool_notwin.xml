@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="315dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_bouns_pool_not_zhongjiang_1" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@mipmap/ic_delete_circle" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="再接再厉!"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/ll"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv1"
+            android:background="@drawable/shape_award_pool">
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/bg_in_the_whole"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="一等奖:1000000 (1名)"
+                    android:textColor="@color/yellow_light" />
+
+                <TextView
+                    android:id="@+id/tvFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="无"
+                    android:textColor="@color/yellow_light"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcfirstNames"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="二等奖:1000000 (1名)"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvsecondName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="无"
+                    android:textColor="@color/yellow_light"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcSecondNames"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/ll"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/bg_bouns_pool_not_zhongjiang_3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:text="奖金池还剩余金"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/leftBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8888.20"
+                android:textColor="@color/yellow_light"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/leftBonusTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本期派发奖励xxxxx元，剩余奖金将累积到下一期。"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

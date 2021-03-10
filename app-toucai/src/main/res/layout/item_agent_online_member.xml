@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    app:bl_corners_radius="5dp"
+    app:bl_solid_color="@color/red_ffdfd7"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/agent_username"
+            android:drawablePadding="6dp"
+            android:text="用户名 :" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:ellipsize="end"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="zhangsan"
+            android:textColor="@color/red" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/usertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/username"
+            android:maxWidth="180dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="2dp"
+            app:bl_solid_color="@color/red"
+            app:bl_corners_radius="3dp"
+            android:text="代理"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dingdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:text="订单"
+            android:textColor="@color/blue_2396f7" />
+
+        <TextView
+            android:id="@+id/zhangdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:text="账单"
+            android:textColor="@color/red_ff2c66" />
+
+
+    </LinearLayout>
+
+
+    <com.noober.background.view.BLRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:bl_corners_bottomLeftRadius="5dp"
+        app:bl_corners_bottomRightRadius="5dp"
+        app:bl_solid_color="@color/white">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="5dp"
+            android:text="余        额："
+            android:textColor="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/accountYue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/tv3"
+            android:text="0.0" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="最后登录："
+            android:textColor="@color/gray"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tvLastLoginTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@+id/status"
+            android:text="2019-9-16 12:15:39"
+            android:textColor="@color/gray"
+            android:textSize="13dp" />
+
+    </com.noober.background.view.BLRelativeLayout>
+</com.noober.background.view.BLRelativeLayout>

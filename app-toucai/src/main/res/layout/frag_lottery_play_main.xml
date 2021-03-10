@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivcoins"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/coins" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/contentView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f5f5f5"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.desheng.app.toucai.view.ImageViewScrollView
+                    android:id="@+id/sv_scroller"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false">
+
+                    <LinearLayout
+
+                        android:id="@+id/vgCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/kaijiangAnimate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.tencent.smtt.sdk.WebView
+                                android:id="@+id/kaijiangWebview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingRight="-33dp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tvTip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/gray_line"
+                                android:gravity="center"
+                                android:padding="7dp"
+                                android:text="下拉展示开奖动画"
+                                android:textColor="@color/gray_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lv_open_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:minHeight="50dp"
+                            android:orientation="vertical"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="-12.5dp">
+
+                            <include layout="@layout/view_lottery_play_open_card" />
+                        </FrameLayout>
+
+                        <!--奖池活动-->
+                        <com.desheng.app.toucai.view.AwardpoolViewModule
+                            android:id="@+id/award"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/vgContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp" />
+                    </LinearLayout>
+
+
+                </com.desheng.app.toucai.view.ImageViewScrollView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vgBottomGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:outlineProvider="bounds">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#FFFFFF"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/tvClear"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_lottery_play_bottom_panel_delete"
+                    android:visibility="gone" />
+
+                <com.desheng.app.toucai.view.PlayFootView
+                    android:id="@+id/vFootView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvClear" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btn_lottery_play_bottom_panel_add_order"
+                    android:gravity="center"
+                    android:text="添加单号"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.desheng.app.toucai.view.PlaySnakeView
+                android:id="@+id/vSnakeBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vgBottomGroup" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.5dp"
+                android:layout_gravity="bottom"
+                android:background="#EFEFEF"
+                android:clipChildren="false"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_bg_lhc_play_money_input_round"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="金额(元)"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#D9D9D9" />
+
+                    <EditText
+                        android:id="@+id/etMoney"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入金额"
+                        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:text="1"
+                        android:textColorHint="#CDCDCD"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <com.noober.background.view.BLFrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    app:bl_corners_radius="5dp"
+                    app:bl_solid_color="@color/orange">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="6dp"
+                        android:background="@mipmap/gwche" />
+
+                    <TextView
+                        android:id="@+id/tvShoppingCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="购物车"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_order_count"
+                        android:layout_width="18.5dp"
+                        android:layout_height="18.5dp"
+                        android:layout_gravity="right|top"
+                        android:background="@drawable/shape_oval_red"
+                        android:elevation="3dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+                </com.noober.background.view.BLFrameLayout>
+
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/tvjixuan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/suiji"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="机 选"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:bl_corners_radius="5dp"
+                    app:bl_solid_color="@color/dark_green" />
+
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/tvBuy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/touzhu"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="立即投注"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    app:bl_corners_radius="5dp"
+                    app:bl_solid_color="@color/red" />
+
+                <com.noober.background.view.BLTextView
+                    android:id="@+id/tvAddNum"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/tianjia"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="添加号码"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    app:bl_corners_radius="5dp"
+                    app:bl_solid_color="#2CADFF" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

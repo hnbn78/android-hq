@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/vgTitleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivTitleGroupBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="热门彩种"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_xxlarge"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvTitleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="5种彩种 劲爆2000模式"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_large"
+            />
+
+
+    </RelativeLayout>
+
+    <com.pearl.view.expandablelayout.SimpleExpandableLayout
+        android:id="@+id/elPlayExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <!--  <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsvPlayExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gvLottery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sh_rect_helf_white_white"
+                android:paddingBottom="10dp"/>
+
+        <!--</android.support.v4.widget.NestedScrollView>-->
+    </com.pearl.view.expandablelayout.SimpleExpandableLayout>
+</LinearLayout>

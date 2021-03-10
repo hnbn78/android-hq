@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:text="用 户 名 : "
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:text="昵  称 : "
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:text="彩票返点 : "
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_lottery_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:text="彩票余额 : "
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_lottery_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/headll"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="6dp"
+        android:layout_weight="1"
+        android:transcriptMode="normal" />
+
+    <LinearLayout
+        android:id="@+id/llAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/vgCOntent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sl_btn_primary_round_sh"
+            android:enabled="false"
+            android:text="增加"
+            android:textColor="@color/textColorPrimaryInverse" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

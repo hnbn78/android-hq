@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/awad_pool_bg" />
+
+    <TextView
+        android:id="@+id/dayTime"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/bg_time"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="00"
+        android:textColor="@color/yellow_light"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvTimeDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/dayTime"
+        android:padding="2dp"
+        android:text="天"
+        android:textColor="@color/yellow"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/hourTime"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/tvTimeDay"
+        android:background="@mipmap/bg_time"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="00"
+        android:textColor="@color/yellow_light"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvTimeHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/hourTime"
+        android:padding="2dp"
+        android:text="时"
+        android:textColor="@color/yellow"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/mmTime"
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/tvTimeHour"
+        android:background="@mipmap/bg_time"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="00"
+        android:textColor="@color/yellow_light"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tvTimeMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/mmTime"
+        android:padding="2dp"
+        android:text="分"
+        android:textColor="@color/yellow"
+        android:textSize="11dp" />
+
+    <com.desheng.app.toucai.view.ScrollingDigitalAnimation
+        android:id="@+id/awardPool"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/tvTimeMin"
+        android:gravity="center"
+        android:maxEms="9"
+        android:shadowColor="@color/ab_light_gray"
+        android:shadowDx="1"
+        android:shadowDy="8"
+        android:shadowRadius="8"
+        android:singleLine="true"
+        android:text="0.00"
+        android:textColor="@color/yellow_light"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/choujiang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getCodeNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即领码"
+            android:textColor="@color/red"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/awardCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0次)"
+            android:textColor="@color/red"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

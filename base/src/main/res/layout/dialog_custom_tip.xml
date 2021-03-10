@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sh_bd_rec_gray_white_round"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sh_bg_rect_primary_half_round"
+        android:gravity="center"
+        android:text="温馨提示"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/textColorPrimaryInverse"/>
+
+    <LinearLayout
+        android:id="@+id/vgContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_title"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/devider_h_normal"
+        android:layout_above="@+id/vgButton"/>
+
+    <LinearLayout
+        android:id="@+id/vgButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/vgContent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNegative"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:textSize="@dimen/text_title"
+            android:text="取消"
+            android:textColor="#888888"
+            />
+
+        <View
+            style="@style/devider_v_normal"/>
+
+        <Button
+            android:id="@+id/btnPositive"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="@dimen/text_title"
+            android:textColor="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

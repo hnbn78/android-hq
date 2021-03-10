@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentInsetStart="0.0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:background="@android:color/darker_gray"
+    android:theme="@style/ToolbarStyle"
+    >
+
+    <RelativeLayout
+        android:id="@+id/vgToolbarContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        >
+
+        <ImageButton
+            android:id="@+id/ibLeftBtn"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height"
+            android:padding="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:onClick="titleLeftClick"
+            android:src="@drawable/ic_back_black_arror"/>
+
+        <TextView
+            android:id="@+id/tvTitleLeft"
+            style="@style/main_content_text_style"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_toRightOf="@id/ibLeftBtn"
+           />
+
+        <TextView
+            android:id="@+id/tvTitleCenter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/iv_title_view"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:src="@mipmap/title_view"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/vgRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibRightBtn"
+                android:layout_width="@dimen/toolbar_height"
+                android:layout_height="@dimen/toolbar_height"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:visibility="invisible"
+                android:scaleType="centerCrop"
+                android:background="@null"
+                android:onClick="titleRightClick"
+                />
+
+            <TextView
+                android:id="@+id/tvRightBtn"
+                style="@style/main_content_text_style"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:onClick="titleRightClick"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

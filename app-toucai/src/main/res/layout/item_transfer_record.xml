@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/sh_bd_rec_gray_white_round"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_type"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_transfer_left_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dp_10"
+            android:text="注册"
+            android:textSize="@dimen/text_large" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="19dp"
+            android:layout_height="2.5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_im_left" />
+
+        <TextView
+            android:id="@+id/tv_transfer_right_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="IM体育"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_transfer_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="0dp"
+            android:textColor="@color/red_mine"
+            android:gravity="right"
+            android:text="600.00"
+            android:textSize="@dimen/text_xxlarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_amount"
+        android:layout_toRightOf="@+id/iv_type"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_transfer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_small"
+            android:text="2018-5-12 09:09"/>
+
+        <TextView
+            android:id="@+id/tv_transfer_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/red_mine"
+            android:text="转账成功"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

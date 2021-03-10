@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/vgType"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/vgBonusType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvAllBonusType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableRight="@mipmap/invert_triangle"
+                    android:text="红利类型"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tvBonusTypeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAllBonusType"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="全部" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/vgAllState"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvAllState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableRight="@mipmap/invert_triangle"
+                    android:text="状态"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tvStateName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAllState"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="全部" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/vgIssue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tvIssueLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="时间选择"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/btnFastChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/sh_stroke_bg_red_round_n"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="快选"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_normal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/time_relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="date"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/blue_mine" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_line" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="至" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="date"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/blue_mine" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_line" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/shape_round_corner_primary"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

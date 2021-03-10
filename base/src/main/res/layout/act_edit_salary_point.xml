@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sh_bd_rec_gray_white_round"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="用户名:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_name"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="可设置工资:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_private_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_02"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_normal" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:transcriptMode="normal"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:textColor="@color/red"
+        android:text="温馨提示：活跃人数若不需要则填0，下级日工资则是按照最低比例" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sl_btn_primary_round_sh"
+        android:text="增加"
+        android:textColor="@color/textColorPrimaryInverse" />
+
+</LinearLayout>

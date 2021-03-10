@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/real_name"
+            android:textColor="@color/text_333" />
+
+        <EditText
+            android:id="@+id/et_real_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_normal"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/please_input_real_name" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:paddingLeft="@dimen/dp_10"
+        android:background="@color/colorDevider" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_10"
+        android:visibility="gone"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/sex"
+            android:textColor="@color/text_333" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/check_secret"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/sl_checkbox_blue_check"
+                android:button="@null"
+                android:scaleType="fitXY"
+                android:textColor="@color/text_333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="@string/secrecy"
+                android:textColor="@color/text_333" />
+
+            <RadioButton
+                android:id="@+id/check_man"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/sl_checkbox_blue_check"
+                android:button="@null"
+                android:checked="true"
+                android:scaleType="fitXY"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tvMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="男"
+                android:textColor="@color/text_333" />
+
+            <RadioButton
+                android:id="@+id/check_woman"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/sl_checkbox_blue_check"
+                android:button="@null"
+                android:scaleType="fitXY"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tvWoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="女"
+                android:textColor="@color/text_333" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center_vertical"
+            android:text="女"
+            android:textColor="@color/text_333" />
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:visibility="gone"
+        android:background="@color/colorDevider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/def_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dp_10"
+        android:visibility="gone"
+        android:paddingStart="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/birth_date"
+            android:textColor="@color/text_333" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableRight="@mipmap/ic_common_arrow_down"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10"
+            android:text="@string/year" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableRight="@mipmap/ic_common_arrow_down"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10"
+            android:text="@string/mouth" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableRight="@mipmap/ic_common_arrow_down"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10"
+            android:text="@string/day" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_remind"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_4"
+            android:text="@string/remind"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="@string/realname_setting_info"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:background="@drawable/shape_round_corner_primary"
+        android:text="@string/sure"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

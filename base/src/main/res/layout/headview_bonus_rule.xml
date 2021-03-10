@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="我的分红规则"
+        android:textColor="@color/colorPrimaryInverse" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="用户类型" />
+
+        <TextView
+            android:id="@+id/tv_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="分红比例："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_bonus_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看"
+            android:textColor="@color/blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:layout_width="130dp"
+            android:text="分红要求消费天数："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_consume_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:layout_width="100dp"
+            android:text="每天最低日量："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_lowest_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+</LinearLayout>

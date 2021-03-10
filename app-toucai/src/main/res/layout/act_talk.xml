@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_content">
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/toolbar_bg" />
+
+    <RelativeLayout
+        android:id="@+id/vgToolbarContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_below="@+id/statusBar"
+        android:background="@drawable/toolbar_bg">
+
+        <ImageButton
+            android:id="@+id/ibLeftBtn"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back_circle_arrow_white" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="联系人"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/statusOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="在线"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgToolbarContent"
+        android:background="@color/bg_content"
+        android:layout_marginBottom="45dp"
+        android:overScrollMode="never"/>
+
+    <include
+        layout="@layout/include_reply_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/flSeePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:visibility="gone"
+        >
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/photoview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_40"/>
+
+        <ImageView
+            android:id="@+id/ivcancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginRight="25dp"
+            android:background="@mipmap/icon_cancel"/>
+    </RelativeLayout>
+</RelativeLayout>

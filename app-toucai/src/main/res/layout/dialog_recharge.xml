@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#66000000"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sh_bd_rec_gray_white_round"
+        >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="转入"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large"/>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_back_gray_delete"/>
+
+        <View
+            style="@style/devider_h_light"
+            android:layout_below="@+id/tvTitle"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/vgCOntent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvCanLab"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:text="可转出金额(元)"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/text_large"
+                />
+
+            <TextView
+                android:id="@+id/tvCanAccount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:text="0.000元"
+                android:textSize="@dimen/text_large"
+                android:textColor="#4d9efe"
+                />
+
+            <View
+                style="@style/devider_h_light"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tvOutLab"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:text="转入金额(元)"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/text_large"
+                />
+
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="请输入转账金额"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/text_large"
+                />
+
+            <View
+                style="@style/devider_h_light"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tvFunPwdLab"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:text="资金密码"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/text_large"
+                />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="请输入您的资金密码"
+                android:inputType="numberPassword"
+                android:textSize="@dimen/text_large"
+                />
+
+            <View
+                style="@style/devider_h_light"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/vgCOntent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/sl_btn_primary_round_sh"
+            android:text="确定转入"
+            android:textColor="@color/textColorPrimaryInverse"
+            android:textSize="@dimen/text_large"
+            />
+    </RelativeLayout>
+</LinearLayout>

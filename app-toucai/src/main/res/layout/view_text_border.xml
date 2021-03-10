@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_shape_fillet_bg_main_5dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="10dp"
+    android:text="method"
+    android:textColor="@color/white_main_color"
+    android:textSize="@dimen/sp_16" />

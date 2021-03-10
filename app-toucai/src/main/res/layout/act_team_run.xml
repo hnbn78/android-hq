@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryInverse"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/vgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="3dp"
+
+
+        >
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+        <RadioButton
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_rb_bg"
+            android:text="@string/toady"
+            android:gravity="center"
+            android:button="@null"
+            />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/sl_rb_bg"
+            android:text="@string/neal_week"
+            android:gravity="center"
+            android:button="@null"
+            />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_rb_bg"
+            android:text="@string/neal_month"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_alignBaseline="@+id/button4"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgType"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/recharge_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/recharge"
+
+            />
+
+        <TextView
+            android:id="@+id/withdrawal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recharge_text"
+            android:padding="5dp"
+
+            android:text="@string/withdrawals" />
+
+        <TextView
+            android:id="@+id/consumption_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/withdrawal_text"
+            android:padding="5dp"
+
+            android:text="@string/consumption" />
+
+        <TextView
+            android:id="@+id/send_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/consumption_text"
+            android:padding="5dp"
+
+
+            android:text="@string/send_the_prirce" />
+
+        <TextView
+            android:id="@+id/return_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/send_price_text"
+            android:padding="5dp"
+            android:text="@string/return_dispoint" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_second"
+
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/price_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/price"
+
+            />
+
+        <TextView
+            android:id="@+id/price_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/price_one"
+            android:padding="5dp"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/price_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/price_two"
+            android:padding="5dp"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/price_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/price_three"
+            android:padding="5dp"
+            android:text="@string/price" />
+
+        <TextView
+            android:id="@+id/price_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/price_four"
+            android:padding="5dp"
+            android:text="@string/price" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/team_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_layout"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_member_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_member_text" />
+
+            <TextView
+                android:id="@+id/team_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_member_online" />
+
+            <TextView
+                android:id="@+id/team_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_member_total" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team_member">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+            <RadioGroup
+                android:id="@+id/RadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <RadioButton
+                android:id="@+id/btRecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/sl_rb_bg"
+                android:text="@string/recharge"
+                android:button="@null"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="wrap_content">
+
+            </View>
+
+
+            <RadioButton
+                android:id="@+id/btWithdrawals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/sl_rb_bg"
+                android:text="@string/withdrawals"
+                android:button="@null"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="wrap_content">
+
+            </View>
+
+            <RadioButton
+                android:id="@+id/btBetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/sl_rb_bg"
+                android:text="@string/betting_liang"
+                android:button="@null"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="wrap_content">
+
+            </View>
+
+            <RadioButton
+                android:id="@+id/btReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/sl_rb_bg"
+                android:text="@string/return_send_price"
+                android:gravity="center"
+                android:button="@null"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="wrap_content">
+
+            </View>
+            <RadioButton
+                android:id="@+id/btActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/sl_rb_bg"
+                android:text="@string/activity"
+                android:button="@null"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="wrap_content">
+
+            </View>
+            <RadioButton
+                android:id="@+id/btReturnPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/sl_rb_bg"
+                android:text="@string/return_dispoint"
+                android:button="@null"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="wrap_content">
+
+            </View>
+            <RadioButton
+                android:id="@+id/new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/sl_rb_bg"
+                android:text="@string/new_add"
+                android:button="@null"
+                android:gravity="center"
+                />
+            </RadioGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shark.tc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.desheng.app.toucai.global.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="BUILD_DATE"
+            android:value="${BUILD_DATE}" /> <!--渠道号，多渠道这里使用了占位符$-->
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLoading"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash_1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <data android:scheme="growing.67fdfd0ee2010f07" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBindBankCardDialog"
+            android:theme="@style/DialogTheme2" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActGuidePageTouCai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRegist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRegistTouCai"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRegistTouCaiSuccess"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBindPhone"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBindEmail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAddFavorite"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBetRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBindBankCardToucai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBankCardListTouCai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBetRecordSearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActChaseIssueList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActChaseRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActChaseRecordDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBetRecordDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryPlay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryPlayJD"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryPlayLHC"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActTransferrecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActFastCharge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActDeposit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActFundRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActBankChooseList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActDepositDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActDepositNextQR"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActDepositNextThird"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActDepositNextTrans"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.GifActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActSafeCenter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRecoverPasswordStart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRecoverPasswordIndex"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRecoverPasswordChange"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRecoverPasswordPhone"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActFundsManagment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryLHC"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActThirdGameMain"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActThirdTransferFastNew"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActTransferThird"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActThirdTransferRecordList"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActThirdGameRecordTouCai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <!--<activity-->
+        <!--android:name="com.desheng.app.toucai.panel.ActUserMsgList"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustNothing" />-->
+
+        <!--<activity-->
+        <!--android:name="com.desheng.app.toucai.panel.ActUserMsgDetail"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:windowSoftInputMode="adjustNothing" />-->
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActWithdrawalsTouCai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActWithdrawals"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActSettingNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActInput"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActEditAccount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActMoreSetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAboutToucai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActHelpAndFeedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActFeedBackAward"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAllQuestion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActNoticeSetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActSecuritySetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActChangePassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActSettingFundsPwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActEditPhoneOrEmail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAccountSetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <receiver
+            android:name="com.desheng.app.toucai.global.AppUmengPushHandler$NotificationReceiver"
+            android:exported="false" />
+
+
+        <activity
+            android:name="com.ab.view.ActMaterialDialog"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActDialog_FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.ab.action.toucai.showDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ab.action.toucai.hideDialog" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryPlayLHCHistory"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryCartTouCai"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActUserContract"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActChaseRecordSearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActThirdGameRecordNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActPhoneModify"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActPhone"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActPhoneModifyOld"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActUpdateContentList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActUpdateContentDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryMain"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActSuperPartner"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActShare"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActProfitRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActShareAndSuperPartner"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!--注册-->
+        <service
+            android:name="com.desheng.app.toucai.service.ImJobservice"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActContacts"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActChoujiangListDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActWebX5"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActTeamCenter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActTeamErweima"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActGudongIncomes"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActTouzhuDetal"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentCenter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentTeamOverShow"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentOpenAccountCenter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentTeamReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentMemberManage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentTeamAccountChangeRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentTeamLotteryCenter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentThirdTeamReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentDividentManagent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentFenhong"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentShengdian"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentZhuanzhang"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAgentTeamBetDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActTeamOverlook"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <receiver android:name="com.desheng.app.toucai.receiver.AlarmReceiver" />
+
+        <service android:name="com.desheng.app.toucai.service.SocketIOKeppService" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActTalk"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActCQ9game"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRechargePay"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActLotteryReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActWithdrawalsList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActSalaryMenage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActSalary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActPlayMethod"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRechargeSuccessInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActRechargeSuccessByQr"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActHomeNotice"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActHomeNoticeDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActOnlineMember"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActPersonalAccountChangeRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActXunibiCharge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActAddXunibiPocketAddress"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActXunibiWithdraw"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.app.toucai.panel.ActDayDivident"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+    </application>
+
+</manifest>

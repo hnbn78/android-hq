@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvHowModify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:text="如何修改会员登陆密码"
+        android:textColor="@color/text_666" />
+
+    <TextView
+        android:id="@+id/tvHowFindBack"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:text="如何找回密码"
+        android:textColor="@color/text_666" />
+
+    <TextView
+        android:id="@+id/tvHowEditInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:text="如何编辑个人资料"
+        android:textColor="@color/text_666" />
+
+    <TextView
+        android:id="@+id/tvHowBind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:text="如何绑定手机号/邮箱"
+        android:textColor="@color/text_666" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_all_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_setting_question" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="全部问题" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@color/gray"></View>
+
+        <LinearLayout
+            android:id="@+id/layout_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_setting_feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="有奖反馈" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@color/gray"></View>
+
+        <LinearLayout
+            android:id="@+id/layout_kefu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ic_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_setting_kefu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="客服" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

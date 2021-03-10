@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:id="@+id/layout_min_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="最低团队流水"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/et_min_count"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+        <TextView
+            android:id="@+id/et_min_count_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="@dimen/text_normal"
+            android:text="x1000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_active_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="活跃人数"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/et_active_count"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="比例"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal" />
+
+        <EditText
+            android:id="@+id/et_rate"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/sh_bd_rect_primary_round_unchecked"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/tv_has_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="已签约"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

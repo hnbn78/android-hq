@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:shrinkColumns="0,1,2"
+    android:stretchColumns="0,1,2,3">
+
+    <TableRow>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_da"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="大肖"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_xiao"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="小肖"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_nan"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="男肖"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_nv"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="女肖"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_jimei"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="吉美生肖"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_xiongchou"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="凶丑生肖"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_yin"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="阴性生肖"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_yewai"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="野外生肖"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_jianei"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="家内生肖"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <Button
+                android:id="@+id/btn_yang"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_bar"
+                android:text="阳性生肖"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+
+        <FrameLayout android:layout_span="2">
+
+            <Button
+                android:id="@+id/btn_wuxing_jin"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_long_bar"
+                android:text="五行属金-猴鸡"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout android:layout_span="2">
+
+            <Button
+                android:id="@+id/btn_wuxing_mu"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_long_bar"
+                android:text="五行属木-虎兔"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+
+        <FrameLayout android:layout_span="2">
+
+            <Button
+                android:id="@+id/btn_wuxing_shui"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_long_bar"
+                android:text="五行属水-鼠猪"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout android:layout_span="2">
+
+            <Button
+                android:id="@+id/btn_wuxing_huo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_long_bar"
+                android:text="五行属火-蛇马"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow android:paddingTop="8dp">
+
+
+        <FrameLayout android:layout_span="2">
+
+            <Button
+                android:id="@+id/btn_wuxing_tu"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_bg_lhc_quick_play_btn_long_bar"
+                android:text="五行属土-牛龙羊狗"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </TableRow>
+</TableLayout>

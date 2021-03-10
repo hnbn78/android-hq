@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="我的分红详情"
+        android:textColor="@color/colorPrimaryInverse" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="团队盈亏金额: " />
+
+        <TextView
+            android:id="@+id/tv_team_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="应得分红："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_should_get_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="已收到分红："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_has_received_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="分红时间："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_bonus_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="应派发分红："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_should_send_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="已派发分红："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_has_send_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textColorSecondary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <TextView
+            style="@style/text_chase_detail_style"
+            android:text="未派发分红："
+            android:textColor="@color/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/tv_not_send_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.365"
+            android:textColor="@color/textColorSecondary" />
+
+        <Button
+            android:id="@+id/btn_distribute_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:background="@drawable/sh_bd_rec_gray_blue_round"
+            android:text="派发分红"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/vgIssue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/time_relativelayout"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center"
+            android:hint="用户名"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sh_edit_bg_round_n"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/sl_btn_primary_sh"
+            android:text="@string/search"
+            android:textColor="@color/search_backcolor" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_ling"
+        style="@style/devider_h_dark"
+        android:layout_below="@+id/vgInfo"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

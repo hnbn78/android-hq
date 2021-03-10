@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@+id/registScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/bgPercentLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/ivBg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rejist_bg_height"
+                android:scaleType="fitXY"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/vBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <LinearLayout
+                    android:id="@+id/vgContentGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sh_bd_rec_white_white_round"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+                        <RelativeLayout
+                            android:id="@+id/vgUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_regist_edit_blank"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/etAccount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/ivAccountValidate"
+                                android:background="@null"
+                                android:hint="输入6-10位用户名"
+                                android:inputType="text"
+                                android:paddingLeft="48dp"
+                                android:textColor="@color/text_login"
+                                android:textColorHint="#999999"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/ivAccount"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/ic_login_user" />
+
+
+                            <ImageView
+                                android:id="@+id/ivAccountValidate"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivAccountDelete"
+                                android:src="@mipmap/ic_allright"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivAccountDelete"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/ic_login_delete"
+                                android:visibility="invisible" />
+
+                            <View
+                                style="@style/devider_h_light"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/vgPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/bg_regist_edit_blank">
+
+                            <EditText
+                                android:id="@+id/etPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/ivPhoneValidate"
+                                android:background="@null"
+                                android:hint="输入真实手机号码"
+                                android:inputType="phone"
+                                android:paddingLeft="48dp"
+                                android:textColor="@color/text_login"
+                                android:textColorHint="#999999"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/ivPhone"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/ic_login_phone" />
+
+
+                            <ImageView
+                                android:id="@+id/ivPhoneValidate"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivPhoneDelete"
+                                android:src="@mipmap/ic_allright"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivPhoneDelete"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/ic_login_delete"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/vgPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/vgUserName"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_regist_edit_blank">
+
+
+                            <EditText
+                                android:id="@+id/etPwd"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/ivPwdValidate"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="输入6-24位数密码"
+                                android:inputType="textPassword"
+                                android:paddingLeft="48dp"
+                                android:text=""
+                                android:textColor="@color/text_login"
+                                android:textColorHint="#999999"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/ivPwd"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/ic_login_password" />
+
+                            <ImageView
+                                android:id="@+id/ivPwdValidate"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivPwdDelete"
+                                android:src="@mipmap/ic_allright"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivPwdDelete"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivPwdShow"
+                                android:src="@mipmap/ic_login_delete"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivPwdShow"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/ic_pwd_clear" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/vgRePassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/vgUserName"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_regist_edit_blank"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/etRePwd"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/ivRePwdValidate"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="请再次确认密码"
+                                android:inputType="textPassword"
+                                android:paddingLeft="48dp"
+                                android:text=""
+                                android:textColor="@color/text_login"
+                                android:textColorHint="#999999"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/ivRePwd"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/ic_login_password" />
+
+                            <ImageView
+                                android:id="@+id/ivRePwdValidate"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivRePwdDelete"
+                                android:src="@mipmap/ic_allright"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivRePwdDelete"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivRePwdShow"
+                                android:src="@mipmap/ic_login_delete"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivRePwdShow"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/ic_pwd_clear" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/vgInviteCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/vgRePassword"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_regist_edit_blank">
+
+                            <EditText
+                                android:id="@+id/etInviteCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:hint="请输入推荐码(非必填)"
+                                android:inputType="text"
+                                android:paddingLeft="48dp"
+                                android:text=""
+                                android:textColor="@color/text_login"
+                                android:textColorHint="#999999"
+                                android:textSize="16dp" />
+
+                            <ImageView
+                                android:id="@+id/ivInviteCode"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/ic_rejest_invite_code" />
+
+                            <ImageView
+                                android:id="@+id/ivInviteCodeDelete"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/ic_login_delete"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/vgSmsCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/vgRePassword"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_regist_edit_blank">
+
+                            <EditText
+                                android:id="@+id/etSmsCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/tvSmsCode"
+                                android:layout_toRightOf="@+id/ivSmsCode"
+                                android:background="@null"
+                                android:hint="输入手机验证码"
+                                android:inputType="text"
+                                android:maxLength="16"
+                                android:paddingLeft="48dp"
+                                android:paddingTop="@dimen/dp_10"
+                                android:paddingBottom="@dimen/dp_10"
+                                android:textColor="@color/text_login"
+                                android:textColorHint="#999999"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/ivSmsCode"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/iv_sms_code" />
+
+                            <ImageView
+                                android:id="@+id/ivSmsCodeValidate"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/ivSmsDelete"
+                                android:src="@mipmap/ic_allright"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivSmsDelete"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/view_line"
+                                android:src="@mipmap/ic_login_delete"
+                                android:visibility="invisible" />
+
+                            <View
+                                android:id="@+id/view_line"
+                                android:layout_width="1dp"
+                                android:layout_height="18dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/tvSmsCode"
+                                android:background="#a8a8a8" />
+
+                            <TextView
+                                android:id="@+id/tvSmsCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:minWidth="100dp"
+                                android:text="获取验证码"
+                                android:textColor="#686868"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/vgVerify"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/vgRePassword"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_regist_edit_blank"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/etVerify"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/ivVercifyCode"
+                                android:background="@null"
+                                android:hint="验证码"
+                                android:inputType="text"
+                                android:maxLength="16"
+                                android:paddingLeft="48dp"
+                                android:paddingTop="@dimen/dp_10"
+                                android:paddingBottom="@dimen/dp_10"
+                                android:textColor="@color/text_login"
+                                android:textColorHint="#999999"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/ivVercifyLab"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/iv_sms_code" />
+
+                            <ImageView
+                                android:id="@+id/ivVercifyCodeValidate"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivVercifyCodeDelete"
+                                android:src="@mipmap/ic_allright"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivVercifyCodeDelete"
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/ivVercifyCode"
+                                android:src="@mipmap/ic_login_delete"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/ivVercifyCode"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:scaleType="fitXY" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vgAgreement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.pearl.view.ToggleImageButton
+                                android:id="@+id/cbAgreement"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="14dp"
+
+                                android:background="@drawable/sl_checkbox_blue_check"
+                                android:checked="true"
+                                android:scaleType="fitXY"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_small" />
+
+                            <TextView
+                                android:id="@+id/tvAgreement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:text="阅读并接受头彩用户协议"
+                                android:textColor="#666666"
+                                android:textSize="@dimen/text_normal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvLoginInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/vgVerify"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_normal"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvRegistBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/tvLoginInfo"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:background="@drawable/sl_btn_login_red_oval"
+                            android:gravity="center"
+                            android:text="立即注册"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_xlarge" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/vgRegistBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toLeftOf="@+id/tvOtherRegistLab"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvOtherRegistLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center"
+                    android:text="其他注册方式"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_large" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/tvOtherRegistLab"
+                    android:background="@color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvOtherRegistLab"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/bg_regist_bottom">
+
+                    <ImageView
+                        android:id="@+id/ivRegistType"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="2dp"
+                        android:padding="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_regist_type_account" />
+
+                    <TextView
+                        android:id="@+id/tvRegistType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivOneKey"
+                        android:layout_alignLeft="@+id/ivRegistType"
+                        android:layout_alignRight="@+id/ivRegistType"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="账号注册"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal" />
+
+                    <ImageView
+                        android:id="@+id/ivOneKey"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="35dp"
+                        android:padding="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_regist_customer" />
+
+                    <TextView
+                        android:id="@+id/tvOneKey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivOneKey"
+                        android:layout_alignLeft="@+id/ivOneKey"
+                        android:layout_alignRight="@+id/ivOneKey"
+                        android:gravity="center"
+                        android:text="在线客服"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal" />
+
+                </RelativeLayout>
+
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

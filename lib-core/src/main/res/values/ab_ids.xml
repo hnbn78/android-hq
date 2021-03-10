@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_int_tag" type="id" />
+    <item name="id_string_tag" type="id" />
+    <item name="id_object_tag" type="id" />
+    <item name="id_img_url_tag" type="id" />
+</resources>

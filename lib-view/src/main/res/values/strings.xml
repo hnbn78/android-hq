@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">lib-view</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">松开开刷新</string>
+    <string name="listview_loading">加载中...</string>
+    <string name="nomore_loading">没有更多可加载了</string>
+    <string name="refreshing">刷新...</string>
+    <string name="refresh_done">刷新完毕</string>
+    <string name="loading_done">加载完毕</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+
+    <string name="timepicker_year">年</string>
+    <string name="timepicker_month">月</string>
+    <string name="timepicker_day">日</string>
+    <string name="timepicker_hour">时</string>
+    <string name="timepicker_min">分</string>
+    <string name="timepicker_title">选择时间</string>
+    <string name="timepicker_finish">确认</string>
+    <string name="timepicker_title_default">设置</string>
+</resources>

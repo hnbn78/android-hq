@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_lottery_name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="彩种"
+        android:textColor="#323232"
+        android:paddingLeft="3dp"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_valid_bet_amount"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="有效投注额"
+        android:textColor="#323232"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_award_amount"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="中奖总额"
+        android:textColor="#323232"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_profit_amount"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="盈利总额"
+        android:textColor="#2396f7"
+        android:textSize="12sp"/>
+</LinearLayout>

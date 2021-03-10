@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:bl_solid_color="@color/white"
+    app:bl_stroke_color="@color/gray_line"
+    app:bl_stroke_width="0.5dp">
+
+    <RelativeLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solid_white_border_1dp">
+
+        <ImageView
+            android:id="@+id/iv_zodiac_header"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="2dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/bg_lhc_zodiac_header_sxgou" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="鼠"
+            android:textColor="@color/gray_bold"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_odds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:text="1.96"
+            android:textColor="#8E5023"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/glDigits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alignmentMode="alignBounds"
+        android:clipChildren="false"
+        android:columnCount="6"
+        android:rowCount="1"
+        android:useDefaultMargins="true" />
+
+</com.noober.background.view.BLLinearLayout>

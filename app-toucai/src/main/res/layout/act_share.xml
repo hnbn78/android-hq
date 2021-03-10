@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="135dp"
+        android:background="@drawable/shape_retange_r5_huoheren"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="82dp"
+        android:background="@mipmap/button_app_actshare"
+        android:onClick="onSharedClick"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</RelativeLayout>

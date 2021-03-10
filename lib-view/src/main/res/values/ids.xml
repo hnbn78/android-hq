@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="non_slidable_view" type="id" />
+    <item name="slidable_view" type="id" />
+    <item name="sliding_drawer_collapsed_view" type="id" />
+    <item name="ab_sliding_view_pager" type="id" />
+    <item name="mz_banner_item_tag" type="id"/>
+    <item name="mz_banner_shadow_tag" type="id"/>
+    <item name="mz_banner_imag_tag" type="id"/>
+</resources>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_b0_r8_white"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="投注时间:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg_b1_r5_gray"
+            android:drawableRight="@mipmap/ic_common_arrow_down"
+            android:paddingLeft="3dp"
+            android:gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tvStopTime"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg_b1_r5_gray"
+            android:drawableRight="@mipmap/ic_common_arrow_down"
+            android:paddingLeft="3dp"
+            android:gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/kuanselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_retange_r5_red_b1"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="快 选"
+            android:textColor="@color/red_ff2c66"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_b0_r8_white"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="用  户  名:"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/tvUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg_b1_r5_gray"
+            android:padding="3dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_retange_r5_red"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="查 询"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll2"
+        android:layout_marginBottom="50dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcTeamDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:paddingTop="7dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/img_empty"
+                android:text="无数据"/>
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll2"
+        android:layout_marginBottom="50dp"
+        >
+
+        <TextView
+            android:id="@+id/tvEmptyview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@mipmap/img_empty"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="无数据..."
+            android:textColor="@color/gray_content"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/betSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="有效投注总额"
+                android:textColor="@color/gray_content"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paijiangSun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="派奖总额"
+                android:textColor="@color/gray_content"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fandianSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="返点总额"
+                android:textColor="@color/gray_content"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

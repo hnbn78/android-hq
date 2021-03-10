@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SimpleExpandableLayout">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_parallax" format="float" />
+        <attr name="android:orientation"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToggleImageButton">
+        <attr name="android:checked" />
+    </declare-styleable>
+
+	<declare-styleable name="MoreTextStyle">
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="maxLine" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TimelyView">
+        <attr name="text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsTextColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="reference" />
+        <attr name="pstsIndicatiorWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeView">
+        <attr name="marqueeAnimDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleMarqueeView">
+        <attr name="smvTextColor" format="reference|color" />
+        <attr name="smvTextSize" format="dimension" />
+        <!--https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/attrs.xml-->
+        <attr name="smvTextGravity">
+            <!-- Push object to the top of its layout, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its layout, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its layout, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its layout, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its layout, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Grow the vertical size of the object if needed so it completely fills its layout. -->
+            <flag name="fill_vertical" value="0x70" />
+            <!-- Place object in the horizontal center of its layout, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Grow the horizontal size of the object if needed so it completely fills its layout. -->
+            <flag name="fill_horizontal" value="0x07" />
+            <!-- Place the object in the center of its layout in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its layout. -->
+            <flag name="fill" value="0x77" />
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its layout's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80" />
+            <!-- Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its layout's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08" />
+            <!-- Push object to the beginning of its layout, not changing its size. -->
+            <flag name="start" value="0x00800003" />
+            <!-- Push object to the end of its layout, not changing its size. -->
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="smvTextSingleLine" format="boolean" />
+        <!-- Where to ellipsize text. -->
+        <attr name="smvTextEllipsize">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="OneLineMarqueeView">
+        <attr name="marqueeview_repet_type" format="enum">
+            <enum name="repet_oncetime" value="0"/><!-- 播放一次 -->
+            <enum name="repet_interval" value="1"/>  <!--连续播放 循环结束再继续下次循环-->
+            <enum name="repet_continuous" value="2"/>  <!--连续播放 到末尾直接继续下次循环-->
+        </attr><!--循环模式-->
+
+        <attr name="marqueeview_text_distance" format="integer"/><!--每个item之间的距离-->
+        <attr name="marqueeview_text_startlocationdistance" format="float"/><!--开始的起始位置 按距离控件左边的百分比 0~1之间 -->
+
+        <attr name="marqueeview_text_speed" format="float"/><!--播放速度 也就是文字滚动速度-->
+        <attr name="marqueeview_text_color" format="color|reference"/><!-- 文字颜色 -->
+        <attr name="marqueeview_text_size" format="float"/><!-- 文字大小 -->
+
+        <attr name="marqueeview_isclickalbe_stop" format="boolean"/><!--是否点击暂停-->
+        <attr name="marqueeview_is_resetLocation" format="boolean"/><!--重新改变内容的时候 ， 是否初始化 位置，默认为true，改变-->
+    </declare-styleable>
+
+    <declare-styleable name="DrawableTextView">
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+        <attr name="space" format="dimension"/>
+        <attr name="imageWidthLeft" format="dimension"/>
+        <attr name="imageHightLeft" format="dimension"/>
+        <attr name="imageWidthTop" format="dimension"/>
+        <attr name="imageHightTop" format="dimension"/>
+        <attr name="imageWidthRight" format="dimension"/>
+        <attr name="imageHightRight" format="dimension"/>
+        <attr name="imageWidthBottom" format="dimension"/>
+        <attr name="imageHightBottom" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MZBannerView">
+        <attr name="open_mz_mode" format="boolean"/>
+        <attr name="canLoop" format="boolean"/>
+        <attr name="indicatorPaddingLeft" format="dimension"/>
+        <attr name="indicatorPaddingRight" format="dimension"/>
+        <attr name="indicatorPaddingTop" format="dimension"/>
+        <attr name="indicatorPaddingBottom" format="dimension"/>
+        <attr name="indicatorAlign">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="middle_page_cover" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="JellyRefreshLayout">
+        <attr name="jellyColor" format="color"/>
+        <attr name="headerHeight" format="dimension"/>
+        <attr name="pullMaxHeight" format="dimension"/>
+        <attr name="triggerHeight" format="dimension"/>
+        <attr name="secondarytriggerHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

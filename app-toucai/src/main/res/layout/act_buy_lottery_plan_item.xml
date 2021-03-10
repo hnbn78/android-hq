@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/qishu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+
+        <TextView
+            android:id="@+id/lottery_qishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lottery_account" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:text="14:50:45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgCellContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qishu_layout"
+        android:padding="5dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/today"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_one" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/button4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_two" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/button5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_three" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/number"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_three" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/number_show"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_three" />
+        </RadioGroup>
+
+    </RelativeLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/title"
+    android:text="@string/frist_ball"
+    android:layout_centerHorizontal="true"
+      android:layout_below="@+id/vgCellContent"
+    android:padding="5dp"
+    />
+    <RelativeLayout
+        android:id="@+id/relative_lottery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:padding="5dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/second_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/RadioButton_one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_one" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_two" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_three" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_four"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_three" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_five"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/button4"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sl_rb_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/plan_three" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</RelativeLayout>

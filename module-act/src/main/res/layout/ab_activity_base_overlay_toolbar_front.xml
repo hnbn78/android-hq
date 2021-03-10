@@ -1,0 +1,27 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/vgRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/flContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <include layout="@layout/ab_view_base_toolbar"/>
+
+        <View
+            android:id="@+id/vFakeStatusBg"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:alpha="0.1"
+            android:background="#000"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+</layout>

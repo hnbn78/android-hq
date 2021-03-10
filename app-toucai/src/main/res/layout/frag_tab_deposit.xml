@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             android:orientation="vertical"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlDepositRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rgWithdrawTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbThird"
+                    style="@style/RadioButton_Accent_Checked"
+                    android:layout_width="90dp"
+                    android:text="在线支付" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rbTrans"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="90dp"
+                    android:text="转账" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rbQR"
+                    style="@style/RadioButton_Accent_UnChecked"
+                    android:layout_width="100dp"
+                    android:text="扫码" />
+
+            </RadioGroup>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/vgRechargeContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="50dp"
+                    android:orientation="vertical"
+                    >
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_height="10dp"/>
+
+                    <android.support.v7.widget.GridLayout
+                        android:id="@+id/glPayCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="150dp"
+                        android:padding="10dp"
+                        app:alignmentMode="alignBounds"
+                        app:columnCount="2"
+                        app:useDefaultMargins="true"
+                        >
+
+                    </android.support.v7.widget.GridLayout>
+
+                    <View
+                        style="@style/devider_h_light"
+                        android:layout_height="10dp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/vgBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:visibility="visible"
+                        >
+
+                        <View
+                            style="@style/devider_h_light"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvBank_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:text="开户银行:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvBankSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/tvBank_select"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="5dp"
+                            android:text="请选择开户银行"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:id="@+id/tvicon"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingTop="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/recharge_arrow"
+                            />
+
+                        <View
+                            style="@style/devider_h_light"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="5dp"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvBank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="充值金额:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+
+                        <EditText
+                            android:id="@+id/etAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/colorPrimaryInverse"
+                            android:gravity="center_vertical"
+                            android:hint="请输入20-49999"
+                            android:inputType="number"
+                            android:paddingLeft="25dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/recycler_devider_margin_5dp">
+
+                        <Button
+                            android:id="@+id/btnMoney0"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/sh_bd_rec_gray_white"
+                            android:text="100"
+                            android:textSize="14sp"/>
+
+                        <Button
+                            android:id="@+id/btnMoney1"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/sh_bd_rec_gray_white"
+                            android:text="200"
+                            android:textSize="14sp"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btnMoney2"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/sh_bd_rec_gray_white"
+                            android:text="500"
+                            android:textSize="14sp"
+
+                            />
+
+                        <Button
+                            android:id="@+id/btnMoney3"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/sh_bd_rec_gray_white"
+                            android:text="1000"
+                            android:textSize="14sp"
+
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/vgMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvLeaveMessageLab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="附言:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"/>
+
+                        <EditText
+                            android:id="@+id/etMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/colorPrimaryInverse"
+                            android:gravity="center_vertical"
+                            android:hint="请输入附言"
+                            android:inputType="text"
+                            android:paddingLeft="25dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <Button
+                            android:id="@+id/btnNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/sl_btn_accent_img"
+                            android:text="@string/btn_next"
+                            android:textColor="@color/white"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/recharge_text"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/recharge_time"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <RelativeLayout
+                android:id="@+id/vgEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tvAnnounce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="抱歉, 平台充值已关闭!"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_large"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>
+

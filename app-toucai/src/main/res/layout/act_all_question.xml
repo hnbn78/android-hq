@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:text="账号设置"
+        android:textColor="@color/text_666" />
+
+    <TextView
+        android:id="@+id/tvDeposit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:text="充值提现"
+        android:textColor="@color/text_666" />
+
+    <TextView
+        android:id="@+id/tvLottery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:drawablePadding="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/dp_10"
+        android:paddingStart="@dimen/dp_10"
+        android:text="彩票投注"
+        android:textColor="@color/text_666" />
+
+
+</LinearLayout>

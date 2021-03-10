@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f7f7f7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="钱包类型" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:text="USDT(ERC20)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钱包地址" />
+
+        <EditText
+            android:id="@+id/pocketAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="请输入钱包地址"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/ivsaoma"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_pay_saoma" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资金密码" />
+
+        <EditText
+            android:id="@+id/withdrawPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="请输入资金密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/submit_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_40"
+        android:paddingLeft="80dp"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingRight="80dp"
+        android:paddingBottom="@dimen/dp_8"
+        android:text="立即添加"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_16"
+        app:bl_corners_radius="@dimen/dp_40"
+        app:bl_solid_color="@color/blue_light" />
+
+</LinearLayout>

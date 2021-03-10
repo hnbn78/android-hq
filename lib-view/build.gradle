@@ -1,0 +1,103 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 2
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    compile 'com.android.support:cardview-v7:25.3.1'
+
+    //gif
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+
+    //动画库
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.airbnb.android:lottie:2.3.0'
+    compile 'at.wirecube:additive_animations:1.6.2'
+
+    //一个Android TabLayout库  https://github.com/H07000223/FlycoTabLayout
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    //轻量侧滑菜单
+    compile 'net.simonvt.menudrawer:menudrawer:3.0.6'
+
+    //自动换行
+    compile 'com.hyman:flowlayout-lib:1.1.2'
+
+    //普通banner
+    compile 'com.youth.banner:banner:1.4.10'  //最新版本
+
+    //魅族中间两边缩放效果banner
+    //compile 'com.github.pinguo-zhouwei:MZBannerView:v2.0.2'
+
+    //recyclerview adapter
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+
+    //特效imageview https://github.com/gavinliu/ShapedImageView
+    compile 'cn.gavinliu.android.lib:ShapedImageView:0.8.5'
+
+    //圆角特效
+    compile 'com.skyline.widget:round-corner-layout:1.0.1'
+
+    //下拉刷新框架 https://github.com/scwang90/SmartRefreshLayout
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-1'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-1'//没有使用特殊Header，可以不加这行
+
+    //跑马灯
+    //compile 'com.gongwen:marqueelibrary:1.1.3'
+    //compile 'com.github.385841539:MarqueeView:1.0.0'
+
+    compile 'com.github.Cutta:GifView:1.1'
+    //伸缩布局
+    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+
+    //拖拽 https://github.com/h6ah4i/android-advancedrecyclerview
+    //implementation ('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.11.0@aar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile project(':lib-core')
+    testCompile 'junit:junit:4.12'
+
+    //图表控件
+    compile 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    compile 'com.teaanddogdog:mpandroidchartutil:1.0.3'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //一个可以自由定制外观、支持拖拽消除的MaterialDesign风格Android BadgeView
+    compile 'q.rorbin:badgeview:1.1.3'
+    compile 'com.wx.wheelview:wheelview:1.3.3'
+
+    compile 'com.jude:easyrecyclerview:4.2.3'
+
+    compile 'com.noober.background:core:1.5.9'
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.github.nanchen2251:CompressHelper:1.0.5'
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_chase_detail_style"
+                android:text="充值银行：" />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorSecondary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_chase_detail_style"
+                android:text="订单编号：" />
+
+            <TextView
+                android:id="@+id/tv_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorSecondary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_chase_detail_style"
+                android:text="姓名：" />
+
+            <TextView
+                android:id="@+id/tv_account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345hjsdfhaksdhfjl"
+                android:textColor="@color/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/tv_copy_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/shape_border1dp_corner3dp_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="复制" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_chase_detail_style"
+                android:text="账号：" />
+
+            <TextView
+                android:id="@+id/tv_bank_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/tv_copy_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/shape_border1dp_corner3dp_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="复制" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_chase_detail_style"
+                android:text="存入银行：" />
+
+            <TextView
+                android:id="@+id/tv_bank_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345hjsdfhaksdhfjl"
+                android:textColor="@color/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/tv_copy_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/shape_border1dp_corner3dp_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="复制" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_chase_detail_style"
+                android:text="存入金额：" />
+
+            <TextView
+                android:id="@+id/tv_recharge_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345hjsdfhaksdhfjl" />
+
+            <TextView
+                android:id="@+id/tv_copy_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/shape_border1dp_corner3dp_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="复制" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                style="@style/text_chase_detail_style"
+                android:text="附言：" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/tv_copy_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/shape_border1dp_corner3dp_gray"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="复制" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_return"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/sl_btn_primary_oval_sh"
+                android:text="返回"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_recharge_record"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/sl_btn_primary_oval_sh"
+                android:text="查看充值记录"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="充值注意事项:"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_constant_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>

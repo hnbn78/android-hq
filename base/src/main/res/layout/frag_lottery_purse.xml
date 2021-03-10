@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vgHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="期数"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/etIssueCount"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/tvMinus"
+                android:layout_alignTop="@+id/tvMinus"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvMinus"
+                android:background="@drawable/bg_et_chase_list_item_times_white"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="10"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="起始"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/etInit"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/tvMinus"
+                android:layout_alignTop="@+id/tvMinus"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvMinus"
+                android:background="@drawable/bg_et_chase_list_item_times_white"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="1"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="倍"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tvCountIntervalLab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="隔"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etCountInterval"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/tvMinus"
+                android:layout_alignTop="@+id/tvMinus"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvMinus"
+                android:background="@drawable/sh_bd_rec_gray_white"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="1"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCountIntervalLab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="期"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMaxLab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="最大"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etMax"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/tvMinus"
+                android:layout_alignTop="@+id/tvMinus"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvMinus"
+                android:background="@drawable/sh_bd_rec_gray_white"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="100"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMaxBei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="倍"
+                android:textColor="#333333"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvMultiBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sh_bd_rect_primary_normal"
+                android:gravity="center"
+                android:text="x"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPlusBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sh_bd_rec_gray_white"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etMulti"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvMinus"
+                android:background="@drawable/sh_bd_rec_gray_white"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="2"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvMultiLab3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="倍"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPercentLab1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="收益"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etPercent"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tvMinus"
+                android:background="@drawable/sh_bd_rec_gray_white"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="30"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPercentLab2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="#333333"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvBuild"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_chase_tab_build"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="生成"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            style="@style/devider_h_light"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

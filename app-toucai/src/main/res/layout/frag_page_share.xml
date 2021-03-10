@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_line">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/testTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bg_share_and_makemoney" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_b0_r8_white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目赚钱方式"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="15dp"
+                    android:background="@color/red_ff2c66"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMethod1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_makemoney_method_1"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_share_and_makemoney_poste" />
+
+            <TextView
+                android:id="@+id/tvTuiguang"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_btn_red_r30_solid"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="分享推广"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/sh_dash_gray_line_3dp"
+                android:layerType="software" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="15dp"
+                    android:background="@color/red_ff2c66"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMethod2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:text="推荐链接" />
+
+                <TextView
+                    android:id="@+id/TvLink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_light_gray_r5"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:padding="4dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvcopyLink"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_btn_red_r30_solid"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="复制链接"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

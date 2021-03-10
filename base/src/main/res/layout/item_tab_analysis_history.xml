@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fl="http://schemas.android.com/apk/res-fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/tvIssue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时时彩"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+
+
+        <FrameLayout
+            android:id="@+id/vgBalls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvIssue"
+            >
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:id="@+id/llSquareMisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="7dp"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                fl:orientation="horizontal"
+                fl:flowGravity="left"
+                fl:horizontalSpacing="10dp"
+                fl:verticalSpacing="5dp">
+
+            </com.zhy.view.flowlayout.FlowLayout>
+        </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llFuncs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vgBalls"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvChapian"
+                android:text="冠军和"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/gray"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tvChapian"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNum"
+                    android:text="00"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/gray"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvDaXiao"
+                    android:text="大"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDanSuang"
+                    android:text="单"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/gray"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvLongHuTitle"
+                android:text="1-5龙虎"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_small"
+                android:textColor="@color/gray"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tvLongHuTitle"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLongHu1"
+                    android:text=""
+                    style="@style/textview_analysis_history_info"/>
+
+
+                <TextView
+                    android:id="@+id/tvLongHu2"
+                    android:text=""
+                    style="@style/textview_analysis_history_info"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLongHu3"
+                    android:text=""
+                    style="@style/textview_analysis_history_info"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLongHu4"
+                    android:text=""
+                    style="@style/textview_analysis_history_info"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLongHu5"
+                    android:text=""
+                    style="@style/textview_analysis_history_info"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

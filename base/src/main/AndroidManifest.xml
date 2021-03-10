@@ -1,0 +1,297 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.desheng.base">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- 读写 权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+                     tools:ignore="ProtectedPermissions"/>
+
+    <!-- 通信权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 其他 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".panel.ActWebX5"
+            android:launchMode="standard"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="webview"
+                    android:scheme="desheng" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".panel.ActWeb"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.desheng.base.panel.ActBettingRecordList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActThirdGameRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActThirdTeamReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActChaseRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActChaseRecordList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActChaseDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+
+        <activity
+            android:name="com.desheng.base.panel.ActDepositRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryReport"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActAccountChangeRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActAddMoreLottery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActWithdrawalsRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActOpenAccount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+
+        <activity
+            android:name="com.desheng.base.panel.ActLinkManage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+
+        <activity
+            android:name="com.desheng.base.panel.ActBankCardList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActGameRecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActTeamAccountChange"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActBonusManage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActTeamOverlook"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActTeamOverlookUnion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActMemberManagement"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActBonus"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        
+        <activity
+            android:name="com.desheng.base.panel.ActBonusQingfeng"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActSalary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.desheng.base.panel.ActTransfer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <service android:name="com.desheng.base.service.FloatMonkService" />
+        <service android:name="com.desheng.base.service.FloatWorldClubService" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActTeamReports"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+
+        <activity
+            android:name="com.desheng.base.panel.ActBindBankCard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActChangeLoginPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActAboutUs"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.base.panel.ActHelpCenter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.desheng.base.panel.ActSetting"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActChangeFundPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActWithdrawals"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryOpen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryOpenHC"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryCart"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryChase"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryBuyPlan"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryKillNum"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActAnalysisMain"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActBroadList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActMessageList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActMessageDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActSendMessage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActLotteryTrend"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.desheng.base.panel.ActThirdTransfer"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".panel.ActLotteryDetail"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".panel.ActMemberManagementHETIANXIA"
+            android:screenOrientation="portrait" />
+        <activity android:name=".panel.ActBonusHETIANXIA"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".panel.ActBettingRecordListHETIANXIA"
+            android:screenOrientation="portrait"/>
+
+
+    </application>
+
+</manifest>

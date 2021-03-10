@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clipChildren="false"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="44dp"
+        />
+
+    <TextView
+        android:id="@+id/tvExtra"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorPrimary"
+        android:text=""/>
+
+    <com.pearl.view.jellyrefresh.JellyRefreshLayout
+        android:id="@+id/jelly_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvExtra"
+        android:elevation="4dp"
+        android:text="asdfasdf"
+        android:clipChildren="false"
+        app:headerHeight="48dp"
+        app:jellyColor="@color/colorPrimary"
+        app:pullMaxHeight="160dp"
+        app:triggerHeight="108dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/vgCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHestory"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:visibility="gone"
+                    android:background="@color/orange"
+                    android:text="历史面板"/>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="-50dp"
+                    android:padding="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/red"
+                    android:text="开奖的面板"/>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="asdfasfdasdfasdfasdfewqrwerafsdgvsdfhdgfnhgdxcvb"/>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </com.pearl.view.jellyrefresh.JellyRefreshLayout>
+
+
+</RelativeLayout>

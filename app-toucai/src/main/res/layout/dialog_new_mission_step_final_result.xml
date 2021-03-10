@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vgBg"
+        android:layout_width="274dp"
+        android:layout_height="390dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/bd_new_mission_one_result">
+
+        <TextView
+            android:id="@+id/tvAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="114dp"
+            android:text="恭喜您已获取红包"
+            android:textColor="#CC2321"
+            android:textSize="@dimen/text_normal" />
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/tvAlready"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/sh_bd_rect_mission_success"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tvUseInfo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="您已总共获得红包!"
+                android:textColor="#CC2B29"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tvUseInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUseInfo1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="0.5dp"
+                android:text="@string/new_mission_text"
+                android:textColor="#363636"
+                android:textSize="@dimen/text_normal" />
+
+            <Button
+                android:id="@+id/btnUse"
+                style="@style/btn_mission"
+                android:layout_marginTop="100dp"
+                android:text="点击使用" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivDeleteBtn"
+        style="@style/iv_mission_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

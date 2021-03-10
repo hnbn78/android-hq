@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/vgBindCard"
+        style="@style/vg_list_container"
+        >
+
+        <ImageView
+            android:id="@+id/imicon"
+            style="@style/iv_list_left_icon"
+            android:src="@mipmap/person_safelty_bank"
+            />
+
+        <TextView
+            android:id="@+id/tvBind"
+            style="@style/tv_list_title"
+            android:layout_toRightOf="@+id/imicon"
+            android:text="@string/bind_card"/>
+
+        <ImageView
+            android:id="@+id/tvarrow"
+            style="@style/iv_list_right_arrow"
+            android:src="@drawable/recharge_arrow"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/myaccount_title"/>
+
+    <RelativeLayout
+        android:id="@+id/vgUser"
+        android:visibility="gone"
+        style="@style/vg_list_container"
+        >
+
+
+        <ImageView
+            android:id="@+id/imUser"
+            style="@style/iv_list_left_icon"
+            android:src="@mipmap/person_safelty_yhm"
+            />
+
+        <TextView
+            android:id="@+id/tvUser"
+            style="@style/tv_list_title"
+            android:layout_toRightOf="@+id/imUser"
+            android:text="@string/user"/>
+
+        <ImageView
+            android:id="@+id/userArrow"
+            style="@style/iv_list_right_arrow"
+            android:src="@drawable/recharge_arrow"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rlUserLayout"
+        android:background="@color/myaccount_title"/>
+
+    <RelativeLayout
+        android:id="@+id/vgPhone"
+        style="@style/vg_list_container"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/imBind"
+            style="@style/iv_list_left_icon"
+            android:src="@mipmap/person_safelty_sjh"
+            />
+
+        <TextView
+            android:id="@+id/tvBind_number"
+            style="@style/tv_list_title"
+            android:layout_toRightOf="@+id/imBind"
+            android:text="@string/bind_phone"/>
+
+        <ImageView
+            android:id="@+id/BindArrow"
+            style="@style/iv_list_right_arrow"
+            android:src="@drawable/recharge_arrow"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rlUserLayout"
+        android:background="@color/myaccount_title"/>
+</LinearLayout>
+
+</layout>

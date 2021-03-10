@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_bg_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-1dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/bg_success" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="转账成功"
+                    android:textColor="@color/white"
+                    android:textSize="22.5sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="是否立即进入彩票游戏平台"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/sv_content"
+            android:background="#CACACA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_below="@+id/divider"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/sh_rect_helf_white_white">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="#A4A4A4"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/horizontal_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#CACACA" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="立即游戏"
+                android:textColor="#FF5045"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

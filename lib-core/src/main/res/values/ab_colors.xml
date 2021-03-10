@@ -1,0 +1,210 @@
+<resources>
+    <color name="ab_white">#ffffff</color>
+    <color name="ab_white40">#40FFFFFF</color>
+    <color name="ab_black_translucent">#50000000</color>
+    <color name="ab_translucent">#00000000</color>
+    <color name="ab_black">#ff000000</color>
+    <color name="ab_blue">#0000FF</color>
+    <color name="ab_orangered">#ff5900</color>
+    <color name="ab_gray">#ff666666</color>
+    <color name="ab_light_gray">#66000000</color>
+    <color name="ab_yello">#FFD845</color>
+    <color name="ab_red">#ffff0000</color>
+    <color name="ab_red_pale">#ff7473</color>
+    <color name="ab_silver">#c0c0c0</color>
+
+    <color name="ab_gray_1">#FF999999</color>
+    <color name="ab_gray_2">#FF828282</color>
+    <color name="ab_gray_3">#FF929292</color>
+    <color name="ab_dark">#FF323232</color>
+
+    <color name="abTextColorBlack">#FF000000</color>
+    <color name="abTextColorBlue">#0066CC</color>
+    <color name="abTextColorRed">#FFE26926</color>
+    <color name="abTextColorGreen">#FF00FF00</color>
+    <color name="abTextColorRed1">#FFFF0000</color>
+    <color name="abTextColorYellow1">#FFFFFF00</color>
+    <color name="abTextColorBlue1">#FF080ad3</color>
+    <color name="abTextColorGreen1">#FF336619</color>
+	<color name="start_bg">#fffedc00</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="border_line">#ffd7dadc</color>
+    <color name="popup_bg">#00ffffff</color>
+    <color name="rediobutton">#ddd7d2</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="orangered">#ff5900</color>
+    <color name="light_gray">#66000000</color>
+    <color name="yello">#FFD845</color>
+    <color name="red_pale">#ff7473</color>
+    <color name="Silver">#c0c0c0</color>
+    <color name="readed">#ffc05500</color>
+    <color name="noread">#ff4b4b4b</color>
+    <color name="transparent01">#9000</color>
+    <color name="gray_bold">#FF606060</color>
+    <color name="movie_name">#FF371A12</color>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorBlue">#0066CC</color>
+    <color name="text_gray_1">#FF999999</color>
+    <color name="text_gray_2">#FF828282</color>
+    <color name="text_gray_3">#FF929292</color>
+    <color name="text_dark">#FF323232</color>
+    
+    <color name="TextColorRed">#FFE26926</color>
+    <color name="TextColorGreen">#FF00FF00</color>
+    <color name="TextColorRed1">#FFFF0000</color>
+    <color name="TextColorYellow1">#FFFFFF00</color>
+    <color name="TextColorBlue1">#FF080ad3</color>
+    <color name="TextColorGreen1">#FF336619</color>
+    <color name="zzblue">#3f5c84</color>
+    <color name="purple">#9300fb</color>
+    <color name="zzyellow">#c06622</color>
+    <color name="zzblack">#000</color>
+    <color name="window_bg">#f3f3f3</color>
+    <color name="title_bg">#ffd744</color>
+    <color name="button_unselected">#ff54acea</color>
+    <color name="button_selected">#ff419de4</color>
+    <color name="info_panel_bg">#ffeeeeee</color>
+    <color name="traffic_bg">#ffecf0f1</color>
+    <color name="traffic_txt">#ff414141</color>
+    <color name="traffic_data">#ff666666</color>
+    <color name="background">#f5f0ec</color>
+
+    <color name="textview_desc">#444444</color>
+    <color name="linearout_press_color">#9af0b7</color>
+    <color name="contactListDefault">#fcfaf9</color>
+    <color name="game_username_color">#fffc00</color>
+    <color name="game_context_color">#fff6da</color>
+    <color name="game_title">#ffe593</color>
+    
+   <color name="tab_botton">#c6beb9</color>
+
+   <color name="ab_sliding_tab_pressed">#8833B5E5</color>
+   <color name="amusement_window_bgs">#88838B8B</color>
+   <color name="bg_red">#FFFFFF</color>  
+   <color name="flag_1">#e50012</color>  
+   <color name="flag_2">#db3e90</color>
+
+    <color name="ab_tab_item_press_color">#f4f4f4</color>
+
+    <color name="red">#F34235</color>
+    <color name="red_light">#F46253</color>
+    <color name="red_dark">#BA202C</color>
+    <color name="red_translucent_light">#20F46253</color>
+
+    <color name="green">#4BAE4F</color>
+    <color name="green_light">#689F38</color>
+    <color name="dark_green">#1ca38b</color>
+    <color name="green_translucent_light">#20689F38</color>
+
+    <color name="blue">#2095F2</color>
+    <color name="blue_light">#02A8F3</color>
+    <color name="blue_translucent_light">#2002A8F3</color>
+
+    <color name="yellow">#FEC006</color>
+    <color name="yellow_light">#FEEA3A</color>
+    <color name="yellow_translucent_light">#20FEEA3A</color>
+
+    <color name="orange">#ff6200</color>
+    <color name="orange_light">#FD7400</color>
+    <color name="orange_translucent_light">#20FD7400</color>
+    
+
+    <color name="gray">#909090</color>
+
+    <color name="gray_light">#D0D0D0</color>
+    <color name="gray_translucent_light">#20D0D0D0</color>
+    <color name="gray_dark">#303030</color>
+
+    <color name="gray_bg">#E7E7E7</color>
+    <color name="gray_line">#EFEFF4</color>
+    <color name="gray_content">#606060</color>
+
+    <!--覆层-->
+    <color name="light_translucent">#20000000</color>
+    <color name="dark_translucent">#88000000</color>
+    <color name="white_translucent">#99FFFFFF</color>
+
+    <!--渐变-->
+    <color name="shadow_end_color">#03000000</color>
+    <color name="shadow_start_color">#37000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#68000000</color>
+
+    <!-- 黑色调 -->
+    <color name="black">#000000</color>
+    <color name="black_222222">#222222</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_444444">#444444</color>
+    <color name="black_555555">#555555</color>
+    <color name="black_666666">#666666</color>
+    <color name="black_777777">#777777</color>
+    <color name="black_888888">#888888</color>
+    <color name="black_999999">#999999</color>
+    <color name="black_959595">#959595</color>
+    <color name="black_cccccc">#CCCCCC</color>
+    <color name="black_464646">#464646</color>
+    <color name="black_a8a8a8">#A8A8A8</color>
+    <color name="black_b4a892">#B4A892</color>
+    <color name="black_afafaf">#AFAFAF</color>
+    <color name="black_a7a7a7">#A7A7A7</color>
+    <color name="black_e2e2e2">#E2E2E2</color>
+    <color name="black_e5e5e5">#E5E5E5</color>
+    <color name="black_404247">#404247</color>
+    <color name="black_2a2d32">#2A2D32</color>
+    <color name="black_c8c8c8">#C8C8C8</color>
+    <color name="black_4d4d4d">#4D4D4D</color>
+    <color name="black_f7f9fc">#F7F9FC</color>
+    <color name="black_060606">#060606</color>
+
+    <!-- 白色调 -->
+    <color name="white">#ffffff</color>
+    <color name="white_f3f3f3">#f3f3f3</color>
+    <color name="white_f3f2f2">#F3F2F2</color>
+    <color name="white_f4f4f4">#f4f4f4</color>
+    <color name="white_f5f5f5">#F5F5F5</color>
+    <color name="white_f7f7f7">#f7f7f7</color>
+    <color name="white_dddddd">#DDDDDD</color>
+    <color name="white_686868">#686868</color>
+    <color name="white_eeeeee">#eeeeee</color>
+    <color name="white_ebebeb">#EBEBEB</color>
+    <color name="white_f4e4e4">#F4E4E4</color>
+    <color name="white_fafafa">#FAFAFA</color>
+    <color name="white_f9fafc">#F9FAFC</color>
+
+    <!-- 红色调 -->
+    <color name="red_dd1006">#DD1006</color>
+    <color name="red_ffccff">#FFCCFF</color>
+    <color name="red_ffdfd7">#FFDFD7</color>
+    <color name="red_ff7600">#FF7600</color>
+    <color name="red_ee314b">#EE314B</color>
+    <color name="red_e12b2b">#E12B2B</color>
+    <color name="red_e4302d">#E4302D</color>
+    <color name="red_fff3f0">#FFF3F0</color>
+    <color name="red_fa2727">#FA2727</color>
+    <color name="red_ffe9e9">#FFE9E9</color>
+    <color name="red_c73e3e">#C73E3E</color>
+    <color name="red_ff2c66">#FF2C66</color>
+    <color name="red_e51e12">#E51E12</color>
+    <color name="red_e43d32">#E43D32</color>
+    <color name="red_c20c20">#C20C20</color>
+    <color name="red_e1ococ">#E10C0C</color>
+    <color name="red_d70c2f">#D70C2F</color>
+    <color name="red_2">#990324</color>
+
+    <!-- 黄色调 -->
+    <color name="yellow_f0af15">#F0AF15</color>
+
+    <!-- 橙色调 -->
+    <color name="orange_ff7a21">#FF7A21</color>
+
+    <!-- 蓝色调 -->
+    <color name="blue_0c6ce2">#0C6CE2</color>
+    <color name="blue_f3fbfe">#F3FBFE</color>
+    <color name="blue_2396f7">#2396f7</color>
+
+    <!-- 绿色调 -->
+    <color name="green_09af1c">#09AF1C</color>
+    
+
+</resources>

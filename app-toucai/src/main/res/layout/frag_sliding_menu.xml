@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/vgSlideTop"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/bg_side_top"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvSlideUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="普通"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/white"
+            android:background="@drawable/sh_bg_ova_black"/>
+
+        <ImageView
+            android:id="@+id/ivSlidePotrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/ic_default_potrait"/>
+
+        <TextView
+            android:id="@+id/tvSlideAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="掘金者"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+
+            android:layout_below="@+id/ivSlidePotrait"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_money"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:layout_toLeftOf="@+id/tvSlideBalance"
+            android:layout_alignTop="@+id/tvSlideBalance"/>
+
+        <TextView
+            android:id="@+id/tvSlideBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="000.000元"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+
+            android:layout_below="@+id/tvSlideAccount"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/vgSlideMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/vgSlideTop"
+        android:background="@color/colorPrimaryInverse"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/vgSlideDeposit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_toLeftOf="@+id/tvSlideDeposit"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerInParent="true"
+
+                android:src="@mipmap/ic_sliding_deposit"/>
+            <TextView
+                android:id="@+id/tvSlideDeposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/devider_v_normal"/>
+
+        <RelativeLayout
+            android:id="@+id/vgSlideWidthdraw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_toLeftOf="@+id/tvSlideWidthdraw"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerInParent="true"
+
+                android:src="@mipmap/ic_sliding_withdraw"/>
+            <TextView
+                android:id="@+id/tvSlideWidthdraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提款"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlSlideRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vgSlideMiddle"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSlideLottery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

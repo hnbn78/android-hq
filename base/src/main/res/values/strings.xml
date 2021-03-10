@@ -1,0 +1,271 @@
+<resources>
+    <!--通用 -->
+    <string name="money_sign">¥</string>
+
+    <string name="all_status">全部状态</string>
+    <string name="search">搜索</string>
+    <string name="to">至</string>
+    <string name="all">全部</string>
+
+    <string name="persion">个人</string>
+    <string name="team">团队</string>
+    <string name="user_name">用户名：</string>
+
+    <string name="open_type">开户类别：</string>
+
+    <string name="link_issnue">链接有效日期：</string>
+
+    <string name="toady">今天</string>
+    <string name="one_day">一天</string>
+    <string name="seven_day">七天</string>
+    <string name="thiry_day">30天</string>
+    <string name="yongjiu_youxiao">永久</string>
+    <string name="ordinary_account">普通开户</string>
+    <string name="link_account">链接开户</string>
+    <string name="link_manage">链接管理</string>
+    <string name="order_issue_no">期号:</string>
+    <string name="withdrawals_ti">提现</string>
+
+    <string name="agence">代理</string>
+    <string name="paly">玩家</string>
+    <string name="third_part">第三方</string>
+    <string name="password">密码:</string>
+    <string name="account">用户名：</string>
+    <string name="plase_input_user">请输入用户名：</string>
+    <string name="geshi_text">格式：大小写字母开头，不能超过10个字符！</string>
+    <string name="format_text">格式：密码前4位必须字母，其他可以为字母和数字</string>
+    <string name="login_input_name">请输入用户名</string>
+    <string name="login_input_password">请输入密码</string>
+    <string name="open_account_center">开户中心</string>
+    <string name="open_account">立即开户</string>
+    <string name="lottery_rebates">彩票返点：</string>
+    <string name="betting_please_return_water">请输入返点</string>
+    <string name="build_link">生成链接</string>
+
+    <string name="all_lottery">全部彩种</string>
+    <string name="input_issue_no">输入期号</string>
+
+    <string name="team_member_text" formatted="false">团队成员：0人(代理0人，玩家0人)</string>
+    <string name="team_member_online" formatted="false">团队在线：0人</string>
+    <string name="team_member_total" formatted="false">团队余额：0元</string>
+    <string name="return_dispoint">返点</string>
+    <string name="return_send_price">返派奖</string>
+    <string name="activity">活动</string>
+    <string name="betting_liang">投注量</string>
+    <string name="new_add">新增用户</string>
+    <string name="recharge_amount">充值金额:</string>
+    <string name="withdrawals">取款</string>
+    <string name="recharge">充值</string>
+    <string name="send_the_prirce">派奖</string>
+    <string name="neal_week">最近7天</string>
+    <string name="neal_month">最近一个月</string>
+    <string name="consumption">消费</string>
+
+    <string name="input_current_password">输入当前密码</string>
+    <string name="input_new_password">输入新密码</string>
+    <string name="again_input_new_password">再次输入新密码</string>
+    <string name="advice_password">建议您使用字母和数字的组合，混合大小写</string>
+
+    <string name="title_login_pwd_modify">修改登录密码</string>
+    <string name="title_fund_pwd_modify">修改资金密码</string>
+    <string name="fingerprint_login">指纹登录</string>
+    <string name="line_charge">线路悬浮开关</string>
+    <string name="share_application">分享应用</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="about_us">关于我们</string>
+    <string name="version_update">版本更新</string>
+    <string name="exit_login">退出登录</string>
+    <string name="help_center">帮助中心</string>
+    <string name="help_center_text">1.如何更改会员密码？\n您登陆账号之后，点击页面上方“个人中心”—“\n修改登录密码”页面，按照相应的规则进行修改您的账号密码.\n\n2.如何找回会员密码\n在用户登陆的页面点击“忘记密码”，根据提示输入您的账号，按照网站的提示来进行操作；如果您既没有绑定邮箱也没有设置安全问题，请联系客服人员，他们会给您修改成相关的密码，之后您可以登陆修改自己心仪的密码。请放心，客服人员看不到您的密码。\n\n3.如何编辑个人资料\n您可以点击“个人中心”—“个人资料”按照提示操作进行完善自己的个人资料。\n\n4.如何绑定邮箱。您可以通过“个人中心”—“个人资料”—“绑定邮箱设置”页面，填写自己常用的邮箱，系统会给您要绑定的邮箱中发送一份验证邮件，您只需要再进入您的邮箱，点击相关的链接即可验证邮箱。请注意：这个邮箱一旦绑定不可更改，并且也是您找回密码的重要凭证。\n\n5.如何设置密保问题。您可以通过“个人中心”—“个人资料”—“密保问题设置”页面来进行设置密保问题。密保会有一个相关的问题。您可以选择一个喜欢的问题来进行自由设计答案。请注意，密保问题请牢记，这个是您找回密码的重要凭证。\n\n6.如何设置资金密码。您可以通过“个人中心”—“资金密码设置”来进行设置自己的资金密码。再次修改资金密码，需要使用自己原来的资金密码。请注意：您的资金密码是您提现的重要密码，请牢记。\n\n7.什么是取款人姓名，如何进行设置？取款人姓名是您提现的一个重要验证，如果取款人的姓名和您的开户行的姓名不一致，是无法来进行提款，请谨慎设置。您可以通过“个人中心”—“个人资料”来进行取款人姓名的绑定，一经绑定是无法来进行修改的。\n\n8.如何进行充值。您可以通过点击页面右上方“充值”的页面来进行充值。您可以选择在线支付，快捷充值，银行转账，微信充值以及支付宝充值五种方式来进行对您的账号充值。
+在线支付和快捷充值，您可以选择相应的网上银行依据系统的引导一步一步的操作，提示操作成功即充值成功。
+银行转账，您可以根据我们给您提供的银行卡信息，在线下进行汇款，汇款成功之后您在网上填写相关的汇款单信息，填写完成之后，即充值成功。请注意：平台会不定期更换收款人信息，充值请以当前发布收款信息进行转账处理，不要保留原始信息直接转账，否则造成损失平台无法处理哦~\n\n9.如何查看余额。\n您可以用过网站页面上方“彩票余额”进行查看。\n\n10.如何进行进行取款。\n您可以通过点击网站页面右上方“取款”页面查看自己可以进行取款的金额，点击取款系统一步一步的提示来进行账号提现。\n\n11.如何查看交易记录。\n您可以通过“个人中心”—“游戏记录”查看自己各类型的交易记录。</string>
+
+
+    <string name="about_us_text"> \t\t彩宏是由菲律宾合法博彩机构\nPAGCOR联合颁发线上博彩执照并受其监\n管，并经第三方游戏平台Gaming \n Laboretories International(GLI) 权威认证\n。我们致力于向用户提供一个公平合理、安全\n可靠、精准快捷的交易平台。\t\t作为专业的网上博彩游戏运营商\n，我们拥有最专业的顶尖团队作为技术支持\n，具有规模宏大的网路安全维护中心，为广\n大玩家提供最先进、最具娱乐性的游戏项目\n，并保证我们游戏平台的赔率是最佳赔\n率，从而保证广大玩家的利益,彩宏全部游\n戏设计均采用世界最领先的软件。
+\t彩宏致力为客户保护隐私并提供一个最安全\n的游戏平台，我们在此网站搜集的资料将会\n为您提供最卓越的服务，我们不会出卖\n或租赁您的个人资料给第三方，客户所提供\n的个人资料均经过SSL128加密技术处理，并储存在\n安全的、非公开的作业系统，对于有机会接触客\n户的个人资料的协助伙伴也\n必需遵守我们订立的隐私保密规则。</string>
+
+    <string name="bank">银行</string>
+    <string name="name">姓名</string>
+    <string name="with_total">提现金额</string>
+    <string name="bank_list">银行卡列表</string>
+    <string name="select_open_bank">银行名称</string>
+    <string name="bank_name">支行名称</string>
+
+    <string name="input_real_bank_name">请输入支行名称</string>
+    <string name="input_bank_number">请输入银行卡号</string>
+    <string name="input_confirm_bank_number">请确认卡号</string>
+    <string name="input_funds_password">请输入6位数字</string>
+    <string name="bind_bank_card_id_tip">请输入您的身份信息</string>
+    <string name="bind_bank_card_tip">请输入您的银行卡信息</string>
+    <string name="bind_bank_card_number">银行卡号</string>
+    <string name="bind_bank_card_number_hint">请输入银行卡号</string>
+    <string name="bind_bank_card_open_city">开户省市</string>
+    <string name="bind_bank_card_open_city_hint">请输入开户省市</string>
+    <string name="bind_bank_card_agreement">我已同意《服务协议》</string>
+    <string name="bind_bank_card_success">银行卡绑定成功</string>
+    <string name="bind_bank_card_set_tip">陛下\n您没有绑定银行卡</string>
+    <string name="bind_bank_card_set_quick">请第一时间绑定银行卡</string>
+    <string name="bind_bank_card_query_bank_info">点击查询卡号归属银行</string>
+    <string name="bind_bank_card_query_bank_error">未查询到银行卡信息</string>
+    <string name="bind_bank_card_bind">去绑定</string>
+    <string name="bank_card_bind">银行卡绑定</string>
+    <string name="submit_bind">立即添加</string>
+    <string name="operate_notice">操作提示：为了保障您的账户安全，请认真填写您的银行信息，资料一经绑定无法修改。</string>
+    <string name="guangda">光大银行</string>
+    <string name="choose_bank">请选择银行</string>
+    <string name="confirm_bind">确定绑卡</string>
+    <string name="sure">确认</string>
+
+    <string name="cash_detail_bank">提现银行</string>
+    <string name="cash_detail_bank_no">提现卡号</string>
+    <string name="title_fund_password">资金密码</string>
+    <string name="with_time">取款时间  10:00-2:00，单笔限额：100-49999元，每日限制次数：20</string>
+
+    <string name="plan_one">计划一</string>
+    <string name="plan_two">计划二</string>
+    <string name="plan_three">计划三</string>
+
+    <string name="update_message">发现新版本</string>
+    <string name="update_immediately">立即更新</string>
+    <string name="update_later">稍后更新</string>
+    <string name="deposit_record">充值记录</string>
+    <string name="up_agent">上级代理</string>
+    <string name="down_member">下级会员</string>
+    <string name="message_content">消息内容:</string>
+    <string name="topic">主题:</string>
+    <string name="input_tips">请输入主题</string>
+    <string name="send">发送</string>
+    <string name="receiver">收件人:</string>
+    <string name="add_member">添加用户</string>
+    <string name="withdraw_amount">可提金额</string>
+
+    <string name="lottery_max_chase_count">最大期数为%d</string>
+    <string name="dandanrgz_range_hint" formatted="false">您当前可设置的单单日工资最低为%.2f%%，最高为%.2f%%</string>
+
+    <string name="are_you_sure_to_join_xxx_phase">您确认加入第%s期？</string>
+    <string name="total_bet_count">总注数：</string>
+    <string name="order_count">订单笔数：</string>
+    <string name="is_follow_number">是否追号：</string>
+    <string name="sum_of_bet_money">投注总金额：</string>
+    <string name="warm_hint_bet_reward_limit">温馨提示：本期最高奖金限额%s元，请会员谨慎投注</string>
+
+
+    <string name="member_pwd_modify_help">如何修改会员登录密码？</string>
+    <string name="member_pwd_find_help">如何找回会员密码？</string>
+    <string name="member_info_help">如何编辑个人资料？</string>
+    <string name="member_telandmail_bind_help">如何绑定手机号/邮箱？</string>
+    <string name="security_setting">安全设置</string>
+    <string name="new_notice">新消息通知</string>
+    <string name="help_and_feedback">帮助与反馈</string>
+    <string name="account_setting">账号设置</string>
+    <string name="recharge_withdraw">充值提现</string>
+    <string name="lottery_bet">彩票投注</string>
+    <string name="feedback">意见反馈</string>
+    <string name="member_name">会员名</string>
+    <string name="register_date">注册时间</string>
+    <string name="real_name">真实姓名</string>
+    <string name="phone_number">手机号码</string>
+    <string name="qq_number">QQ号码</string>
+    <string name="wechat_number">微信号码</string>
+    <string name="phone_verify">手机验证</string>
+    <string name="email_verify">邮箱验证</string>
+    <string name="verify_code">验证码</string>
+    <string name="email_address">邮箱地址</string>
+    <string name="sex">性别</string>
+    <string name="birth_date">出生日期</string>
+    <string name="login_password">登录密码</string>
+    <string name="funds_password">资金密码</string>
+    <string name="add_now">立即添加</string>
+    <string name="add_now_tc">立即设置</string>
+    <string name="secrecy">保密</string>
+    <string name="more_setting">更多设置</string>
+    <string name="remind">提醒</string>
+    <string name="edit_phone">修改手机号</string>
+    <string name="bind_phone">绑定手机号</string>
+    <string name="your_phone_number">您的手机号</string>
+    <string name="your_phone_email">您的邮箱地址</string>
+    <string name="change_phone_failed_info">如无法更改手机号，请联系在线客户申请协助</string>
+    <string name="change_email_failed_info">如无法更改邮箱地址，请联系在线客户申请协助</string>
+    <string name="change_phone_number">更改手机号</string>
+    <string name="change_email_address">修改邮箱地址</string>
+    <string name="please_input_real_name">请输入真实姓名</string>
+    <string name="please_input_phone_number">请输入手机号码</string>
+    <string name="please_input_email_address">请输入邮箱地址</string>
+    <string name="change_phone_info">为了您的账户安全请填写手机号完成验证</string>
+    <string name="change_email_info">为了您的账户安全请填写真实邮箱完成验证</string>
+    <string name="change_email_info_add">开启邮箱查看邮箱验证码，输入正确的邮箱验证码完成绑定</string>
+    <string name="please_input_verify_code">请输入验证码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="go_to_bind">前往绑定</string>
+    <string name="verify_code_incorrect_format">验证码格式不正确</string>
+    <string name="setting_info">真实姓名、性别、出生日期修改请联系在线客户</string>
+    <string name="setting_funds_password_info">资金密码在发生资金交易时使用</string>
+    <string name="realname_setting_info">为保障您提款更快捷，请填写真实姓名</string>
+    <string name="edit_phone_info">您正在修改账户绑定的手机号，请再次确认并进行身份验证</string>
+    <string name="edit_email_info">您正在修改账户绑定的邮箱，请再次确认并进行身份验证</string>
+    <string name="more_setting_info">QQ号,微信号修改请联系在线客户</string>
+    <string name="change_login_password_info">建议您定期更改密码以保护账户安全</string>
+    <string name="change_funds_password_info">建议您定期更改密码以保护资金安全</string>
+    <string name="funds_password_use_info">用于提款验证</string>
+    <string name="old_password">旧密码</string>
+    <string name="please_input_old_password">请填写旧密码</string>
+    <string name="please_input_new_password">请填写新密码</string>
+    <string name="please_input_password">请填写密码</string>
+    <string name="please_input_password_agame">请再次输入密码</string>
+    <string name="new_password">新密码</string>
+    <string name="right_password">确认密码</string>
+    <string name="setting_password">设置密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="year">年</string>
+    <string name="mouth">月</string>
+    <string name="day">日</string>
+
+    <!-- 通用 -->
+    <string name="not_data">暂无数据</string>
+    <string name="status">状态</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="setting">设置</string>
+
+    <string name="resend">重新发送</string>
+    <string name="back">返回</string>
+    <string name="account_z">账户</string>
+    <string name="lottery_point">彩票返点</string>
+    <string name="deadline">剩余/有效时间</string>
+    <string name="use_count">使用次数/总次数</string>
+
+    <string name="system_notice">系统通知</string>
+    <string name="system_notice_info">包含充值、转账、提现等系统服务和资金变动</string>
+    <string name="activity_notice">活动通知</string>
+    <string name="activity_notice_info">热门活动与最新优惠推荐等</string>
+    <string name="balance_notice">短信通知</string>
+    <string name="balance_notice_info">会员的资金发生变动发送短信到会员绑定的手机号码中</string>
+    <string name="line_float">线路悬浮</string>
+
+    <string name="transfer_out">转出</string>
+    <string name="transfer_in">转入</string>
+
+    <string name="trend_he_str">"后二 和值"</string>
+
+    <string name="trend_hs_str">"后三 和值"</string>
+
+    <string name="trend_kdhe_str">"后二 跨度"</string>
+
+    <string name="trend_kdhs_str">"后三 跨度"</string>
+
+    <string name="trend_kdqe_str">"前二 跨度"</string>
+
+    <string name="trend_kdqs_str">"前三 跨度"</string>
+
+    <string name="trend_kdzs_str">"中三 跨度"</string>
+
+    <string name="trend_qe_str">"前二 和值"</string>
+
+    <string name="trend_qs_str">"前三 和值"</string>
+
+    <string name="trend_sm_str">"三码 和值"</string>
+
+    <string name="trend_wxhz_str">"五星 和值"</string>
+
+    <string name="trend_zs_str">"中三 和值"</string>
+</resources>

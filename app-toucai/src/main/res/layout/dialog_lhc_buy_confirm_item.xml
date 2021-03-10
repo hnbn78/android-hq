@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF"
+    android:paddingLeft="16dp"
+    android:paddingStart="19dp"
+    android:paddingEnd="16dp"
+    android:paddingRight="16dp"
+    android:orientation="horizontal">
+
+    <com.desheng.app.toucai.view.MyTextView
+        android:id="@+id/tv_lottery_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:text="正码【fasdfasdfasdfasdfasdfadfasdfasdfasdfasdfa21fasfasdfaasdffdfasdfsdfasfaasdfasdfasdfas】@48.02 *1.00"
+        android:textColor="#4F4F4F"
+        android:textSize="14sp"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:id="@+id/ib_del"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_lhc_buy_confirm_delete"
+        android:background="@null"/>
+</LinearLayout>
