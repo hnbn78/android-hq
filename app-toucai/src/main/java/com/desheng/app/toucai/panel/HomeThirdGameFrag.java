@@ -89,26 +89,26 @@ public class HomeThirdGameFrag extends BasePageFragment implements BaseQuickAdap
             case 1:
                 data.clear();
                 data.add(new GameEtry(R.mipmap.home_ag, ThirdGamePlatform.AGIN.getPlatformId()));
-                data.add(new GameEtry(R.mipmap.bbin, ThirdGamePlatform.BBIN.getPlatformId()));
-                data.add(new GameEtry(R.mipmap.home_og, ThirdGamePlatform.OG.getPlatformId()));
+                //data.add(new GameEtry(R.mipmap.bbin, ThirdGamePlatform.BBIN.getPlatformId()));
+                //data.add(new GameEtry(R.mipmap.home_og, ThirdGamePlatform.OG.getPlatformId()));
                 adapter.setNewData(data);
                 break;
             case 2:
                 data.clear();
-                data.add(new GameEtry(R.mipmap.home_cq9, ThirdGamePlatform.CQ.getPlatformId(), true));
-                data.add(new GameEtry(R.mipmap.home_pt, ThirdGamePlatform.PT.getPlatformId(), true));
+               // data.add(new GameEtry(R.mipmap.home_cq9, ThirdGamePlatform.CQ.getPlatformId(), true));
+               // data.add(new GameEtry(R.mipmap.home_pt, ThirdGamePlatform.PT.getPlatformId(), true));
                 adapter.setNewData(data);
                 break;
             case 3:
                 data.clear();
-                data.add(new GameEtry(R.mipmap.home_ky, ThirdGamePlatform.KY.getPlatformId()));
-                data.add(new GameEtry(R.mipmap.home_datang, ThirdGamePlatform.DT.getPlatformId(),true));
+               // data.add(new GameEtry(R.mipmap.home_ky, ThirdGamePlatform.KY.getPlatformId()));
+               // data.add(new GameEtry(R.mipmap.home_datang, ThirdGamePlatform.DT.getPlatformId(),true));
                 data.add(new GameEtry(R.mipmap.home_leg, ThirdGamePlatform.LEG.getPlatformId(),true));
                 adapter.setNewData(data);
                 break;
             case 4:
                 data.clear();
-                data.add(new GameEtry(R.mipmap.home_im, ThirdGamePlatform.IM.getPlatformId()));
+               // data.add(new GameEtry(R.mipmap.home_im, ThirdGamePlatform.IM.getPlatformId()));
                 adapter.setNewData(data);
                 break;
         }

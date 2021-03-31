@@ -309,6 +309,12 @@ public class HomeLotteryFrag extends BasePageFragment {
                 return R.mipmap.home_flbcai;
             case "快三":
                 return R.mipmap.home_kuai3;
+            case "PK10":
+                return R.mipmap.home_pk10;
+            case "经典彩种":
+                return R.mipmap.home_jingdian;
+            case "热门游戏":
+                return R.mipmap.home_remen;
             case "天彩VR":
                 return R.mipmap.home_vr;
             default:
