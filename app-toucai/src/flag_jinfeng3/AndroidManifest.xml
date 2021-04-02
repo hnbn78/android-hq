@@ -11,7 +11,7 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
 
             <intent-filter>
-                <action android:name="com.my.app.huanq.login" />
+                <action android:name="com.my.app.gjhq.login" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
@@ -24,7 +24,7 @@
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
 
             <intent-filter>
-                <action android:name="com.my.app.huanq.regist" />
+                <action android:name="com.my.app.gjhq.regist" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
@@ -32,7 +32,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.my.app.huanq.fileProvider"
+            android:authorities="com.my.app.gjhq.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

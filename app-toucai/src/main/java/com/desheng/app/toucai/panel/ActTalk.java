@@ -325,7 +325,7 @@ public class ActTalk extends AbBaseActivity implements View.OnClickListener {
                             if (Strs.isEqual(BaseConfig.custom_flag, BaseConfig.FLAG_JINFENG_2)) {
                                 authority = "com.my.app.jf2.fileProvider";
                             } else if (Strs.isEqual(BaseConfig.custom_flag, BaseConfig.FLAG_JINFENG_3)) {
-                                authority = "com.my.app.huanq.fileProvider";
+                                authority = "com.my.app.gjhq.fileProvider";
                             }
                             Matisse.from(ActTalk.this)
                                     .choose(MimeType.ofImage())//图片类型
