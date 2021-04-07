@@ -178,7 +178,7 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="#FFFFFF"
-            android:visibility="visible">
+            android:visibility="invisible">
 
             <Button
                 android:id="@+id/btn_quick_play_ctrl"

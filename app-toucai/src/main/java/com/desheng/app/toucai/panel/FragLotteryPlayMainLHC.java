@@ -359,20 +359,24 @@ public class FragLotteryPlayMainLHC extends AbBaseFragment implements LotteryPla
 
     private void initOpenCodeCard(ArrayList<LotteryOpenHistory> listOpen) {
         String currentIssue = String.valueOf(Strs.parse(nextIssue == null ? "0" : nextIssue.getIssue(), 0) - 1);
-        if (nextIssue != null)
-            tvIssueDate.setText(Html.fromHtml(String.format("第 <font color=\"#4A90E2\">%s</font> 期开奖结果", currentIssue)));
-        else
-            tvIssueDate.setText("");
+       // if (nextIssue != null)
+        //    tvIssueDate.setText(Html.fromHtml(String.format("第 <font color=\"#4A90E2\">%s</font> 期开奖结果", currentIssue)));
+       // else
+       //     tvIssueDate.setText("");
 
         LotteryOpenHistory history = null;
         for (LotteryOpenHistory hi : listOpen) {
             if (nextIssue != null
                     && hi != null
-                    && hi.getCode() != null
-                    && Strs.isEqual(hi.getIssue(), currentIssue)) {
+                    && hi.getCode() != null ) {
                 history = hi;
                 break;
             }
+        }
+        if(history!=null){
+            tvIssueDate.setText(Html.fromHtml(String.format("第 <font color=\"#4A90E2\">%s</font> 期开奖结果", currentIssue)));
+        }else{
+            tvIssueDate.setText("");
         }
         updateOpenCode(history);
     }
